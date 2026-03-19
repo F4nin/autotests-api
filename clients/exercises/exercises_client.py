@@ -8,14 +8,14 @@ class Exercise(TypedDict):
     """
     Описание структуры упражнения.
     """
-        id: str
-        title: str
-        courseId: str
-        maxScore: int
-        minScore: int
-        orderIndex: int
-        description: str
-        estimatedTime: str
+    id: str
+    title: str
+    courseId: str
+    maxScore: int
+    minScore: int
+    orderIndex: int
+    description: str
+    estimatedTime: str
 
 class UpdateExerciseResponseDict(TypedDict):
     """
