@@ -1,0 +1,65 @@
+import uuid
+from typing import Annotated
+
+from pydantic import BaseModel, Field, ConfigDict, EmailStr, StringConstraints
+
+from clients.files.files_schema import FileSchema
+from clients.users.users_schema import UserSchema
+
+String250 = Annotated[str, StringConstraints(min_length=1, max_length=250)]
+String_more_1_simbols = Annotated[str, StringConstraints(min_length=1, max_length=50)]
+
+class CourseSchema(BaseModel):
+
+    """
+    Описание структуры курса.
+    """
+    model_config = ConfigDict(populate_by_name=True)
+
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    title: String250
+    max_score: int | None = Field(alias="maxScore")
+    min_score: int | None = Field(alias="minScore")
+    description: String_more_1_simbols
+    preview_file: FileSchema = Field(alias="previewFile")
+    estimated_time: str | None = Field(alias="estimatedTime")
+    created_by_user: UserSchema = Field(alias="createdByUser")
+
+class CreateCourseResponseSchema(BaseModel):
+    """
+    Описание структуры ответа создания курса.
+    """
+    course: CourseSchema
+
+class GetCoursesRequestSchema(BaseModel):
+    """
+    Описание структуры запроса на получение списка курсов.
+    """
+    model_config = ConfigDict(populate_by_name=True)
+    user_id: str = Field(alias="userId")
+
+class CreateCourseRequestSchema(BaseModel):
+    """
+    Описание структуры запроса на создание курса.
+    """
+    model_config = ConfigDict(populate_by_name=True)
+
+    title: String250
+    max_score: int | None = Field(alias="maxScore")
+    min_score: int | None = Field(alias="minScore")
+    description: String_more_1_simbols
+    estimated_time: str | None = Field(alias="estimatedTime")
+    preview_file_id: str = Field(default_factory=lambda: str(uuid.uuid4()), alias="previewFileId")
+    created_by_user_id: str = Field(default_factory=lambda: str(uuid.uuid4()), alias="createdByUserId")
+
+class UpdateCourseRequestSchema(BaseModel):
+    """
+    Описание структуры запроса на обновление курса.
+    """
+    model_config = ConfigDict(populate_by_name=True)
+
+    title: String250 | None
+    max_score: int | None = Field(alias="maxScore")
+    min_score: int | None = Field(alias="minScore")
+    description: str | None
+    estimatedTime:str | None = Field(alias="estimatedTime")
