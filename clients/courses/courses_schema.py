@@ -16,7 +16,7 @@ class CourseSchema(BaseModel):
     """
     model_config = ConfigDict(populate_by_name=True)
 
-    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    id: str
     title: String250
     max_score: int | None = Field(alias="maxScore")
     min_score: int | None = Field(alias="minScore")
@@ -49,8 +49,8 @@ class CreateCourseRequestSchema(BaseModel):
     min_score: int | None = Field(alias="minScore")
     description: String_more_1_simbols
     estimated_time: str | None = Field(alias="estimatedTime")
-    preview_file_id: str = Field(default_factory=lambda: str(uuid.uuid4()), alias="previewFileId")
-    created_by_user_id: str = Field(default_factory=lambda: str(uuid.uuid4()), alias="createdByUserId")
+    preview_file_id: str = Field(alias="previewFileId")
+    created_by_user_id: str = Field(alias="createdByUserId")
 
 class UpdateCourseRequestSchema(BaseModel):
     """
