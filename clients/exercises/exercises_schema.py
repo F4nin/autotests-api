@@ -1,4 +1,3 @@
-import uuid
 from typing import Annotated
 
 from pydantic import BaseModel, Field, ConfigDict, EmailStr, StringConstraints
@@ -12,9 +11,9 @@ class ExerciseSchema(BaseModel):
     """
     model_config = ConfigDict(populate_by_name=True)
 
-    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    id: str
     title: String250
-    course_id: str = Field(default_factory=lambda: str(uuid.uuid4()), alias="courseId")
+    course_id: str = Field(alias="courseId")
     max_score: int | None = Field(alias="maxScore")
     min_score: int | None = Field(alias="minScore")
     order_index: int = Field(alias="orderIndex")
@@ -62,7 +61,7 @@ class CreateExercisesRequestSchema(BaseModel):
     model_config = ConfigDict(populate_by_name=True)
 
     title: String250
-    course_id: str = Field(default_factory=lambda: str(uuid.uuid4()), alias="courseId")
+    course_id: str = Field(alias="courseId")
     max_score: int | None = Field(alias="maxScore")
     min_score: int | None = Field(alias="minScore")
     order_index: int = Field(alias="orderIndex")

@@ -38,6 +38,9 @@ class GetCoursesRequestSchema(BaseModel):
     model_config = ConfigDict(populate_by_name=True)
     user_id: str = Field(alias="userId")
 
+class GetCourseResponseSchema(BaseModel):
+    course: CourseSchema
+
 class CreateCourseRequestSchema(BaseModel):
     """
     Описание структуры запроса на создание курса.

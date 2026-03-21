@@ -6,7 +6,7 @@ class FileSchema(BaseModel):
     """
     Описание структуры файла.
     """
-    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    id: str
     url: HttpUrl
     filename: str
     directory: str
