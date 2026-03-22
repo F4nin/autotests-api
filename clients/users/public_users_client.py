@@ -13,7 +13,7 @@ class PublicUsersClient(APIClient):
     def create_user_api(self, request: CreateUserRequestSchema) -> Response:
         """
         Публичный метод для создания пользователя
-        :param request: словарь со структурой CreateUserRequestDict
+        :param request: словарь со структурой CreateUserRequestSchema
         :return: Ответ от сервера в виде объекта httpx.Response
         """
         return self.post("/api/v1/users",json=request.model_dump(by_alias=True))

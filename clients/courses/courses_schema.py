@@ -65,4 +65,4 @@ class UpdateCourseRequestSchema(BaseModel):
     max_score: int | None = Field(alias="maxScore")
     min_score: int | None = Field(alias="minScore")
     description: str | None
-    estimatedTime:str | None = Field(alias="estimatedTime")
+    estimated_time:str | None = Field(alias="estimatedTime")
