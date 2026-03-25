@@ -65,7 +65,7 @@ def public_users_client() -> PublicUsersClient:
     return get_public_users_client()
 
 @pytest.fixture
-def function_user(public_user_client: PublicUsersClient) -> UserFixture:
+def function_user(public_users_client: PublicUsersClient) -> UserFixture:
     """
     Фикстура, создающая тестового пользователя.
 
@@ -76,13 +76,13 @@ def function_user(public_user_client: PublicUsersClient) -> UserFixture:
     который ее запрашивает.
 
     Args:
-        public_user_client: Фикстура публичного клиента для создания пользователя
+        public_users_client: Фикстура публичного клиента для создания пользователя
 
     Returns:
         UserFixture: Объект с данными запроса и ответа созданного пользователя
     """
     request = CreateUserRequestSchema()
-    response = public_user_client.create_user(request)
+    response = public_users_client.create_user(request)
     return UserFixture(request=request, response=response)
 
 @pytest.fixture
