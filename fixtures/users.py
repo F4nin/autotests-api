@@ -37,20 +37,6 @@ class UserFixture(BaseModel):
         return AuthenticationUserSchema(email=self.request.email, password=self.request.password)
 
 @pytest.fixture
-def authentication_client() -> AuthenticationClient:
-    """
-    Фикстура для клиента аутентификации.
-
-    Предоставляет клиент для работы с эндпоинтами аутентификации:
-    - Логин пользователя
-    - Получение токенов
-
-    Returns:
-       AuthenticationClient: Клиент для аутентификации
-    """
-    return get_authentication_client()
-
-@pytest.fixture
 def public_users_client() -> PublicUsersClient:
     """
     Фикстура для публичного клиента пользователей.
