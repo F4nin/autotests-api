@@ -36,3 +36,30 @@ def test_get_user_me(private_users_client: PrivateUsersClient, function_user):
     validate_json_schema(response.json(), response_data.model_json_schema())
 
 
+@pytest.mark.users
+@pytest.mark.regression
+class TestUsers:
+    @pytest.mark.parametrize("domain", ["mail.ru", "gmail.com", "example.com"],
+                             ids=["Проверка домена: mail_ru", "Проверка домена: gmail_com",
+                                  "Проверка домена: example_com"])
+    def test_create_user(self, domain: str, public_users_client: PublicUsersClient):
+        email = fake.email(domain)
+        request = CreateUserRequestSchema(email=email)
+        response = public_users_client.create_user_api(request)
+        response_data = CreateUserResponseSchema.model_validate_json(response.text)
+
+        assert_status_code(response.status_code, HTTPStatus.OK)
+        assert_create_user_response(request, response_data)
+
+        validate_json_schema(response.json(), response_data.model_json_schema())
+
+    def test_get_user_me(self, private_users_client: PrivateUsersClient, function_user):
+        response = private_users_client.get_user_me_api()
+        response_data = GetUserResponseSchema.model_validate_json(response.text)
+
+        assert_status_code(response.status_code, HTTPStatus.OK)
+
+        assert_get_user_response(response_data, function_user.response)
+
+        validate_json_schema(response.json(), response_data.model_json_schema())
+
