@@ -2,7 +2,7 @@ from clients.errors_schema import ValidationErrorSchema, ValidationErrorResponse
 from clients.files.files_schema import CreateFileRequestSchema, CreateFileResponseSchema, FileSchema, \
     GetFileResponseSchema
 from tools.assertions.base import assert_equal
-from tools.assertions.errors import assert_validation_errors_response, assert_internal_error_response
+from tools.assertions.errors import assert_validation_error_response, assert_internal_error_response
 
 
 def assert_create_file_response(request: CreateFileRequestSchema, response: CreateFileResponseSchema):
@@ -68,7 +68,7 @@ def assert_create_file_with_empty_filename_response(actual: ValidationErrorRespo
             )
         ]
     )
-    assert_validation_errors_response(actual, expected)
+    assert_validation_error_response(actual, expected)
 
 
 def assert_create_file_with_empty_directory_response(actual: ValidationErrorResponseSchema):
@@ -90,7 +90,7 @@ def assert_create_file_with_empty_directory_response(actual: ValidationErrorResp
             )
         ]
     )
-    assert_validation_errors_response(actual, expected)
+    assert_validation_error_response(actual, expected)
 
 
 def assert_file_not_found_response(actual: InternalErrorResponseSchema):
@@ -102,3 +102,6 @@ def assert_file_not_found_response(actual: InternalErrorResponseSchema):
     """
     expected = InternalErrorResponseSchema(details="File not found")
     assert_internal_error_response(actual, expected)
+
+def assert_get_file_with_incorrect_file_id_response(actual: ValidationErrorResponseSchema):
+

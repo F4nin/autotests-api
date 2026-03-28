@@ -17,7 +17,7 @@ def assert_validation_error(actual: ValidationErrorSchema, expected: ValidationE
     assert_equal(actual.message, expected.message, "message")
     assert_equal(actual.location, expected.location, "location")
 
-def assert_validation_errors_response(
+def assert_validation_error_response(
                 actual: ValidationErrorResponseSchema,
                 expected: ValidationErrorResponseSchema
 ):
