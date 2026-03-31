@@ -18,9 +18,12 @@ import allure
 @pytest.mark.authentication
 @allure.tag(AllureTag.REGRESSION, AllureTag.AUTHENTICATION)
 @allure.epic(AllureEpic.LMS)
+@allure.parent_suite(AllureEpic.LMS)
 @allure.feature(AllureFeature.AUTHENTICATION)
+@allure.suite(AllureFeature.AUTHENTICATION)
 class TestAuthentication:
     @allure.story(AllureStory.LOGIN)
+    @allure.sub_suite(AllureStory.LOGIN)
     @allure.title("Login with correct credentials")
     @allure.severity(Severity.BLOCKER)
     def test_login(self, function_user: UserFixture, authentication_client: AuthenticationClient):
