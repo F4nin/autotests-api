@@ -3,8 +3,10 @@ from clients.courses.courses_schema import UpdateCourseRequestSchema, UpdateCour
 from tools.assertions.base import assert_equal, assert_lenght
 from tools.assertions.files import assert_file
 from tools.assertions.users import assert_user
+import allure
 
 
+@allure.step("Check update course response")
 def assert_update_course_response(request:UpdateCourseRequestSchema, response:UpdateCourseResponseSchema):
     """
     Проверяет, что ответ на обновление курса соответствует данным из запроса.
@@ -20,6 +22,8 @@ def assert_update_course_response(request:UpdateCourseRequestSchema, response:Up
     assert_equal(response.course.max_score, request.max_score, "max_score")
     assert_equal(response.course.min_score, request.min_score, "min_score")
 
+
+@allure.step("Check course")
 def assert_course(actual:CourseSchema, expected:CourseSchema):
     """
     Проверяет, что фактические данные курса соответствуют ожидаемым.
@@ -38,6 +42,8 @@ def assert_course(actual:CourseSchema, expected:CourseSchema):
     assert_file(actual.preview_file, expected.preview_file)
     assert_user(actual.created_by_user, expected.created_by_user)
 
+
+@allure.step("Check get courses response")
 def assert_get_courses_response(
         get_courses_response: GetCoursesResponseSchema,
         create_courses_responses: list[CreateCourseResponseSchema]
@@ -54,6 +60,8 @@ def assert_get_courses_response(
     for index, create_course_response in enumerate(create_courses_responses):
         assert_course(get_courses_response.courses[index], create_course_response.course)
 
+
+@allure.step("Check create course response")
 def assert_create_course_response(request:CreateCourseRequestSchema, response:CreateCourseResponseSchema):
     """
     Проверяет, что ответ на создание курса соответствует данным из запроса.
