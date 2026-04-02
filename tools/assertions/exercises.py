@@ -7,7 +7,7 @@ from tools.assertions.errors import assert_internal_error_response
 import allure
 from tools.logger import get_logger
 
-logger = get_logger("EXERCOSES_ASSERTIONS")
+logger = get_logger("EXERCISES_ASSERTIONS")
 
 
 @allure.step("Check create exercise response")
@@ -109,7 +109,7 @@ def assert_exercise_not_found_response(actual: InternalErrorResponseSchema):
     assert_internal_error_response(actual, expected)
 
 
-@allure.step("Check update exercises response")
+@allure.step("Check get exercises response")
 def assert_get_exercises_response(
         get_exercises_response: GetExercisesResponseSchema,
         create_exercises_response: list[CreateExerciseResponseSchema],
