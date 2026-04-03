@@ -3,6 +3,7 @@ from httpx import Response
 import allure
 from clients.private_http_builder import get_private_http_client, AuthenticationUserSchema
 from clients.users.users_schema import UpdateUserRequestSchema, UpdateUserResponseSchema, GetUserResponseSchema
+from tools.routes import APIRoutes
 
 
 class PrivateUsersClient(APIClient):
@@ -17,7 +18,7 @@ class PrivateUsersClient(APIClient):
 
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.get(url="api/v1/users/me")
+        return self.get(url=f"{APIRoutes.USERS}/me")
 
     @allure.step("Get user by id {user_id}")
     def get_user_api(self, user_id: str) -> Response:
@@ -27,7 +28,7 @@ class PrivateUsersClient(APIClient):
         :param user_id: Идентификатор пользователя.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.get(url=f"api/v1/users/{user_id}")
+        return self.get(url=f"{APIRoutes.USERS}/{user_id}")
 
     @allure.step("Update user by id {user_id}")
     def update_user_api(self, user_id: str, request: UpdateUserRequestSchema) -> Response:
@@ -38,7 +39,7 @@ class PrivateUsersClient(APIClient):
         :param request: Словарь с email, lastName, firstName, middleName.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.patch(url=f"api/v1/users/{user_id}", json=request.model_dump(by_alias=True))
+        return self.patch(url=f"{APIRoutes.USERS}/{user_id}", json=request.model_dump(by_alias=True))
 
     @allure.step("Delete user by id {user_id}")
     def delete_user_api(self, user_id: str) -> Response:
@@ -48,7 +49,7 @@ class PrivateUsersClient(APIClient):
         :param user_id: Идентификатор пользователя.
         :return: Ответ от сервера в виде объекта httpx.Response
         """
-        return self.delete(url=f"api/v1/users/{user_id}")
+        return self.delete(url=f"{APIRoutes.USERS}{user_id}")
 
     def get_user(self, user_id: str) -> GetUserResponseSchema:
         response = self.get_user_api(user_id)
