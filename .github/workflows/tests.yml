@@ -1,14 +1,14 @@
-# Имя вашего workflow, которое будет отображаться в интерфейсе GitHub Actions
+# Имя вашего workflows, которое будет отображаться в интерфейсе GitHub Actions
 name: API tests
 
-# Указываем, когда будет запускаться данный workflow
+# Указываем, когда будет запускаться данный workflows
 on:
   push:
     branches:
-      - main  # Запускать workflow, когда будет сделан коммит в ветку main
+      - main  # Запускать workflows, когда будет сделан коммит в ветку main
   pull_request:
     branches:
-      - main  # Запускать workflow, когда будет сделан pull request в ветку main
+      - main  # Запускать workflows, когда будет сделан pull request в ветку main
 
 # Определяем все шаги, которые должны быть выполнены в рамках работы с тестами
 jobs:
@@ -60,7 +60,7 @@ jobs:
       - name: Get Allure history
         uses: actions/checkout@v4  # Опять клонируем репозиторий, чтобы получить историю отчётов
         if: always()  # Всегда выполняем, независимо от успеха или неудачи предыдущих шагов
-        continue-on-error: true  # Если здесь возникнет ошибка, workflow всё равно продолжит выполнение
+        continue-on-error: true  # Если здесь возникнет ошибка, workflows всё равно продолжит выполнение
         with:
           ref: gh-pages  # Указываем ветку gh-pages для получения отчётов
           path: gh-pages  # Указываем путь для сохранения отчётов
