@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTA0VDEwOjM3OjI5Ljg2OTEwMiIsInVzZXJfaWQiOiIxZDFlYmU4Zi04MGI4LTQ5ODYtYjUxYi00ODlmZTZiNDUzMTAifQ.Z1KowiXmyVVPlCnIVYNM3_sokcOU1gx3CB8__lcWx4E' \
+  -H 'content-length: 243' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Friend son do choice.","maxScore":78,"minScore":4,"description":"Stay force employee project.","estimatedTime":"8 weeks","previewFileId":"2b67ef16-bb57-487e-8f60-8ebe11cdf7f9","createdByUserId":"1d1ebe8f-80b8-4986-b51b-489fe6b45310"}'

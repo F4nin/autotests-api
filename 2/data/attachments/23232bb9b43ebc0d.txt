@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTA0VDEwOjM3OjI4LjM2OTEyMCIsInVzZXJfaWQiOiIxYTMxNWYyMy01YTlhLTQwOTctYWEzYy00MTI0MTU3MGQ2YTgifQ.AdeJU4d75AcGh-NxKcXbFyqBT_3kATThoWyGyA5Dt3s' \
+  -H 'content-length: 281' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Total plan and talk describe nor identify.","maxScore":81,"minScore":14,"description":"Six young west voice short easy couple form.","estimatedTime":"1 weeks","previewFileId":"dd018d1c-0654-49d9-936e-7893fd8175a6","createdByUserId":"1a315f23-5a9a-4097-aa3c-41241570d6a8"}'

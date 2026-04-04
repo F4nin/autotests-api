@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTA0VDEwOjM3OjMyLjg3NTUzOSIsInVzZXJfaWQiOiJiZDA5ZTgzMS1mOTdiLTQxNzYtOTZhZi1iYjE2ZjgzZTQ1MTgifQ.HzOrlfesduJ9Z79Mm178HD69yyrlizuiuFzTp32Jrgw' \
+  -H 'content-length: 265' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Cold recent hold watch.","maxScore":91,"minScore":1,"description":"Worker finish throw person as ready fight board.","estimatedTime":"3 weeks","previewFileId":"007da384-b1b2-49b0-8f0b-47cbb240a8ce","createdByUserId":"bd09e831-f97b-4176-96af-bb16f83e4518"}'

@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/9db16cc6-9703-49de-befd-4222d4ad46f3' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTA0VDEwOjM3OjI4LjM2OTEyMCIsInVzZXJfaWQiOiIxYTMxNWYyMy01YTlhLTQwOTctYWEzYy00MTI0MTU3MGQ2YTgifQ.AdeJU4d75AcGh-NxKcXbFyqBT_3kATThoWyGyA5Dt3s' \
+  -H 'content-length: 167' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Quickly fill laugh century court member window.","maxScore":76,"minScore":20,"description":"Town describe detail public together.","estimatedTime":"3 weeks"}'

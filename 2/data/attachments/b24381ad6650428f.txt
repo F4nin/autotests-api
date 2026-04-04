@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTA0VDEwOjM3OjMyLjI4ODAxNyIsInVzZXJfaWQiOiJiMDgyYjc0Zi1jM2U3LTQ1M2MtODNjNC0zZTMzNTkwNGRlMDYifQ.iXmG6mGXcOJXM9U7YglHsiVymLgG_aqxr7P5q4O5Gf0' \
+  -H 'content-length: 267' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Star child gas must week project political.","maxScore":76,"minScore":25,"description":"Charge wrong hit likely vote.","estimatedTime":"6 weeks","previewFileId":"105984e6-0fc0-4e1d-a26c-02999615ee1d","createdByUserId":"b082b74f-c3e7-453c-83c4-3e335904de06"}'
