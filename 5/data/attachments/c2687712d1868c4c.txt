@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTA1VDEzOjUyOjU4LjE4NTY3MCIsInVzZXJfaWQiOiI1OGM1ZjU4MC01ZmVlLTQzMmYtODA3YS0yNTllMzhkYmY3ODkifQ.IkQlJhorLgcUy9bBq24p2KT2_S3obL-J-BXKC-jtOwI' \
+  -H 'content-length: 266' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Mrs item as able how or pull.","maxScore":100,"minScore":2,"description":"Point something character avoid identify.","estimatedTime":"10 weeks","previewFileId":"7b9421be-0c0b-4b87-bcaf-0d898f686d86","createdByUserId":"58c5f580-5fee-432f-807a-259e38dbf789"}'

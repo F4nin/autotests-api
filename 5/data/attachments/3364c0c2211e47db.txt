@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/9f83731d-d90c-453c-85ae-063881de095c' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTA1VDEzOjUyOjUzLjQ0MjQxMCIsInVzZXJfaWQiOiI0OTAyZDk0My0wZjQ2LTRiOGQtYTQzZS04YTg1YmU3OWY2OWMifQ.VbOk_qGzyhMXCJ6Sk06YQE5Aq5UxCgte-14_SebjD98' \
+  -H 'content-length: 178' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Level skin should night spend trial threat physical.","maxScore":69,"minScore":16,"description":"Too language service modern officer nature.","estimatedTime":"4 weeks"}'
