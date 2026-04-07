@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTA3VDE4OjIxOjQzLjM0NTQ0MSIsInVzZXJfaWQiOiI5MzliNTNkMC1jNDFiLTQ2ODUtOWMxNy1iMTMzZjhjYmU2MmQifQ.ILS0JvplmKP-reWdqnntweCRjYFg-YutyMj7YUSdk-g' \
+  -H 'content-length: 233' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Likely no suffer let place though subject act.","courseId":"79d433b1-79c6-40a4-8a98-c4651e1a48fa","maxScore":84,"minScore":13,"orderIndex":69,"description":"Although develop within instead final.","estimatedTime":"7 weeks"}'

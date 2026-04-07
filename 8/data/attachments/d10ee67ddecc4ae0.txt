@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTA3VDE4OjIxOjQxLjUwOTA0MyIsInVzZXJfaWQiOiJlYzM4ZGY1Ny1jNmUxLTRiYjktOThjMy0zNTgxMDM2MDQ3YjMifQ.y4HstNYid8dUNCncvuN1MGXqJLrSbJ5LqfSBbyMAlgY' \
+  -H 'content-length: 268' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Rule think account best say.","maxScore":67,"minScore":19,"description":"Save age college despite marriage individual.","estimatedTime":"5 weeks","previewFileId":"a00ba0a8-c998-42a4-a568-1b8fa9732f0e","createdByUserId":"ec38df57-c6e1-4bb9-98c3-3581036047b3"}'

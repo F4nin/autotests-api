@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTA3VDE4OjIxOjM5LjY2MDcyMSIsInVzZXJfaWQiOiI1ZmM0ZDMyNi04MzM0LTQ3ZmItYjgxNC0yNmY0OTgzYWI4ZmEifQ.73V36gx1ABqzMNVQ2FlPaglhjpbsK_-6hQ2cPdljM24' \
+  -H 'content-length: 277' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Player general business factor grow threat expert.","maxScore":82,"minScore":23,"description":"Much though when analysis tough.","estimatedTime":"4 weeks","previewFileId":"14af2a1d-52aa-4075-a4fd-7d232f78eedd","createdByUserId":"5fc4d326-8334-47fb-b814-26f4983ab8fa"}'
