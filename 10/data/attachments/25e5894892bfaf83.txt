@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTA3VDIwOjA4OjE4LjE0NzQ0MSIsInVzZXJfaWQiOiI5ZDUzMjA0Ny0zZTIwLTRjMTYtYjgzOS0yZGExOGI3NmEyZDcifQ.X8QhFez_t1aQHxv6IjhKzj87oU2POYi5gm6dxPaPNeg' \
+  -H 'content-length: 268' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Like station ten cup care six.","maxScore":94,"minScore":19,"description":"Entire customer dog others design building.","estimatedTime":"2 weeks","previewFileId":"ee62e02c-d586-49ec-bfaa-39426c20dbd7","createdByUserId":"9d532047-3e20-4c16-b839-2da18b76a2d7"}'
