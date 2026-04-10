@@ -3,7 +3,7 @@ import sys
 import platform
 
 
-def create_allure_enviroment_file():
+def create_allure_environment_file():
     items = [f'{key}={value}' for key, value in settings.model_dump().items()]
     items.extend([
         f"os_info: {platform.system()}, {platform.release()}",
