@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTEwVDExOjI2OjUwLjkxODQ5NiIsInVzZXJfaWQiOiJiNGU0YTNlMy0xYjMxLTQ1MmQtODg2My1kOGIxMTdhMzFjNTIifQ.T14KmvoO_hEnM81J6ITaoVX3b8OMCNb9_KYZwAkrtms' \
+  -H 'content-length: 258' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Short politics bad lose.","maxScore":67,"minScore":8,"description":"Since might whole human would gas bring.","estimatedTime":"2 weeks","previewFileId":"4ea8e9eb-888f-46a3-8d68-ac36de744244","createdByUserId":"b4e4a3e3-1b31-452d-8863-d8b117a31c52"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTEwVDExOjI2OjUyLjY4MzEwNCIsInVzZXJfaWQiOiJlZjU4ZDliNS1hYTE4LTRkMTUtYjU3Zi01MTc2NzZhYTdlNjYifQ.vwZsJ1s3Oh_44rRj5uVj1KiuUOf7st75CjsESch80CY' \
+  -H 'content-length: 271' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Owner report just year production.","maxScore":89,"minScore":22,"description":"Key east main religious its maintain door.","estimatedTime":"3 weeks","previewFileId":"3fcb565a-53ea-4fb5-97fd-dc86c037b42c","createdByUserId":"ef58d9b5-aa18-4d15-b57f-517676aa7e66"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTEwVDExOjI2OjUyLjA5NjMxNiIsInVzZXJfaWQiOiJhYjM4OTE1ZS1hNmM2LTQwZTQtYjA1NC01ZmFlNDdkM2IyNTQifQ.hQ_mDz6PONqZnn3ZiD7yfubCfcZSL_RNivNNrap-VhA' \
+  -H 'content-length: 273' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Message animal American research.","maxScore":78,"minScore":14,"description":"Hard compare difference stock west many eat.","estimatedTime":"10 weeks","previewFileId":"11e1a19a-185f-4b7d-8a4b-7423bf386865","createdByUserId":"ab38915e-a6c6-40e4-b054-5fae47d3b254"}'

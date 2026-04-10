@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTEwVDExOjI2OjUzLjMzNDc2NCIsInVzZXJfaWQiOiJiNDNkZjIwNy0wOGQ0LTQ0YWItOGMzYS02OTM4NWMzZTJmMzAifQ.hduhu9je5adz--NZZVHE6mBEoMB6lQPZbqWR4Ekik3I' \
+  -H 'content-length: 276' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Support address reflect guy son significant land.","maxScore":77,"minScore":19,"description":"If reveal remain too artist gas.","estimatedTime":"1 weeks","previewFileId":"662fa438-1fb4-4394-9d23-e45e2aed8884","createdByUserId":"b43df207-08d4-44ab-8c3a-69385c3e2f30"}'
