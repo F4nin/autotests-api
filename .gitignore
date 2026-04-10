@@ -8,3 +8,10 @@ __pycache__
 # allure
 allure-results
 allure-report
+
+# images
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
