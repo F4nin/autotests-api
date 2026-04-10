@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTEwVDExOjA1OjI4LjM1MzI5NCIsInVzZXJfaWQiOiI4MjE2ODZiYS03N2RmLTQ2NDktYmNiOC1kYjU5YTUzODQ5MGQifQ.5jJpPVFs9obBjUhV3dtMGxh3zw7XuIW-DdbIVTD0poE' \
+  -H 'content-length: 264' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Order though agreement old week develop.","maxScore":61,"minScore":21,"description":"Choose author family society.","estimatedTime":"7 weeks","previewFileId":"7c8c803b-4791-4ed5-a489-11f4c945a8f9","createdByUserId":"821686ba-77df-4649-bcb8-db59a538490d"}'
