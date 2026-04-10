@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTEwVDExOjA2OjE0LjMwMDEzMiIsInVzZXJfaWQiOiJkYjJlOWU0MS0xNWQ1LTQzNzUtODgyMC1lYjQwYTAzM2I2NWYifQ.5odjj6IRSLEetKOJN4ydIPsYUl7F5ptOVeuQp6NVvWs' \
+  -H 'content-length: 261' \
+  -H 'content-type: application/json' \
+  -d '{"title":"On result both of.","maxScore":72,"minScore":4,"description":"Message huge cover point statement show question.","estimatedTime":"8 weeks","previewFileId":"2ebba8c1-4642-4b40-8311-e28ac948398f","createdByUserId":"db2e9e41-15d5-4375-8820-eb40a033b65f"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTEwVDExOjA2OjE3Ljg3NDU5NyIsInVzZXJfaWQiOiI1YmI4MDgxZi04NTk2LTQ2ZDAtOWJlMC1lYmFhMWNhNTRmN2MifQ.oTux59CIaCAX2Uk19X6_I3NCAk4b40mkeRxfC7IEcyw' \
+  -H 'content-length: 262' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Rest grow thought someone resource.","maxScore":92,"minScore":13,"description":"Study window become other trial.","estimatedTime":"1 weeks","previewFileId":"f84cacdc-a1fb-4662-aa89-9b4d98067667","createdByUserId":"5bb8081f-8596-46d0-9be0-ebaa1ca54f7c"}'

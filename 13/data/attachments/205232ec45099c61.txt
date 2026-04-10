@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/8f2a6b37-d761-4725-b2b7-c91902329cbc' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTEwVDExOjA2OjEzLjE1ODk5NSIsInVzZXJfaWQiOiJlYTJiZDgyNS00OTNjLTRlZDctYmIxOC1lZGU5N2Q1Nzk0MzYifQ.32T7OJW8v4kgngAeEbeb5T0tAfSvf3yfZKPFbjq8tPw' \
+  -H 'content-length: 167' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Imagine writer job focus crime attention medical.","maxScore":72,"minScore":23,"description":"Theory according name against main.","estimatedTime":"5 weeks"}'

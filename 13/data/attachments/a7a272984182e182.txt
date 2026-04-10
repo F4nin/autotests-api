@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA0LTEwVDExOjA2OjE2Ljk1MDA5NyIsInVzZXJfaWQiOiJiOGRhZWY4Zi1lMTQ1LTRkOGItOTFkNC1iMGY5YWM2MzlkNTgifQ.4pRoRbIqheFl8Ni_wtD3C8mNF4dKpYc2PFt5msKg6aY' \
+  -H 'content-length: 290' \
+  -H 'content-type: application/json' \
+  -d '{"title":"National kitchen ability law bed fish instead.","maxScore":85,"minScore":19,"description":"System plan expect film north whatever foot area.","estimatedTime":"8 weeks","previewFileId":"efa2af1e-94c0-4929-904b-b51ada242275","createdByUserId":"b8daef8f-e145-4d8b-91d4-b0f9ac639d58"}'
