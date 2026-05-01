@@ -1,0 +1,50 @@
+services:
+  api-service:
+    build:
+      context: ./service
+      dockerfile : Dockerfile
+    container_name: api-service
+    ports:
+      - "8000:8000"
+    networks:
+      - test-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/docs"]
+      interval: 15s
+      timeout:  5s
+      retries:  15
+      start_period: 10s
+    restart: on-failure
+
+  test-runner:
+    build:
+      context: ./tests
+      dockerfile : Dockerfile
+      args:
+        REPO_URL: ${TESTS_REPO_URL:-https://github.com/F4nin/autotests-api.git}
+        BRANCH: ${TESTS_BRANCH:-main}
+    container_name: test_runner
+    depends_on:
+      api-service:
+        condition: service_healthy
+    networks:
+      - test-network
+    environment:
+      - BASE_URL=http://api-service:8000
+      - API_URL=http://api-service:8000
+      - PYTEST_MARKERS=${PYTEST_MARKERS}
+      - PYTEST_ADDOPTS=-v --alluredir=allure-results
+    volumes:
+      - ./allure-results:/tests/allure-results
+    command: >
+      sh -c "
+        cd /tests &&
+        echo 'ЗАПУСК ТЕСТОВ с маркером: ${PYTEST_MARKERS}' &&
+        pytest -m ${PYTEST_MARKERS} -v --alluredir=allure-results
+      "
+    restart: "no"
+
+networks:
+  test-network:
+    name: api-test-network
+    driver: bridge

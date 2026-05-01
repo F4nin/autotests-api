@@ -1,0 +1,97 @@
+pipeline {
+    agent any
+
+    parameters {
+        choice(
+            name: 'TEST_TYPE',
+            choices: [
+                'regression',
+                'users',
+                'authentication',
+                'files',
+                'courses',
+                'exercises'
+            ],
+             description: 'Выберите тип тестов'
+        )
+    }
+
+    environment {
+        PYTEST_MARKERS = "${params.TEST_TYPE}"
+        DOCKER_COMPOSE_FILE = 'docker-compose.yml'
+        ALLURE_RESULTS_DIR = 'allure-results'
+
+    }
+
+    stages {
+        stage('Очистка предыдущих результатов') {
+            steps {
+                echo 'Очистка предыдущих результатов'
+                sh '''
+                    rm -rf ${ALLURE_RESULTS_DIR}
+                    mkdir -p ${ALLURE_RESULTS_DIR}
+                '''
+            }
+        }
+
+        stage('Подготовка окружения') {
+            steps {
+                echo 'Сборка Docker-окружения'
+                sh 'docker-compose build'
+            }
+        }
+
+        stage('Запуск сервисов') {
+            steps {
+                echo 'Запуск сервисов'
+                sh 'docker-compose up -d api-service'
+            }
+        }
+
+        stage('Запуск выбранных тестов') {
+            steps {
+                echo "Запуск тестов с маркером: ${params.TEST_TYPE}"
+                sh """
+                    PYTEST_MARKERS=${params.TEST_TYPE} docker-compose up --abort-on-container-exit test-runner
+                    """
+            }
+        }
+
+        stage('Сбор результатов тестирования') {
+            steps {
+                echo 'Сбор результатов тестирования'
+                sh '''
+                    echo "Статистика:"
+                    echo "Тип тестов: ${params.TEST_TYPE}"
+
+                    if [ -d "${ALLURE_RESULTS_DIR}" ]; then
+                        echo "Файлов с результатами: $(ls ${ALLURE_RESULTS_DIR}/*.json 2>/dev/null | wc -l)"
+                    else
+                        echo "Директория с результатами не найдена"
+                    fi
+                '''
+            }
+        }
+
+        stage('Генерация Allure отчета') {
+            steps {
+                echo 'Генерация Allure отчета'
+                allure results: [[path: "${ALLURE_RESULTS_DIR}"]]
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Все этапы выполнены успешно'
+        }
+        failure {
+            echo 'Ошибка на одном из этапов'
+        }
+        always {
+            echo 'Pipeline завершен'
+            sh 'docker-compose down -v'
+            cleanWs()
+        }
+    }
+}
