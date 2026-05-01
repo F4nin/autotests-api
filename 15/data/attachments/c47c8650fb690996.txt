@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAxVDIxOjM2OjQwLjAwMzM3NiIsInVzZXJfaWQiOiI1YTQ3YzUyOS1jZWU3LTQzODYtOWIxMi1iZDA4M2ZhZTk1ZjUifQ.v_1Rd4MOS751x7N1K_f1AqFoPDPMTPk1eHRKqlcvGIY' \
+  -H 'content-length: 253' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Use land campaign plant religious light.","maxScore":55,"minScore":3,"description":"Buy exactly expert.","estimatedTime":"2 weeks","previewFileId":"8350b169-bff5-4ba2-91ab-59f9680e31ea","createdByUserId":"5a47c529-cee7-4386-9b12-bd083fae95f5"}'

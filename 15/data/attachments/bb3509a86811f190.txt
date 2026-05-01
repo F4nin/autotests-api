@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAxVDIxOjM2OjM5LjM2Mjc2MiIsInVzZXJfaWQiOiJkZTNkNGE2MS0zYWM2LTQ0YWItYjZjMS00OGJkOThiN2YyZWEifQ.kYjKmDWwoZ08RExwH6SRf45jzRH4b_JWxud_d02oChE' \
+  -H 'content-length: 275' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Economic blood read analysis day great.","maxScore":56,"minScore":20,"description":"Free because however price adult or away.","estimatedTime":"8 weeks","previewFileId":"d95c4c4f-f063-4f46-98b4-6f4e80da394b","createdByUserId":"de3d4a61-3ac6-44ab-b6c1-48bd98b7f2ea"}'

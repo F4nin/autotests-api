@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAxVDIxOjM2OjM4Ljc4Mjg3OSIsInVzZXJfaWQiOiJlY2FkMTZhZS1hMDk5LTRmZmQtOTQzYi0yZDViMDE2NTE2MDkifQ.yLYGaOlTHMAGhN-xZ-XosJbSes1pvglj8EoYaPQjeVQ' \
+  -H 'content-length: 224' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Old training kid mother apply.","courseId":"3074919b-4616-43e3-82de-6e9e751463f8","maxScore":84,"minScore":20,"orderIndex":14,"description":"Wait growth from even appear chair view tree.","estimatedTime":"8 weeks"}'
