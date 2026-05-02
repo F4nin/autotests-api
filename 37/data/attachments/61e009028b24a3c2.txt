@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIwOjUxOjMwLjExODQ2NSIsInVzZXJfaWQiOiIyMmVmMWE5ZS1jZTY4LTRjZmQtOGQ5NC1lZjIxOGVkM2Q1MWEifQ.gErOevYLE41n9MKJQXgDFvV4b0777eHDhEac9DHyGBk' \
+  -H 'content-length: 270' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Card own race common maybe.","maxScore":93,"minScore":8,"description":"Write team before science bring. Trade type news.","estimatedTime":"4 weeks","previewFileId":"6bf5749c-7972-40de-905b-cb4a9653679a","createdByUserId":"22ef1a9e-ce68-4cfd-8d94-ef218ed3d51a"}'

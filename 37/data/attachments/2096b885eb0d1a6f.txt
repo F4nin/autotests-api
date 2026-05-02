@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIwOjUxOjI4LjM1OTM1OCIsInVzZXJfaWQiOiJjOTU1Mjk0YS0yZmZlLTRlYTgtYWY4Yy1lODg4N2Y2ODRmNjcifQ.8RBaYP2WmMc9DyZmoGb8qI-UwTXb6jjh2H6SbO41dy0' \
+  -H 'content-length: 275' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Century side peace western indicate face.","maxScore":86,"minScore":5,"description":"Group stock stuff reduce account indeed.","estimatedTime":"6 weeks","previewFileId":"09f4089e-ce3e-4402-9b01-f60871583d26","createdByUserId":"c955294a-2ffe-4ea8-af8c-e8887f684f67"}'

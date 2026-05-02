@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIwOjUxOjI5LjUzNjM5OSIsInVzZXJfaWQiOiIwNmRhNzIxYi0wZmQxLTQ2NTQtYWJjOS02Nzk0ZjcxMTNhN2IifQ.pewhmmUvdrPHxEpJKw0nCaIsmxAsSM5wSsaeNqMeWq0' \
+  -H 'content-length: 249' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Step father ok program have.","maxScore":98,"minScore":2,"description":"Something recently present.","estimatedTime":"2 weeks","previewFileId":"2905276e-1732-4a39-9025-93903727e58c","createdByUserId":"06da721b-0fd1-4654-abc9-6794f7113a7b"}'

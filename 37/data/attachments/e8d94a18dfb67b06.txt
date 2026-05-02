@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIwOjUxOjMwLjc0OTE5MiIsInVzZXJfaWQiOiJiYjBlZDQ2ZC04MGNjLTRhYzMtYWQ1MS02M2Y1NjRiNDVhYmUifQ.sw7ygDxlWVjKlegePOg4hPABaCUN7huhBaCUnt_0k5k' \
+  -H 'content-length: 264' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Second almost know just life.","maxScore":89,"minScore":3,"description":"Management perhaps security policy owner.","estimatedTime":"7 weeks","previewFileId":"4e5a64e7-3526-46cd-adb7-256c32bef19d","createdByUserId":"bb0ed46d-80cc-4ac3-ad51-63f564b45abe"}'

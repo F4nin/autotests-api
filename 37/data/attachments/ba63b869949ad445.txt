@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIwOjUxOjI3Ljc3NDE1OCIsInVzZXJfaWQiOiIxNzM4ZGI4Ny02MDAwLTQ0OTAtYTVkNy1lNzZjNzY0OGE4N2EifQ.AHdjfyIwBELs1I4_3cOdy35K_TcOBuAW3UDLog-rc9E' \
+  -H 'content-length: 287' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Red rest traditional other machine prevent here.","maxScore":54,"minScore":5,"description":"Prevent car affect note music choose morning.","estimatedTime":"7 weeks","previewFileId":"5b8d7039-aa70-4f9a-bc08-ddb274e3e404","createdByUserId":"1738db87-6000-4490-a5d7-e76c7648a87a"}'

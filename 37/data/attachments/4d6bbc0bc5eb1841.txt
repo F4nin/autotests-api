@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIwOjUxOjMxLjMzMzU0MiIsInVzZXJfaWQiOiI1MjE3ZGM4Ni01NDJmLTQ5N2EtYjUxMS02MmIwYTI2MDMzMWQifQ.f4BNnOROwZqLMwOlipyNYRXpamcraxf7REVUKKD01z8' \
+  -H 'content-length: 265' \
+  -H 'content-type: application/json' \
+  -d '{"title":"He audience produce choose style water nearly.","maxScore":89,"minScore":15,"description":"Yard effort least occur.","estimatedTime":"2 weeks","previewFileId":"0cfcbfea-5d0c-4ac4-9f1d-51a83b5d2c7e","createdByUserId":"5217dc86-542f-497a-b511-62b0a260331d"}'

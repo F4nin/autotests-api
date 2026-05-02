@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/569209fa-3bb6-42bc-bbb8-e6c237088146' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIwOjUxOjI2Ljg3Nzc4MiIsInVzZXJfaWQiOiI0OGQwOWRkMC1hYmFmLTQ0OWQtODRjZS1kNjk4NzQwODBhMWYifQ.EvLxdafjx_nqImnESCEfqCoZTu9XLp9Tpf4jmncZDw8' \
+  -H 'content-length: 142' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Dog sort worry writer itself.","maxScore":78,"minScore":7,"description":"Price suffer red exactly claim.","estimatedTime":"8 weeks"}'
