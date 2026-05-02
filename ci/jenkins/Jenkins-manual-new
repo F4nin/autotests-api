@@ -37,6 +37,13 @@ pipeline {
                 echo "Запуск тестов с маркером: ${params.TEST_TYPE}"
                 sh """
                     PYTEST_MARKERS=${params.TEST_TYPE} docker compose up --abort-on-container-exit test-runner
+
+                    # Копируем результаты из контейнера на хост
+                    docker cp test_runner:/app/allure-results/. allure-results/ 2>/dev/null && echo "Скопировано!" || echo "Не скопировано"
+
+                    echo "=== Файлы ==="
+                    ls -la allure-results/ | head -10
+                    echo "JSON: \$(ls allure-results/*.json 2>/dev/null | wc -l)"
                 """
             }
         }
