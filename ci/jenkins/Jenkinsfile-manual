@@ -12,25 +12,20 @@ pipeline {
                 'courses',
                 'exercises'
             ],
-             description: 'Выберите тип тестов'
+            description: 'Выберите тип тестов'
         )
     }
 
     environment {
         PYTEST_MARKERS = "${params.TEST_TYPE}"
-        DOCKER_COMPOSE_FILE = 'docker-compose.yml'
         ALLURE_RESULTS_DIR = 'allure-results'
-
     }
 
     stages {
         stage('Очистка предыдущих результатов') {
             steps {
                 echo 'Очистка предыдущих результатов'
-                sh '''
-                    rm -rf ${ALLURE_RESULTS_DIR}
-                    mkdir -p ${ALLURE_RESULTS_DIR}
-                '''
+                sh 'rm -rf allure-results allure-report && mkdir -p allure-results'
             }
         }
 
@@ -52,8 +47,12 @@ pipeline {
             steps {
                 echo "Запуск тестов с маркером: ${params.TEST_TYPE}"
                 sh """
-                    PYTEST_MARKERS=${params.TEST_TYPE} docker compose up --abort-on-container-exit test-runner
-                    """
+                    docker compose run --rm \
+                        -v \$(pwd)/allure-results:/app/allure-results \
+                        -e PYTEST_MARKERS=${params.TEST_TYPE} \
+                        test-runner \
+                        sh -c "cd /tests && pytest -m ${params.TEST_TYPE} -v --alluredir=/app/allure-results"
+                """
             }
         }
 
@@ -61,11 +60,14 @@ pipeline {
             steps {
                 echo 'Сбор результатов тестирования'
                 sh """
-                    echo "Статистика:"
+                    echo "========================================="
+                    echo "Статистика выполнения тестов"
+                    echo "========================================="
                     echo "Тип тестов: ${params.TEST_TYPE}"
 
-                    if [ -d "${ALLURE_RESULTS_DIR}" ]; then
+                    if [ -d "allure-results" ]; then
                         echo "Количество JSON файлов: \$(ls allure-results/*.json 2>/dev/null | wc -l)"
+                        echo "Всего файлов в allure-results: \$(ls allure-results/ | wc -l)"
                     else
                         echo "Директория с результатами не найдена"
                     fi
@@ -76,22 +78,24 @@ pipeline {
         stage('Генерация Allure отчета') {
             steps {
                 echo 'Генерация Allure отчета'
-                allure results: [[path: "${ALLURE_RESULTS_DIR}"]]
+                allure results: [[path: 'allure-results']]
             }
         }
     }
 
     post {
         success {
-            echo 'Все этапы выполнены успешно'
+            echo '✅ Все этапы выполнены успешно!'
+            echo "Тесты типа '${params.TEST_TYPE}' успешно пройдены"
         }
         failure {
-            echo 'Ошибка на одном из этапов'
+            echo '❌ Ошибка при выполнении Pipeline'
         }
         always {
-            echo 'Pipeline завершен'
-            sh 'docker compose down -v'
+            echo '🧹 Очистка окружения...'
+            sh 'docker compose down -v || true'
             cleanWs()
+            echo '🏁 Pipeline завершен'
         }
     }
 }
