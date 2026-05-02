@@ -36,7 +36,7 @@ pipeline {
             steps {
                 echo "Запуск тестов с маркером: ${params.TEST_TYPE}"
                 sh """
-                    docker run --rm \
+                    docker run \
                         --name test-runner-temp \
                         --network api-test-network \
                         -e BASE_URL=http://api-service:8000 \
@@ -48,11 +48,11 @@ pipeline {
 
                     docker wait test-runner-temp
                     docker cp test-runner-temp:/tmp/allure-results/. allure-results/
-                    docker rm test-runner-temp || true
+                    docker rm test-runner-temp
 
-                    echo "=== Файлы ==="
+                    echo "=== РЕЗУЛЬТАТЫ ==="
                     ls -la allure-results/ | head -10
-                    echo "JSON: \$(ls allure-results/*.json 2>/dev/null | wc -l)"
+                    echo "JSON файлов: \$(ls allure-results/*.json 2>/dev/null | wc -l)"
                 """
             }
         }
