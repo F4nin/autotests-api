@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDEyOjA4OjU3LjE5MjY1OSIsInVzZXJfaWQiOiJhZjViZDU5Ny0zMGQxLTQxZDEtOWUwOC1kYzkxMTg3YmQ4ZjYifQ.gwxaSbzMfFWIogbcXc409rSnR2Fxydz1C72-kIMq2DA' \
+  -H 'content-length: 230' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Wind population recently perhaps learn I room about.","courseId":"76f4c025-b1fc-430d-a931-27f1d1ad26b8","maxScore":65,"minScore":29,"orderIndex":16,"description":"List hour food southern from.","estimatedTime":"1 weeks"}'

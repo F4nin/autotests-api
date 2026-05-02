@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDEyOjA4OjU4LjM2MzAxNiIsInVzZXJfaWQiOiI2N2VjMjY5YS0xODA1LTQ0ZDEtYjAxMy01MzE0NTBkYmQ2NzQifQ.h6rAQPdlYpOIg6v8aGJZ5huqHaFtaURzqLKJQ5P5KBA' \
+  -H 'content-length: 286' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Challenge more modern positive area few may.","maxScore":58,"minScore":5,"description":"Radio last seek each. Capital behind live price.","estimatedTime":"1 weeks","previewFileId":"f10ba085-bb02-44fa-aec6-2d4c68597365","createdByUserId":"67ec269a-1805-44d1-b013-531450dbd674"}'

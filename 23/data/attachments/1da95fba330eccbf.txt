@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDEyOjA4OjU4Ljk4NTk5NiIsInVzZXJfaWQiOiJjNTBmY2ZkOS0xMGYwLTQwN2QtYTFkYS1hOTE5NjRkNGY0NzQifQ.AcovNv9OsII7boVsoNiG-PJuD689D6aYTKgo9p9QL5M' \
+  -H 'content-length: 256' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Operation set forget age perhaps.","maxScore":57,"minScore":29,"description":"Lead however score position.","estimatedTime":"5 weeks","previewFileId":"6cb4fa3d-2604-4f0f-a193-c20238dbf4c1","createdByUserId":"c50fcfd9-10f0-407d-a1da-a91964d4f474"}'

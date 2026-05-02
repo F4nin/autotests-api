@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDEyOjA4OjU3LjE5MjY1OSIsInVzZXJfaWQiOiJhZjViZDU5Ny0zMGQxLTQxZDEtOWUwOC1kYzkxMTg3YmQ4ZjYifQ.gwxaSbzMfFWIogbcXc409rSnR2Fxydz1C72-kIMq2DA' \
+  -H 'content-length: 264' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Which we candidate same.","maxScore":61,"minScore":8,"description":"Stage tough nation since energy often brother.","estimatedTime":"7 weeks","previewFileId":"87623767-dd93-4ba1-aadd-4256f78c6c0d","createdByUserId":"af5bd597-30d1-41d1-9e08-dc91187bd8f6"}'

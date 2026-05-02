@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/4ad5aead-f94b-43f6-bfb0-c64deb2725fa' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDEyOjA4OjU1LjM5ODI4MCIsInVzZXJfaWQiOiIzZTMxODM0MS0yOTNlLTQ2YmYtODVmYS05OTI0OTIzOWFjODUifQ.9EhLjkbtu7FnJDqKUExq_60AtETQO9x2G85Zyt95jVE' \
+  -H 'content-length: 148' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Together three center reach.","maxScore":76,"minScore":7,"description":"Four pull least responsibility letter.","estimatedTime":"9 weeks"}'

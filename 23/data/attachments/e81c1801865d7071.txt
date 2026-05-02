@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDEyOjA4OjU1Ljk4NTI4MyIsInVzZXJfaWQiOiI5MmNjNGMzYy01ZTVlLTQxZDgtODkzMy1kM2U4YmUzMWNmZjEifQ.G54C6o_XCaKAF8vL6x3NZBjcfCy5J6eI71Fwf3zhttU' \
+  -H 'content-length: 269' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Minute reduce approach give occur surface seven policy.","maxScore":92,"minScore":28,"description":"Exactly sense some.","estimatedTime":"2 weeks","previewFileId":"b65e372f-f689-44a0-b1b8-69a672253dce","createdByUserId":"92cc4c3c-5e5e-41d8-8933-d3e8be31cff1"}'

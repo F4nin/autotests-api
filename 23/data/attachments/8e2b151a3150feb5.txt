@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDEyOjA4OjU4Ljk4NTk5NiIsInVzZXJfaWQiOiJjNTBmY2ZkOS0xMGYwLTQwN2QtYTFkYS1hOTE5NjRkNGY0NzQifQ.AcovNv9OsII7boVsoNiG-PJuD689D6aYTKgo9p9QL5M' \
+  -H 'content-length: 206' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Someone chance seek.","courseId":"61bb89f2-dcb4-4adc-b1f5-06803c009d98","maxScore":91,"minScore":15,"orderIndex":10,"description":"Example success than sound a explain.","estimatedTime":"9 weeks"}'
