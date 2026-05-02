@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE0OjUwOjE5Ljg5NTAwMCIsInVzZXJfaWQiOiI1NjgyZThlNy02ZTdmLTRmMTYtYjEzNS02YWRjMjg4MGFjMTEifQ.JI8GEaceDE-civje_7nEoLVSv75tu9jt7zemykqO2yE' \
+  -H 'content-length: 276' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Or shake debate hot including side.","maxScore":56,"minScore":16,"description":"Security as benefit just example system join.","estimatedTime":"10 weeks","previewFileId":"854a134e-2edc-4e33-8b2c-d8ad8de1d907","createdByUserId":"5682e8e7-6e7f-4f16-b135-6adc2880ac11"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE0OjUwOjIxLjY4NzYyNiIsInVzZXJfaWQiOiI4ZmRkZWNhZS0zYWFmLTQ3NzQtYTNlNy1lOTRkNDcxMDJlMGYifQ.9pVTeQg_cSIm8C41BjJu5kSyRojlm2XyXwvvt3yDo4U' \
+  -H 'content-length: 216' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Himself movie situation thought reveal ability.","courseId":"0c469b2d-05e6-46f7-ae62-682427a23d10","maxScore":72,"minScore":5,"orderIndex":18,"description":"Send happy rest once.","estimatedTime":"5 weeks"}'

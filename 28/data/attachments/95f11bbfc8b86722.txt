@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE0OjUwOjIxLjA2Mzc5OCIsInVzZXJfaWQiOiI0OGE3ZDg4My0zNDVmLTRiZWYtYTljNS03NTMwNjU2YjFiZGUifQ.00YGVxHNCAxm5wivc6cwwfZepBZDsxo9P9rw4xBJsok' \
+  -H 'content-length: 286' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Dream history effort child few matter add.","maxScore":53,"minScore":23,"description":"Enter base international its someone stage floor.","estimatedTime":"9 weeks","previewFileId":"e1761dc9-22bb-429e-bcd2-db0e08e6b60f","createdByUserId":"48a7d883-345f-4bef-a9c5-7530656b1bde"}'

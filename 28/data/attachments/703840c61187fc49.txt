@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE0OjUwOjE5LjMxMzIxMyIsInVzZXJfaWQiOiJjNDg3YjhiYi05YzVlLTRjZDQtYmI3NC00ODQzM2NmN2Y4MmQifQ.V-TyYSYR2W3IGSR73EfRm9xv3P0bUvhigeNibE9RQE4' \
+  -H 'content-length: 285' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Carry everybody offer city buy than true.","maxScore":60,"minScore":24,"description":"Shoulder few middle moment yet report meet admit.","estimatedTime":"5 weeks","previewFileId":"27798eb2-5558-487a-9694-47ad808fa057","createdByUserId":"c487b8bb-9c5e-4cd4-bb74-48433cf7f82d"}'

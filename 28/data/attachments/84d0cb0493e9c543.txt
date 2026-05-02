@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE0OjUwOjIxLjY4NzYyNiIsInVzZXJfaWQiOiI4ZmRkZWNhZS0zYWFmLTQ3NzQtYTNlNy1lOTRkNDcxMDJlMGYifQ.9pVTeQg_cSIm8C41BjJu5kSyRojlm2XyXwvvt3yDo4U' \
+  -H 'content-length: 283' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Action size if away trouble politics defense degree.","maxScore":58,"minScore":22,"description":"Activity improve gas yet south plan.","estimatedTime":"9 weeks","previewFileId":"ec7dbd2c-ac0e-43a8-b797-bb4bf537f174","createdByUserId":"8fddecae-3aaf-4774-a3e7-e94d47102e0f"}'

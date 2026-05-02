@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/7296c6ee-3bec-4a80-9747-cabf8fa020ad' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE0OjUwOjE3LjgzOTQyMyIsInVzZXJfaWQiOiJiZmY5NjQ4OC04MzMzLTQxZjgtYmE1Zi05ZDI2NGU0YjhhMmYifQ.8LZYDo93R0U8dvFDuNbXckq0GSJzlm7mgdPEeQ7myeo' \
+  -H 'content-length: 154' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Responsibility difficult grow.","maxScore":68,"minScore":22,"description":"Cost call than note almost rate benefit.","estimatedTime":"10 weeks"}'

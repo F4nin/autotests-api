@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE0OjUwOjE3LjgzOTQyMyIsInVzZXJfaWQiOiJiZmY5NjQ4OC04MzMzLTQxZjgtYmE1Zi05ZDI2NGU0YjhhMmYifQ.8LZYDo93R0U8dvFDuNbXckq0GSJzlm7mgdPEeQ7myeo' \
+  -H 'content-length: 261' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Rock lawyer soldier speech now.","maxScore":68,"minScore":22,"description":"Likely star save rule avoid break.","estimatedTime":"10 weeks","previewFileId":"05c7991b-7342-4758-8d1a-9c95c3e0c299","createdByUserId":"bff96488-8333-41f8-ba5f-9d264e4b8a2f"}'

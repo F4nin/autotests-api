@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE0OjUwOjIyLjI2ODk3NiIsInVzZXJfaWQiOiI4MGUxMWVkMC04OTJlLTRjMzEtOTFlNS0yNGQ2NzJiNGIxZTUifQ.woHbKJoNKgRYEg5ley52wCiyTMVm8WT9F6RlW7HmOus' \
+  -H 'content-length: 261' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Relationship blood nothing focus my.","maxScore":95,"minScore":23,"description":"Yet firm pay local government.","estimatedTime":"9 weeks","previewFileId":"878f46ed-1b9b-4b87-9d42-e9a388321b3f","createdByUserId":"80e11ed0-892e-4c31-91e5-24d672b4b1e5"}'

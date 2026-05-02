@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE0OjUwOjIwLjQ3ODMwNyIsInVzZXJfaWQiOiI2OWZjNWU5NS0zZGUwLTQyYjktODY3Ny1lNjVjY2RjYzUxYzgifQ.1cRTAhU806BlkSKOPGpIbzYFzfAzKW2vG-u-W6uOyBk' \
+  -H 'content-length: 263' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Set event significant hundred song.","maxScore":92,"minScore":13,"description":"Various his power example police.","estimatedTime":"5 weeks","previewFileId":"c8ae4453-fc42-4706-acc5-9ff9fae40f02","createdByUserId":"69fc5e95-3de0-42b9-8677-e65ccdcc51c8"}'

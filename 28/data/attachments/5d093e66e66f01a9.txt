@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE0OjUwOjE5Ljg5NTAwMCIsInVzZXJfaWQiOiI1NjgyZThlNy02ZTdmLTRmMTYtYjEzNS02YWRjMjg4MGFjMTEifQ.JI8GEaceDE-civje_7nEoLVSv75tu9jt7zemykqO2yE' \
+  -H 'content-length: 232' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Road money lead leader bill kitchen.","courseId":"4540d0d1-71a5-46f1-8893-444167aeab47","maxScore":85,"minScore":28,"orderIndex":92,"description":"Result suddenly exactly minute last Republican.","estimatedTime":"6 weeks"}'

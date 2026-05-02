@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE0OjUwOjE4LjcyOTQ1MyIsInVzZXJfaWQiOiI0ODViMmQxOC00OGY4LTQyMDMtYWYzZS01YzlhZDRmM2E1ZWEifQ.aoGm4qy_ryKw__zV9YO-Z3qZ355vkUBsNgJZCt42sis' \
+  -H 'content-length: 272' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Blood light third eye dream responsibility girl.","maxScore":80,"minScore":30,"description":"Reflect special sign example.","estimatedTime":"3 weeks","previewFileId":"9f54084b-af21-4dfa-8e4f-60fedf4aeb8d","createdByUserId":"485b2d18-48f8-4203-af3e-5c9ad4f3a5ea"}'
