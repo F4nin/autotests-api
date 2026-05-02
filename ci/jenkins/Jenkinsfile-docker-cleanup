@@ -1,0 +1,64 @@
+pipeline {
+    agent any
+
+    triggers {
+        cron('0 3 * * 0')  // Каждое воскресенье в 3:00 ночи
+    }
+
+    stages {
+        stage('Docker Deep Clean') {
+            steps {
+                echo '🧹 Глубокая очистка Docker'
+                sh '''
+                    echo "=== Состояние ДО очистки ==="
+                    docker system df -v
+
+                    echo ""
+                    echo "=== Остановка всех контейнеров ==="
+                    docker stop $(docker ps -aq) 2>/dev/null || true
+
+                    echo ""
+                    echo "=== Удаление всех контейнеров ==="
+                    docker rm -f $(docker ps -aq) 2>/dev/null || true
+
+                    echo ""
+                    echo "=== Удаление всех образов ==="
+                    docker rmi -f $(docker images -q) 2>/dev/null || true
+
+                    echo ""
+                    echo "=== Удаление всех томов ==="
+                    docker volume rm $(docker volume ls -q) 2>/dev/null || true
+
+                    echo ""
+                    echo "=== Удаление всех сетей (кроме стандартных) ==="
+                    docker network rm $(docker network ls -q) 2>/dev/null || true
+
+                    echo ""
+                    echo "=== Очистка кэша сборки ==="
+                    docker builder prune -a -f
+
+                    echo ""
+                    echo "=== Полная очистка ==="
+                    docker system prune -a -f --volumes
+
+                    echo ""
+                    echo "=== Состояние ПОСЛЕ очистки ==="
+                    docker system df
+
+                    echo ""
+                    echo "=== Свободное место на диске ==="
+                    df -h /
+                '''
+            }
+        }
+    }
+
+    post {
+        success {
+            echo '✅ Глубокая очистка Docker выполнена успешно'
+        }
+        failure {
+            echo '❌ Ошибка при очистке Docker'
+        }
+    }
+}
