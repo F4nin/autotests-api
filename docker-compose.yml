@@ -32,9 +32,10 @@ services:
     environment:
       - BASE_URL=http://api-service:8000
       - API_URL=http://api-service:8000
-      - PYTEST_MARKERS=${PYTEST_MARKERS}
+      - PYTEST_MARKERS=${PYTEST_MARKERS:-regression}
+      - ALLURE_DIR=/app/allure-results
     volumes:
-      - ./allure-results:/tests/allure-results
+      - ./allure-results:/app/allure-results    # ← ВНЕ WORKDIR!
     restart: "no"
 
 networks:
