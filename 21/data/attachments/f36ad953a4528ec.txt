@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/99698e19-be2c-49e0-9075-1ba5d2b48362' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDExOjU3OjI3LjI4NjExOCIsInVzZXJfaWQiOiIzOGExYmJjNS1iMGQ3LTQwMTYtYWEzZC0zZmU0NWM3OGEzYjUifQ.NBt-Ewee6XhPoFbMUsdNPX_51XVFR90pubxxXMw4Tig' \
+  -H 'content-length: 155' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Television college trial region month.","maxScore":62,"minScore":17,"description":"Event poor the use close research.","estimatedTime":"1 weeks"}'

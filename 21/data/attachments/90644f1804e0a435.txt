@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDExOjU3OjMyLjIwMTQwNCIsInVzZXJfaWQiOiI1OGQwYmZiOS1iODFiLTRkY2MtYjEyMC1iYmM3ZWFjZjkyZTEifQ.PMuXwTiDmOZGl4lTUzG5nb2N0ht0o0Y3aUwHKgnu5yI' \
+  -H 'content-length: 250' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Best pay nature test gas.","maxScore":63,"minScore":27,"description":"Ground police able local sure.","estimatedTime":"8 weeks","previewFileId":"a1d3af95-2d1a-496c-b359-3594d3f54ffd","createdByUserId":"58d0bfb9-b81b-4dcc-b120-bbc7eacf92e1"}'

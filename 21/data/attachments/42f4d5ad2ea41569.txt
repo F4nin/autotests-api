@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/e86331b7-03a4-460e-8b39-00d5b0947f1a' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDExOjU3OjI5LjkzMDAzNyIsInVzZXJfaWQiOiJmMmM5NzRjYi1hMzdkLTRiNjgtODhmZS0zM2U4YzU5MDA2ZDAifQ.HnjDQOufrpGyKNBBT50k9mCwCnkd1fCctS4sRgIerCw' \
+  -H 'content-length: 146' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Drug see sing race under.","maxScore":100,"minScore":11,"orderIndex":66,"description":"Edge hair deep sound.","estimatedTime":"2 weeks"}'

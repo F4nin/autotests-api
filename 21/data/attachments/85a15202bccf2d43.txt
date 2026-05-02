@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDExOjU3OjI4LjE4OTg3OCIsInVzZXJfaWQiOiI0MWNkOTAxZi1mOWI0LTQyNDItYjYyNS01ZTliZjE2ZjUxNzUifQ.6sPPQY-_WOQt5n3fWEh3ySHHH-ZB2yRVa4iaGNRQCcw' \
+  -H 'content-length: 292' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Write small senior hold shake report loss several.","maxScore":70,"minScore":23,"description":"Question modern note white. Trip know probably.","estimatedTime":"6 weeks","previewFileId":"49b48643-26a6-4c5f-b997-83943e0b7acf","createdByUserId":"41cd901f-f9b4-4242-b625-5e9bf16f5175"}'
