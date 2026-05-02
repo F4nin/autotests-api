@@ -1,0 +1,78 @@
+pipeline {
+    agent any
+
+    parameters {
+        choice(
+            name: 'TEST_TYPE',
+            choices: ['regression', 'users', 'authentication', 'files', 'courses', 'exercises'],
+            description: 'Выберите тип тестов'
+        )
+    }
+
+    environment {
+        PYTEST_MARKERS = "${params.TEST_TYPE}"
+    }
+
+    stages {
+        stage('Очистка предыдущих результатов') {
+            steps {
+                sh 'rm -rf allure-results allure-report && mkdir -p allure-results'
+            }
+        }
+
+        stage('Подготовка окружения') {
+            steps {
+                sh 'docker compose build'
+            }
+        }
+
+        stage('Запуск сервисов') {
+            steps {
+                sh 'docker compose up -d api-service'
+            }
+        }
+
+        stage('Запуск выбранных тестов') {
+            steps {
+                echo "Запуск тестов с маркером: ${params.TEST_TYPE}"
+                sh """
+                    docker run --rm \
+                        --name test-runner-temp \
+                        --network api-test-network \
+                        -e BASE_URL=http://api-service:8000 \
+                        -e API_URL=http://api-service:8000 \
+                        -e PYTEST_MARKERS=${params.TEST_TYPE} \
+                        -d \
+                        manual-test-runner:latest \
+                        sh -c "cd /tests && python -m pytest -m ${params.TEST_TYPE} -v --alluredir=/tmp/allure-results"
+
+                    docker wait test-runner-temp
+                    docker cp test-runner-temp:/tmp/allure-results/. allure-results/
+                    docker rm test-runner-temp || true
+
+                    echo "=== Файлы ==="
+                    ls -la allure-results/ | head -10
+                    echo "JSON: \$(ls allure-results/*.json 2>/dev/null | wc -l)"
+                """
+            }
+        }
+
+        stage('Генерация Allure отчета') {
+            steps {
+                allure results: [[path: 'allure-results']]
+            }
+        }
+    }
+
+    post {
+        success {
+            echo '✅ Успешно!'
+        }
+        failure {
+            echo '❌ Ошибка'
+        }
+        always {
+            sh 'docker compose down -v || true'
+        }
+    }
+}
