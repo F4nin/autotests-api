@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDEyOjQzOjQ1LjcyNTI5OCIsInVzZXJfaWQiOiIwMGQ2ZTQ1MC1mZGI3LTQxNzgtODUyOC0xNDkzZmE3YjdlNDEifQ.n3FeCGhINJLBtYbct0Z-TRPRjCehXUaft_rLJhzuA1E' \
+  -H 'content-length: 261' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Operation nothing end study.","maxScore":66,"minScore":1,"description":"Real church very enter knowledge raise.","estimatedTime":"1 weeks","previewFileId":"f96902a1-8b0b-41a1-96f6-3ca39a86ebe9","createdByUserId":"00d6e450-fdb7-4178-8528-1493fa7b7e41"}'

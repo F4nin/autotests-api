@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDEyOjQzOjQ1LjE0Mjc2NSIsInVzZXJfaWQiOiIwMDIwNjU2ZC1mMzQyLTQ3ZTgtYjRhZS04Yzc5ZGI4MjE5ZjMifQ.sOWyA3jHsx6zsgV3MaVfI9zPpDA5UNwwqzagPDJD3vk' \
+  -H 'content-length: 270' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Pull force power final would.","maxScore":70,"minScore":13,"description":"Bad sing community agreement before nice long.","estimatedTime":"8 weeks","previewFileId":"f902a52d-ac76-40a8-948e-eab8caa509ad","createdByUserId":"0020656d-f342-47e8-b4ae-8c79db8219f3"}'

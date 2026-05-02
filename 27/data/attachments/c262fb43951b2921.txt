@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDEyOjQzOjQ2LjMwODc3NCIsInVzZXJfaWQiOiJjMmM3ZGM2Yi02YzFiLTRjYjUtOGZhNC01YTgwOWIzMDU4MzAifQ.MLkQqHAjgaBig6kMNmwRtBz5CQf8kSBylfpoyPfSvcA' \
+  -H 'content-length: 208' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Room and be fill agency health against.","courseId":"41363ee0-f424-4961-a5c9-f981bcac7ade","maxScore":100,"minScore":17,"orderIndex":45,"description":"Me return audience.","estimatedTime":"5 weeks"}'

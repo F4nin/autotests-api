@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDEyOjQzOjQ2LjkzMjk0NiIsInVzZXJfaWQiOiJmZDE5N2VkZC01MjZhLTQyMWItYjNlNi1hNTM3M2EzNzExMDMifQ.Ge4_jI-P1bjEpqgaa_L5JaP5I1uhAD_9s1wO0_TOdFc' \
+  -H 'content-length: 242' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Meeting doctor network property.","maxScore":95,"minScore":25,"description":"Edge since gun.","estimatedTime":"3 weeks","previewFileId":"0260a502-05bb-4043-8f9b-b9294c740f26","createdByUserId":"fd197edd-526a-421b-b3e6-a5373a371103"}'

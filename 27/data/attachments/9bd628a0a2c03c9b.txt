@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDEyOjQzOjQ2LjMwODc3NCIsInVzZXJfaWQiOiJjMmM3ZGM2Yi02YzFiLTRjYjUtOGZhNC01YTgwOWIzMDU4MzAifQ.MLkQqHAjgaBig6kMNmwRtBz5CQf8kSBylfpoyPfSvcA' \
+  -H 'content-length: 275' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Security social thus outside sit suddenly.","maxScore":52,"minScore":2,"description":"Level medical live visit memory reason.","estimatedTime":"6 weeks","previewFileId":"90bb630e-1599-41bc-a6a2-7bdc7764514e","createdByUserId":"c2c7dc6b-6c1b-4cb5-8fa4-5a809b305830"}'

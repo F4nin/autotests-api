@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/b7df3bf0-2f2f-47a8-8299-8e9f8f56e434' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDEyOjQzOjQ0LjI1NDA3NiIsInVzZXJfaWQiOiIzOGY5ODdkOS1jNGIwLTRiMzYtODQ2Ni1mYTA1MTcxNmZmNmIifQ.1pht7XVYkg9iQiP4ObxE7VNxEIB0mJt9p_CYvMrxYdg' \
+  -H 'content-length: 176' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Husband media affect hear imagine economy own answer.","maxScore":92,"minScore":18,"description":"Decide citizen send miss data more fall.","estimatedTime":"9 weeks"}'

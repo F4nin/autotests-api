@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDEyOjQzOjQ4LjE0ODE1NiIsInVzZXJfaWQiOiJmZTgxOGRmMi00MTgxLTQ0Y2UtYmRjNi1mNmJmMmFhOTUxNDAifQ.3bFhUbn_xpMf2ynfAUJoSfQ3X4P52HPVxn-fSVt3kNo' \
+  -H 'content-length: 264' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Present raise tell old tax.","maxScore":57,"minScore":2,"description":"Prevent into themselves bank inside author.","estimatedTime":"2 weeks","previewFileId":"2321a386-25e1-49e8-a347-e2b790a61494","createdByUserId":"fe818df2-4181-44ce-bdc6-f6bf2aa95140"}'

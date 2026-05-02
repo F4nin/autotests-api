@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDEyOjQzOjQ3LjU2NzI1NiIsInVzZXJfaWQiOiJkMDllOTYxZC04MWFiLTRmMDktODk5OS04ODc0OGM3OTk4NGMifQ.90K--5haau6UCLV1bWE5H08dZjQRCJ21C7pt7NYI0Io' \
+  -H 'content-length: 278' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Than consider design policy teacher carry.","maxScore":54,"minScore":22,"description":"General huge community marriage somebody.","estimatedTime":"9 weeks","previewFileId":"111e23c7-6e16-4589-a1e8-a5b1765e9020","createdByUserId":"d09e961d-81ab-4f09-8999-88748c79984c"}'

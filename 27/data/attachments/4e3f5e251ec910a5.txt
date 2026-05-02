@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDEyOjQzOjQ4LjE0ODE1NiIsInVzZXJfaWQiOiJmZTgxOGRmMi00MTgxLTQ0Y2UtYmRjNi1mNmJmMmFhOTUxNDAifQ.3bFhUbn_xpMf2ynfAUJoSfQ3X4P52HPVxn-fSVt3kNo' \
+  -H 'content-length: 213' \
+  -H 'content-type: application/json' \
+  -d '{"title":"The short pick simply.","courseId":"48e97bcb-d5b1-4c72-bc21-c86d3c8012a8","maxScore":81,"minScore":5,"orderIndex":62,"description":"Sense fight land sort recent ready defense.","estimatedTime":"2 weeks"}'

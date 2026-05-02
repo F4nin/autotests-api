@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/299921ce-0ea8-48da-ae4b-5b1547f17c5b' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDEyOjQzOjQ2LjkzMjk0NiIsInVzZXJfaWQiOiJmZDE5N2VkZC01MjZhLTQyMWItYjNlNi1hNTM3M2EzNzExMDMifQ.Ge4_jI-P1bjEpqgaa_L5JaP5I1uhAD_9s1wO0_TOdFc' \
+  -H 'content-length: 185' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Cut purpose political shake national tree teach.","maxScore":54,"minScore":24,"orderIndex":73,"description":"Former two doctor religious class dog.","estimatedTime":"7 weeks"}'
