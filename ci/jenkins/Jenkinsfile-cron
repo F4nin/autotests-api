@@ -8,6 +8,7 @@ pipeline {
     environment {
         PYTEST_MARKERS = 'regression'
         EMAIL_TO = 'qa-team@example.com'
+        ALLURE_DIR = 'allure-results'
     }
 
     stages {
@@ -28,7 +29,7 @@ pipeline {
         stage('Очистка предыдущих результатов') {
             steps {
                 echo '🧹 Очистка предыдущих результатов'
-                sh 'rm -rf allure-results allure-report && mkdir -p allure-results'
+                sh 'rm -rf ${ALLURE_DIR} allure-report && mkdir -p ${ALLURE_DIR}'
             }
         }
 
@@ -81,12 +82,13 @@ pipeline {
                     PYTEST_MARKERS=${PYTEST_MARKERS} docker compose up --abort-on-container-exit test-runner
 
                     echo '📋 Копирование результатов из контейнера'
-                    docker cp test_runner:/tests/allure-results/. allure-results/ 2>/dev/null && echo "✅ Результаты скопированы" || echo "⚠️ Ошибка копирования"
+                    # ИСПРАВЛЕНО: правильный путь /tests/allure-results
+                    docker cp test_runner:/tests/allure-results/. ${ALLURE_DIR}/ 2>/dev/null && echo "✅ Результаты скопированы" || echo "⚠️ Ошибка копирования"
 
                     echo '📊 Статистика результатов:'
-                    ls -la allure-results/ 2>/dev/null | head -10
-                    echo "JSON файлов: \$(ls allure-results/*.json 2>/dev/null | wc -l)"
-                    echo "XML файлов: \$(ls allure-results/*.xml 2>/dev/null | wc -l)"
+                    ls -la ${ALLURE_DIR}/ 2>/dev/null | head -10
+                    echo "JSON файлов: \$(ls ${ALLURE_DIR}/*.json 2>/dev/null | wc -l)"
+                    echo "TXT файлов: \$(ls ${ALLURE_DIR}/*.txt 2>/dev/null | wc -l)"
                 """
             }
         }
@@ -96,35 +98,21 @@ pipeline {
                 echo '📊 Генерация Allure отчета'
                 script {
                     def jsonCount = sh(
-                        script: 'ls allure-results/*.json 2>/dev/null | wc -l',
+                        script: "ls ${ALLURE_DIR}/*.json 2>/dev/null | wc -l",
                         returnStdout: true
                     ).trim()
 
+                    echo "Найдено JSON файлов: ${jsonCount}"
+
                     if (jsonCount.toInteger() > 0) {
-                        allure results: [[path: 'allure-results']]
+                        allure results: [[path: "${ALLURE_DIR}"]]
                         echo "✅ Allure отчет создан (${jsonCount} файлов)"
                     } else {
                         echo '⚠️ Нет данных для Allure отчета'
+                        // Проверяем что в директории
+                        sh "ls -la ${ALLURE_DIR}/ || echo 'Директория пуста'"
                     }
                 }
-            }
-        }
-
-        stage('Архивация результатов') {
-            steps {
-                echo '📦 Архивирование результатов тестирования'
-                sh '''
-                    DATE_STAMP=$(date +%Y%m%d_%H%M)
-                    ARCHIVE_NAME="regression_${DATE_STAMP}.tar.gz"
-
-                    tar -czf "${ARCHIVE_NAME}" allure-results/ 2>/dev/null || true
-
-                    if [ -f "${ARCHIVE_NAME}" ]; then
-                        echo "✅ Архив создан: ${ARCHIVE_NAME}"
-                        ls -lh "${ARCHIVE_NAME}"
-                    fi
-                '''
-                archiveArtifacts artifacts: 'regression_*.tar.gz', fingerprint: true
             }
         }
     }
@@ -220,13 +208,12 @@ pipeline {
         }
 
         always {
-            echo '🧹 Финальная очистка окружения'
+            echo '🧹 Очистка Docker окружения'
             sh '''
                 docker compose down -v 2>/dev/null || true
                 docker system prune -f --volumes 2>/dev/null || true
             '''
             echo '🏁 Пайплайн завершен'
-            cleanWs()
         }
     }
 }
