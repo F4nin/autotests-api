@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDExOjQwOjA0LjE4NjE4NiIsInVzZXJfaWQiOiJlOWQ1ODI5MC0yZDUzLTQ0YTAtOTg2OC05ZTc5NjE1YTliNGYifQ.a7fT8Z75Z0zhzx5YqrK3W1LnpOwyCsrbYpc9SEoYrKw' \
+  -H 'content-length: 258' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Around woman water just rich agency deep.","maxScore":92,"minScore":24,"description":"Throw traditional out.","estimatedTime":"6 weeks","previewFileId":"cfd9ea8a-0902-4e7d-acfe-da482fa2a793","createdByUserId":"e9d58290-2d53-44a0-9868-9e79615a9b4f"}'

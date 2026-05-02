@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDExOjQwOjAzLjI4OTA5NyIsInVzZXJfaWQiOiJjYmE0ZTk3NS0yMTZkLTRmZDAtOGQ3Ni1jYmM2NDAxOWQwN2QifQ.neVyenR8MVCf2W3gtjV9-YmQPpSF4wNC3K2xzjHpxsE' \
+  -H 'content-length: 275' \
+  -H 'content-type: application/json' \
+  -d '{"title":"President practice hope visit vote south hand.","maxScore":61,"minScore":21,"description":"Ask manager morning ball computer.","estimatedTime":"5 weeks","previewFileId":"4c45ae82-37c8-49ea-8827-34779d7ee892","createdByUserId":"cba4e975-216d-4fd0-8d76-cbc64019d07d"}'

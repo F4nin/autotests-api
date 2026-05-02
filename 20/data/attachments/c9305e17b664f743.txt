@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDExOjQwOjA1LjM1MTEyOSIsInVzZXJfaWQiOiJkOGRjOThhZS1mMDIzLTQ4N2MtODQ4YS05NzBiMTQxOGNmNTYifQ.v4pgNCucUSG_hO4fGTrax4-3TgZr2M6xSGl5je1P9t0' \
+  -H 'content-length: 287' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Simple speak general middle buy provide large responsibility.","maxScore":91,"minScore":17,"description":"Full attention wife put person.","estimatedTime":"7 weeks","previewFileId":"ce1b01fd-5950-4cd6-a5e7-804ed66cac7b","createdByUserId":"d8dc98ae-f023-487c-848a-970b1418cf56"}'

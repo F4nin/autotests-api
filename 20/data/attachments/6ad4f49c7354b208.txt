@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/653f7f5c-f003-466a-947a-6dba062bd310' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDExOjQwOjAzLjI4OTA5NyIsInVzZXJfaWQiOiJjYmE0ZTk3NS0yMTZkLTRmZDAtOGQ3Ni1jYmM2NDAxOWQwN2QifQ.neVyenR8MVCf2W3gtjV9-YmQPpSF4wNC3K2xzjHpxsE' \
+  -H 'content-length: 155' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Sense just base break point be.","maxScore":53,"minScore":5,"description":"Exist film third strategy stage matter of.","estimatedTime":"4 weeks"}'

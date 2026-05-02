@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDExOjQwOjA0Ljc2OTc2MCIsInVzZXJfaWQiOiJkNTIzYTk3Zi05ZDMyLTRmNGEtYTIzMS05NzA5NDZiNjE1MGQifQ.ICZuFKv_oA5D6OnygdMlJrfv1SkRr-S4uljlwjyZtp4' \
+  -H 'content-length: 252' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Focus just law world.","maxScore":71,"minScore":10,"description":"Term picture administration current.","estimatedTime":"2 weeks","previewFileId":"d5a1f446-ea7d-4512-bd7a-645e0fc96210","createdByUserId":"d523a97f-9d32-4f4a-a231-970946b6150d"}'
