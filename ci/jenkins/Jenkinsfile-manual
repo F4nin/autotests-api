@@ -65,7 +65,7 @@ pipeline {
                     echo "Тип тестов: ${params.TEST_TYPE}"
 
                     if [ -d "${ALLURE_RESULTS_DIR}" ]; then
-                        echo "Файлов с результатами: $(ls ${ALLURE_RESULTS_DIR}/*.json 2>/dev/null | wc -l)"
+                        echo "Количество JSON файлов: \$(ls allure-results/*.json 2>/dev/null | wc -l)"
                     else
                         echo "Директория с результатами не найдена"
                     fi
