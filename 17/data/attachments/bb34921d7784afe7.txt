@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDExOjI1OjQ1Ljk4ODM2NSIsInVzZXJfaWQiOiIyNGNhM2EyYS0zZDA4LTRiNzEtYTFmYy0yY2U4YjYzNWM3ZmEifQ.JcPczGBw2ZEELhFwBmbi80nC0Vzm49YUnKp7_x-xqmw' \
+  -H 'content-length: 274' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Despite degree activity president girl before.","maxScore":72,"minScore":15,"description":"Well defense trouble there study.","estimatedTime":"4 weeks","previewFileId":"03ee2ee5-98cd-43d9-80ba-344a1074d47f","createdByUserId":"24ca3a2a-3d08-4b71-a1fc-2ce8b635c7fa"}'

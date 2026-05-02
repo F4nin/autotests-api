@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDExOjI1OjQyLjcwNzIyOSIsInVzZXJfaWQiOiIzMzFiYWMwNy01ZjE4LTQxNjktYmY0ZS1jMzJlMmFkNDViNjUifQ.wdnJ0HyPWW76oxXN7mbjaU8U9HDrme57pm-_uasCUy0' \
+  -H 'content-length: 275' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Base challenge end she technology structure.","maxScore":67,"minScore":28,"description":"Institution cold real off like hair.","estimatedTime":"2 weeks","previewFileId":"7f2261ee-db27-42c7-a179-f8592f5d109e","createdByUserId":"331bac07-5f18-4169-bf4e-c32e2ad45b65"}'

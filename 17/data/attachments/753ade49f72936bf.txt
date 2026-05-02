@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDExOjI1OjQ0LjM0MjEyMCIsInVzZXJfaWQiOiI4NGUyMzYzZS1mYjE2LTQ5YjQtOTE5Yi1iMGIzMGU5NmZkMDgifQ.siQXCGnp0UpMsGdS9wX8jnyIDHS5M7b3xXlrpiHcNOs' \
+  -H 'content-length: 265' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Among population model.","maxScore":98,"minScore":23,"description":"Drug him first such mouth responsibility store.","estimatedTime":"4 weeks","previewFileId":"5fa2f371-dc82-42c3-8f84-cbe0359a49cc","createdByUserId":"84e2363e-fb16-49b4-919b-b0b30e96fd08"}'

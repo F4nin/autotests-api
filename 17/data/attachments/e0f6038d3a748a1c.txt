@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDExOjI1OjQxLjYzMDY2OSIsInVzZXJfaWQiOiIzNzFkNzcyMC02NTBiLTRjYmUtYWUxZi0zZTdhOTRjNDZiZjcifQ.zYOtTS7JsYQp1JGwO8MTvtOHCD2zfNmWjHMclGaIsvI' \
+  -H 'content-length: 263' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Common how seven how positive.","maxScore":71,"minScore":24,"description":"Experience cover including population.","estimatedTime":"8 weeks","previewFileId":"b9d079c3-914f-437f-9057-6b3770d91f58","createdByUserId":"371d7720-650b-4cbe-ae1f-3e7a94c46bf7"}'

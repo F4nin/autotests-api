@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDExOjI1OjQ3LjAxMjA5OCIsInVzZXJfaWQiOiJiYzk5YTE0ZS03YWI2LTRmZWUtOWM2Zi0yNmZiNWM4YjhhNTIifQ.DbF5fcDAc-Co2HVebqqEBtkX2qrD9uhiXa_NzIjaBkY' \
+  -H 'content-length: 274' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Kind time through them like approach.","maxScore":76,"minScore":22,"description":"Television body evening whether hard home.","estimatedTime":"3 weeks","previewFileId":"5be58ca8-01e3-4990-9a1f-1ac9c35654b6","createdByUserId":"bc99a14e-7ab6-4fee-9c6f-26fb5c8b8a52"}'
