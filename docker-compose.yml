@@ -33,9 +33,16 @@ services:
       - BASE_URL=http://api-service:8000
       - API_URL=http://api-service:8000
       - PYTEST_MARKERS=${PYTEST_MARKERS:-regression}
+      - PYTEST_ADDOPTS=-v --tb=short
     volumes:
       - ./allure-results:/app/allure-results
+      - ./test-artifacts:/app/artifacts
     restart: "no"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
 
 networks:
   test-network:
