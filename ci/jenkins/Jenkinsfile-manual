@@ -48,12 +48,11 @@ pipeline {
             steps {
                 echo "Запуск тестов с маркером: ${params.TEST_TYPE}"
                 sh """
-                    mkdir -p allure-results && \
+                    mkdir -p allure-results
                     docker compose run --rm \
-                        -v \$(pwd)/allure-results:/tmp/results \
+                        -v \$(pwd)/allure-results:/app/allure-results \
                         -e PYTEST_MARKERS=${params.TEST_TYPE} \
-                        test-runner \
-                        pytest -m ${params.TEST_TYPE} -v --alluredir=/tmp/results
+                        test-runner
                 """
             }
         }
