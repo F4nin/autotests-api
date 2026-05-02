@@ -1,0 +1,133 @@
+pipeline {
+    agent any
+
+    triggers {
+        pollSCM('')  // Пустая строка включает Webhook
+    }
+
+    environment {
+        PYTEST_MARKERS = 'regression'
+        EMAIL_TO = 'qa-team@example.com'
+    }
+
+    stages {
+        stage('Проверка ветки') {
+            when {
+                anyOf {
+                    branch 'main'
+                    branch 'develop'
+                    branch 'release/*'
+                }
+            }
+            steps {
+                echo "📥 Изменения в ветке: ${env.BRANCH_NAME}"
+                echo "📝 Коммит: ${env.GIT_COMMIT}"
+            }
+        }
+
+        stage('Очистка предыдущих результатов') {
+            steps {
+                echo '🧹 Очистка предыдущих результатов'
+                sh 'rm -rf allure-results allure-report && mkdir -p allure-results'
+            }
+        }
+
+        stage('Подготовка окружения') {
+            steps {
+                echo '🏗️ Сборка Docker-окружения'
+                sh 'docker compose build'
+            }
+        }
+
+        stage('Запуск сервисов') {
+            steps {
+                echo '🚀 Запуск сервисов'
+                sh 'docker compose up -d api-service'
+            }
+        }
+
+        stage('Ожидание готовности сервиса') {
+            steps {
+                echo '⏳ Ожидание готовности API'
+                sh '''
+                    for i in $(seq 1 30); do
+                        if curl -f http://localhost:8000/docs > /dev/null 2>&1; then
+                            echo "✅ Сервис готов"
+                            break
+                        fi
+                        echo "Ожидание... ($i/30)"
+                        sleep 2
+                    done
+                '''
+            }
+        }
+
+        stage('Запуск regression тестов') {
+            steps {
+                echo '🧪 Запуск regression тестов'
+                sh """
+                    PYTEST_MARKERS=regression docker compose up --abort-on-container-exit test-runner
+
+                    echo '📋 Копируем результаты из контейнера на хост'
+                    docker cp test_runner:/tests/allure-results/. allure-results/ 2>/dev/null && echo "✅ Скопировано!" || echo "⚠️ Не скопировано"
+
+                    echo '📊 Статистика результатов:'
+                    echo "JSON файлов: \$(ls allure-results/*.json 2>/dev/null | wc -l)"
+                """
+            }
+        }
+
+        stage('Генерация Allure отчета') {
+            steps {
+                echo '📊 Генерация Allure отчета'
+                allure results: [[path: 'allure-results']]
+            }
+        }
+    }
+
+    post {
+        success {
+            emailext(
+                subject: "✅ [Webhook] Regression тесты пройдены: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                body: """
+                    <h2>Статус: УСПЕШНО ✅</h2>
+                    <p><b>Триггер:</b> Webhook (изменения в коде)</p>
+                    <p><b>Ветка:</b> ${env.BRANCH_NAME}</p>
+                    <p><b>Коммит:</b> ${env.GIT_COMMIT}</p>
+                    <p><b>Проект:</b> ${env.JOB_NAME}</p>
+                    <p><b>Сборка:</b> #${env.BUILD_NUMBER}</p>
+                    <p><b>Тип тестов:</b> regression</p>
+                    <p><b>Дата:</b> ${new Date().format('dd.MM.yyyy HH:mm:ss')}</p>
+                    <p><b>Allure отчет:</b> <a href="${env.BUILD_URL}allure">${env.BUILD_URL}allure</a></p>
+                """,
+                to: "${EMAIL_TO}",
+                mimeType: 'text/html'
+            )
+        }
+
+        failure {
+            emailext(
+                subject: "❌ [Webhook] Regression тесты упали: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                body: """
+                    <h2>Статус: ОШИБКА ❌</h2>
+                    <p><b>Триггер:</b> Webhook (изменения в коде)</p>
+                    <p><b>Ветка:</b> ${env.BRANCH_NAME}</p>
+                    <p><b>Коммит:</b> ${env.GIT_COMMIT}</p>
+                    <p><b>Проект:</b> ${env.JOB_NAME}</p>
+                    <p><b>Сборка:</b> #${env.BUILD_NUMBER}</p>
+                    <p><b>Тип тестов:</b> regression</p>
+                    <p><b>Дата:</b> ${new Date().format('dd.MM.yyyy HH:mm:ss')}</p>
+                    <p><b>Логи сборки:</b> <a href="${env.BUILD_URL}console">${env.BUILD_URL}console</a></p>
+                """,
+                to: "${EMAIL_TO}",
+                mimeType: 'text/html'
+            )
+        }
+
+        always {
+            echo '🧹 Очистка окружения'
+            sh 'docker compose down -v || true'
+            cleanWs()
+        }
+    }
+}
