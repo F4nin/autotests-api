@@ -25,6 +25,6 @@ RUN echo "BASE_URL=http://api-service:8000" > .env && \
     echo "HTTP_CLIENT.TIMEOUT=100" >> .env
 
 # Создаём папку для Allure
-RUN mkdir -p allure-results
+RUN mkdir -p /app/allure-results
 
 CMD ["sh", "-c", "pytest -m \"${PYTEST_MARKERS:-regression}\" -v --alluredir=/app/allure-results"]
