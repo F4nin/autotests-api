@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/97f0a87f-089c-4bd1-a5f5-06e9b1ad21ab' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIxOjAwOjMyLjA0NjYxMiIsInVzZXJfaWQiOiIxYTNhMzk3MC1jNzNiLTQwODEtOGNiYy0zZjhkNjI4YTQ1YzEifQ.HP2iTRQsDZPEFBmLAT9FI31btmUukCXtZ2MbFzDTMjo' \
+  -H 'content-length: 161' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Skin professor here effect activity.","maxScore":71,"minScore":10,"description":"Attorney area peace beautiful bring smile.","estimatedTime":"2 weeks"}'

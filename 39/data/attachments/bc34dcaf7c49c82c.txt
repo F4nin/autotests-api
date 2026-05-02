@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/d65e60b6-083e-4b9f-9f12-7306fb83fed9' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIxOjAwOjM1LjM1MzYzOCIsInVzZXJfaWQiOiI3Y2QzOWZmMy0wMGM0LTQxN2QtYTJhYy03ZDJhNmIwNjAzMjUifQ.nOD76yFwh1pgrO3HhDikgD5YcatGICRyGaKpqGJf7D0' \
+  -H 'content-length: 167' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Any after into less.","maxScore":70,"minScore":14,"orderIndex":85,"description":"Off single benefit value shoulder senior manage.","estimatedTime":"2 weeks"}'

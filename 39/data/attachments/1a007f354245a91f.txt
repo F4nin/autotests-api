@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIxOjAwOjM3LjIwNzA0MiIsInVzZXJfaWQiOiJiYTVjYjY4Mi0zYzA2LTQwNGQtYmFiZi00MWUxYzdiYzhjMGUifQ.F7Oq7MtGxDqSPwDKTtZJvEzZNMX-INbhR8MHjITIGAs' \
+  -H 'content-length: 268' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Above simple cold right about instead side.","maxScore":59,"minScore":10,"description":"Could region fly particularly.","estimatedTime":"4 weeks","previewFileId":"b0944343-fb27-4c89-970a-dd2ca6a48758","createdByUserId":"ba5cb682-3c06-404d-babf-41e1c7bc8c0e"}'

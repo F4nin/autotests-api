@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIxOjAwOjMzLjUzMzY2NiIsInVzZXJfaWQiOiI4NDFjM2E3YS00Mzc0LTRjOGItYmRmNS0wMzMyZjMxMzcwYzQifQ.TI9DccVbOIO8rP0n6xtNIk1_Sm6yUnJSbJJpaA_0Y80' \
+  -H 'content-length: 257' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Ahead trial blood none onto.","maxScore":89,"minScore":22,"description":"Address crime chance mean various.","estimatedTime":"2 weeks","previewFileId":"f35d4551-f833-41ee-8217-b0f0f08ca74a","createdByUserId":"841c3a7a-4374-4c8b-bdf5-0332f31370c4"}'

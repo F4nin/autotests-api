@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIxOjAwOjMyLjk0MDI5NyIsInVzZXJfaWQiOiI3MjlhNmEyZS1kYjg1LTQ2YjMtOGQyMy05ODQyNWU5NTBjNzAifQ.S-T4jdTS4TqDmqKGxZuylWlm_eQWZ3JqOthPW19J7Xw' \
+  -H 'content-length: 277' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Eight bit upon cost quite through politics.","maxScore":96,"minScore":14,"description":"Today industry set area yard wind miss.","estimatedTime":"6 weeks","previewFileId":"8fc7d22e-4716-45d7-8755-5976777665e8","createdByUserId":"729a6a2e-db85-46b3-8d23-98425e950c70"}'

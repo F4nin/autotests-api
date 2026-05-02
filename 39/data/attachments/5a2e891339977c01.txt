@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIxOjAwOjM1Ljk4ODAzMiIsInVzZXJfaWQiOiJhNGQ3MDViMy0yMGEyLTRjM2EtOGRkZC03YTBkNDkwZTc1YjAifQ.liwVPBwMOpibmySp0-dDjDDbNHkq6-JO5QLJvaoPqdw' \
+  -H 'content-length: 284' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Talk commercial example room understand number station.","maxScore":96,"minScore":2,"description":"Public choose across without teach.","estimatedTime":"5 weeks","previewFileId":"70fa7dcb-ee51-4912-bef6-8fec73a845f5","createdByUserId":"a4d705b3-20a2-4c3a-8ddd-7a0d490e75b0"}'

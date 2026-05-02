@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIxOjAwOjMyLjA0NjYxMiIsInVzZXJfaWQiOiIxYTNhMzk3MC1jNzNiLTQwODEtOGNiYy0zZjhkNjI4YTQ1YzEifQ.HP2iTRQsDZPEFBmLAT9FI31btmUukCXtZ2MbFzDTMjo' \
+  -H 'content-length: 241' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Look challenge mouth authority.","maxScore":51,"minScore":7,"description":"Fish son public.","estimatedTime":"1 weeks","previewFileId":"f945f419-e63e-4385-a51a-b2345638c0bf","createdByUserId":"1a3a3970-c73b-4081-8cbc-3f8d628a45c1"}'

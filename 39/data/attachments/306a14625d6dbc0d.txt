@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIxOjAwOjM1LjM1MzYzOCIsInVzZXJfaWQiOiI3Y2QzOWZmMy0wMGM0LTQxN2QtYTJhYy03ZDJhNmIwNjAzMjUifQ.nOD76yFwh1pgrO3HhDikgD5YcatGICRyGaKpqGJf7D0' \
+  -H 'content-length: 265' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Shoulder morning benefit move.","maxScore":98,"minScore":29,"description":"Out little investment ready store item.","estimatedTime":"10 weeks","previewFileId":"192b2d33-243c-4c7a-9d1f-17b09d69a3ef","createdByUserId":"7cd39ff3-00c4-417d-a2ac-7d2a6b060325"}'
