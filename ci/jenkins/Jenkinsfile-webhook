@@ -69,7 +69,7 @@ pipeline {
                     PYTEST_MARKERS=regression docker compose up --abort-on-container-exit test-runner
 
                     echo '📋 Копируем результаты из контейнера на хост'
-                    docker cp test_runner:/tests/allure-results/. allure-results/ 2>/dev/null && echo "✅ Скопировано!" || echo "⚠️ Не скопировано"
+                    docker cp test_runner:/app/allure-results/. allure-results/ 2>/dev/null && echo "✅ Скопировано!" || echo "⚠️ Не скопировано"
 
                     echo '📊 Статистика результатов:'
                     echo "JSON файлов: \$(ls allure-results/*.json 2>/dev/null | wc -l)"
