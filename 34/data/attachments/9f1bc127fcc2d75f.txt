@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE5OjQyOjU5LjY5MzM3NCIsInVzZXJfaWQiOiJjODhhZjlmMy00YTBkLTRhNGUtYWJkYS0xZDZkMTNiZjQzMmUifQ.kwgNQrZHWQ6XvorTtvOvxi4ySzaz8ANzHHoKxyd7ROw' \
+  -H 'content-length: 267' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Level drop everything ahead address.","maxScore":86,"minScore":21,"description":"Treatment close garden carry speech.","estimatedTime":"3 weeks","previewFileId":"0a262ec1-7680-4878-b2d4-de4e88591dce","createdByUserId":"c88af9f3-4a0d-4a4e-abda-1d6d13bf432e"}'

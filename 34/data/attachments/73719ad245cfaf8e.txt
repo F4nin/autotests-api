@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE5OjQzOjAwLjI0NDY0MSIsInVzZXJfaWQiOiI2YTdkM2EyNi0xMDcwLTRiYTktYWUyZi05MGNhZTlhZjUyMzkifQ.0BBLtJAxJiwuHwWoUc3tz4qFjk3SA2DGeN8qfNAIo3c' \
+  -H 'content-length: 278' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Audience without end yeah stock build civil.","maxScore":91,"minScore":13,"description":"Others inside page Congress hour main.","estimatedTime":"10 weeks","previewFileId":"aefe3f68-6dab-43ba-a7b7-4695cf5dd1d4","createdByUserId":"6a7d3a26-1070-4ba9-ae2f-90cae9af5239"}'

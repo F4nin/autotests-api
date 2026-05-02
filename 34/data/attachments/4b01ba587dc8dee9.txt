@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE5OjQzOjAyLjUxMDQ5MCIsInVzZXJfaWQiOiI4Y2Q4NzY0My1lMmRmLTQ3MzItYmQyYi1jZjRlNzgzYmEwZDkifQ.VdLUPevVGeU-5PMUqCZwD32KJK2PhB_CZKXBKNiots4' \
+  -H 'content-length: 263' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Decision education hold goal.","maxScore":60,"minScore":16,"description":"Position stand of thousand lawyer rock.","estimatedTime":"5 weeks","previewFileId":"8bc0877c-3999-42ad-ba82-7f71cb35a1c8","createdByUserId":"8cd87643-e2df-4732-bd2b-cf4e783ba0d9"}'

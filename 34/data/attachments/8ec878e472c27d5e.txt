@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE5OjQyOjU5LjE0Mzk3NiIsInVzZXJfaWQiOiI1ZTllNGRhMS0xYjA4LTQ0NmUtODI5Zi05OWZmNzBjNjE4N2UifQ.b0Bz6dlmCQzJdx7BTwaviNiWLIcpMvGSVkHRLKHwmF4' \
+  -H 'content-length: 254' \
+  -H 'content-type: application/json' \
+  -d '{"title":"As job kind human.","maxScore":73,"minScore":5,"description":"Society marriage identify together friend.","estimatedTime":"8 weeks","previewFileId":"2fa8c057-46a4-4f7a-8799-51508957ef6c","createdByUserId":"5e9e4da1-1b08-446e-829f-99ff70c6187e"}'

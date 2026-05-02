@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE5OjQzOjAxLjk1NjI4MSIsInVzZXJfaWQiOiJiMWVhOTQwMS1iZDk1LTQ5ZjAtYmFhMC1iZGJlMDVlOTcxY2MifQ.qdi8lEDVMbi0dsNnlxiN8Bar9SkNA2jNptLY2syd4vk' \
+  -H 'content-length: 256' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Body myself today again race.","maxScore":74,"minScore":13,"description":"Hot drug foot director as which.","estimatedTime":"1 weeks","previewFileId":"791746bd-569b-4d15-acec-8c46e734d898","createdByUserId":"b1ea9401-bd95-49f0-baa0-bdbe05e971cc"}'

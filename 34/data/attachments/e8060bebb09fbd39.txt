@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE5OjQyOjU4LjU1ODk0NyIsInVzZXJfaWQiOiJkMmYyZDE4NC01MDBlLTQzM2ItYWM2My1kNTQ5NjkxYTY4ZmQifQ.i2riaxQnGea6B1l89YOSQleAycHfAlN7-G7AVC7awNE' \
+  -H 'content-length: 256' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Usually oil more answer.","maxScore":55,"minScore":5,"description":"Of life whom day somebody those visit.","estimatedTime":"4 weeks","previewFileId":"0cee5e52-b035-447d-a3a3-54eaf88231eb","createdByUserId":"d2f2d184-500e-433b-ac63-d549691a68fd"}'

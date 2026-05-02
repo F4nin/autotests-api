@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE5OjQzOjAwLjc5NjQ1NyIsInVzZXJfaWQiOiJmZDVhNzljYS04MjZmLTQ2NjAtYjUyYy00MDI5ZjViMGNlNDAifQ.t7nsaXreSqmeGM_Lm8XoVkY_hdagKBENpbrQcQ2VkEY' \
+  -H 'content-length: 272' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Door treat run floor let call.","maxScore":88,"minScore":11,"description":"Cell move year clear reveal we activity former.","estimatedTime":"5 weeks","previewFileId":"2de2de10-fe93-4aef-989c-faa01861ada6","createdByUserId":"fd5a79ca-826f-4660-b52c-4029f5b0ce40"}'

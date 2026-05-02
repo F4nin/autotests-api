@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE5OjQzOjAxLjM1MTE1MSIsInVzZXJfaWQiOiJmYjY3YmFmZC05ZWU1LTQ3MWYtYTRlYy1lNTAwNjAxZGIxNWEifQ.PfrsQtcPVfGDDpfkzVmzl20TQcW3RCHOa_-GzDXtpeU' \
+  -H 'content-length: 225' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Republican eight smile street person tree group.","courseId":"2ffc2e9f-086c-4e43-9810-98d470c80749","maxScore":75,"minScore":15,"orderIndex":3,"description":"Economy rest strong physical.","estimatedTime":"8 weeks"}'

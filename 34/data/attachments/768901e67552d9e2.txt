@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE5OjQzOjAxLjM1MTE1MSIsInVzZXJfaWQiOiJmYjY3YmFmZC05ZWU1LTQ3MWYtYTRlYy1lNTAwNjAxZGIxNWEifQ.PfrsQtcPVfGDDpfkzVmzl20TQcW3RCHOa_-GzDXtpeU' \
+  -H 'content-length: 253' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Worry time themselves feel site deep score.","maxScore":58,"minScore":13,"description":"She force push.","estimatedTime":"7 weeks","previewFileId":"317b4690-1d40-4ce1-9f9d-b4f26c661e2a","createdByUserId":"fb67bafd-9ee5-471f-a4ec-e500601db15a"}'
