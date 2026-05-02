@@ -2,7 +2,7 @@ services:
   api-service:
     build:
       context: .
-      dockerfile : ci/service/Dockerfile
+      dockerfile: ci/service/Dockerfile
     container_name: api-service
     ports:
       - "8000:8000"
@@ -11,15 +11,15 @@ services:
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8000/docs"]
       interval: 15s
-      timeout:  5s
-      retries:  15
+      timeout: 5s
+      retries: 15
       start_period: 10s
     restart: on-failure
 
   test-runner:
     build:
       context: .
-      dockerfile : ci/tests/Dockerfile
+      dockerfile: ci/tests/Dockerfile
       args:
         REPO_URL: ${TESTS_REPO_URL:-https://github.com/F4nin/autotests-api.git}
         BRANCH: ${TESTS_BRANCH:-main}
@@ -35,12 +35,15 @@ services:
       - PYTEST_MARKERS=${PYTEST_MARKERS}
     volumes:
       - ./allure-results:/app/allure-results
-    command: >
-      sh -c "
-        cd /tests &&
-        echo 'ЗАПУСК ТЕСТОВ с маркером: ${PYTEST_MARKERS}' &&
-        pytest -m ${PYTEST_MARKERS} -v --alluredir=/app/allure-results &&
-      "
+    command:
+      - sh
+      - -c
+      - |
+        cd /tests
+        echo "ЗАПУСК ТЕСТОВ с маркером: $${PYTEST_MARKERS}"
+        pytest -m "$${PYTEST_MARKERS}" -v --alluredir=/app/allure-results
+        echo "Результаты Allure:"
+        ls -la /app/allure-results/
     restart: "no"
 
 networks:
