@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIwOjU0OjIyLjI0NTMyOSIsInVzZXJfaWQiOiIyOTY0ZTMxYS0xMWI2LTRkMTUtOWI3YS1lYWE2Y2YxNjFkZmIifQ.p3m66J8I6_vNRCGrRn9tS9TLjVd0JiiFuES-6qtC9hc' \
+  -H 'content-length: 262' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Property hair technology cost despite.","maxScore":85,"minScore":2,"description":"Raise around kid record idea.","estimatedTime":"10 weeks","previewFileId":"1bda1380-fb8b-4159-bc87-b04cdf611e99","createdByUserId":"2964e31a-11b6-4d15-9b7a-eaa6cf161dfb"}'

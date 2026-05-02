@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIwOjU0OjIzLjQyMzE1OSIsInVzZXJfaWQiOiJjOWUyZTU4My1kNjY4LTRkOGEtOGQ1NS0xN2E3YjQxOGJmNGEifQ._i2Yg8br0vkkG59RgpApu_RCp0tpQwfBUvA_0kdGbbc' \
+  -H 'content-length: 281' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Plan success money second stuff sense television.","maxScore":77,"minScore":30,"description":"Political decide force tonight order.","estimatedTime":"7 weeks","previewFileId":"9d34bbcd-46ef-46c2-b2f3-a4c857dfe7f7","createdByUserId":"c9e2e583-d668-4d8a-8d55-17a7b418bf4a"}'

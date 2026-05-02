@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIwOjU0OjIyLjI0NTMyOSIsInVzZXJfaWQiOiIyOTY0ZTMxYS0xMWI2LTRkMTUtOWI3YS1lYWE2Y2YxNjFkZmIifQ.p3m66J8I6_vNRCGrRn9tS9TLjVd0JiiFuES-6qtC9hc' \
+  -H 'content-length: 198' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Thank easy get.","courseId":"63617f3c-c543-4a7b-b956-b093be246b33","maxScore":70,"minScore":6,"orderIndex":25,"description":"Crime than eye sort safe though me.","estimatedTime":"9 weeks"}'

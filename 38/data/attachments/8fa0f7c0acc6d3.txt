@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIwOjU0OjIyLjgzOTkyOCIsInVzZXJfaWQiOiJmZTk2YWVlYi1mMzMxLTQxYTgtYmFhMC04YzgwNWUzNDJlYWYifQ.lzezQ5zbV9VS2Nx81H141ELRVLhUFbtJdJSFkI4GgRc' \
+  -H 'content-length: 271' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Customer yourself or oil real.","maxScore":99,"minScore":16,"description":"Positive deep baby education something behind.","estimatedTime":"6 weeks","previewFileId":"8518a63d-4078-406a-9fa1-c36af972ae4e","createdByUserId":"fe96aeeb-f331-41a8-baa0-8c805e342eaf"}'

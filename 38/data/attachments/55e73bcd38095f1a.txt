@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIwOjU0OjI0LjY0ODAzMyIsInVzZXJfaWQiOiJiNDE2YzAxNi1hYTM2LTQxMmMtYTk2ZS0wOTFiZmVkYTA3MDIifQ._mVrlbi5uIfKqaOgj5-lUEYymVXrU2huyIJM54P9Or4' \
+  -H 'content-length: 259' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Quite hot arm nation expect.","maxScore":81,"minScore":12,"description":"Cup major according nice especially.","estimatedTime":"7 weeks","previewFileId":"efe30c76-24b0-4ef8-bc01-938d5a43677a","createdByUserId":"b416c016-aa36-412c-a96e-091bfeda0702"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIwOjU0OjIxLjY1OTI0MiIsInVzZXJfaWQiOiI4ZDcxMWJjMy1kYzk1LTRkODMtOWEwNS0zZTYwMjJmNGE5Y2YifQ.Tye624AQaf-FATIByC0lONvyvaoIhz4HqYU5rVDZzoM' \
+  -H 'content-length: 275' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Religious dinner hotel increase him crime reality.","maxScore":90,"minScore":1,"description":"South edge early according far.","estimatedTime":"6 weeks","previewFileId":"18fbd103-b113-4890-8128-a05b6a0111e5","createdByUserId":"8d711bc3-dc95-4d83-9a05-3e6022f4a9cf"}'
