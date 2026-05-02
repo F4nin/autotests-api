@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/87dabddd-9da8-4ccb-9f33-cc36e8de3f85' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIwOjAxOjU4LjUxNjA2MyIsInVzZXJfaWQiOiJlODlmZDVlNC05ZTU2LTQ5NzEtYTliZS0xNWM5Yjg4YWM5ODQifQ.iuQvBe2nLklrzayXZ7ZHVAsUXsA7cDnmx8gtOrmIDk8' \
+  -H 'content-length: 171' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Finally real bring too.","maxScore":65,"minScore":14,"orderIndex":64,"description":"Least surface none simple current energy debate.","estimatedTime":"10 weeks"}'

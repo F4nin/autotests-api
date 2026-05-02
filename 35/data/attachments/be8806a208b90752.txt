@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIwOjAxOjU2LjA0ODI0NCIsInVzZXJfaWQiOiJmNGNiN2U3Ny0zM2NmLTRhM2YtOTIxNS03MTBhZmYwMDhkMGEifQ.FF8UxUlFII9sH6LfW-UHPUbKBsuBF8ctniefs5iTO7g' \
+  -H 'content-length: 274' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Goal one just pass hear set establish.","maxScore":67,"minScore":10,"description":"Middle foot audience office home soldier.","estimatedTime":"5 weeks","previewFileId":"cda599f9-3a16-492b-b6b1-d38549638e55","createdByUserId":"f4cb7e77-33cf-4a3f-9215-710aff008d0a"}'

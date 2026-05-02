@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIwOjAxOjU4LjUxNjA2MyIsInVzZXJfaWQiOiJlODlmZDVlNC05ZTU2LTQ5NzEtYTliZS0xNWM5Yjg4YWM5ODQifQ.iuQvBe2nLklrzayXZ7ZHVAsUXsA7cDnmx8gtOrmIDk8' \
+  -H 'content-length: 258' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Expect war garden floor church car.","maxScore":54,"minScore":30,"description":"Skin drive surface southern.","estimatedTime":"5 weeks","previewFileId":"5418002e-8ae4-4bb6-a1d6-b5165fdf8c95","createdByUserId":"e89fd5e4-9e56-4971-a9be-15c9b88ac984"}'

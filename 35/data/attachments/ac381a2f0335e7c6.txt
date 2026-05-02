@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIwOjAxOjU5LjkyMTQ1MSIsInVzZXJfaWQiOiJhNmUwM2VmMC0wNmYwLTQxYjAtODgxOS0wZTdjMWUzY2IyODEifQ.P1FFAHzs4w32ivd5ByaUf_6V1K3oOZNw-wQr_OHO91M' \
+  -H 'content-length: 277' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Good interesting knowledge style memory.","maxScore":52,"minScore":29,"description":"It hundred throw world evidence sell tend.","estimatedTime":"7 weeks","previewFileId":"5ad4d648-f47d-446f-9ccd-940c53fe8ad5","createdByUserId":"a6e03ef0-06f0-41b0-8819-0e7c1e3cb281"}'

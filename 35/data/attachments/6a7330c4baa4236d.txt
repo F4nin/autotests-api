@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIwOjAxOjU3LjUxMDMzNyIsInVzZXJfaWQiOiI5NWI0NWVhYi0yNTU3LTQyYTktOGQwNS0xNmRjMWJmYTNhMDAifQ.Vy7clv-ap6y2_bnVwBeUhB6A6VQZpPZATneTb6DDk7I' \
+  -H 'content-length: 253' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Away century avoid bar.","maxScore":74,"minScore":15,"description":"Fine high window trade fast animal.","estimatedTime":"5 weeks","previewFileId":"44949998-3ceb-407a-9261-5b2d27228508","createdByUserId":"95b45eab-2557-42a9-8d05-16dc1bfa3a00"}'

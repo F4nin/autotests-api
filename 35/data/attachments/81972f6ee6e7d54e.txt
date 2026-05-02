@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIwOjAxOjU4LjI3NjkxOSIsInVzZXJfaWQiOiI2OTQ2MzkzYS1jYmIzLTRkMzUtOGU1Ny05ZjI5YzAwNTMwNjkifQ.vFqNE2biLIOyNRA060N3T38aAAydbYCtzroximbQwQ4' \
+  -H 'content-length: 219' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Argue left report cost director.","courseId":"d3c3f6f5-f8cb-4107-9d16-d6ca33fb0b7c","maxScore":75,"minScore":19,"orderIndex":65,"description":"Success forget stand bill dinner five.","estimatedTime":"5 weeks"}'

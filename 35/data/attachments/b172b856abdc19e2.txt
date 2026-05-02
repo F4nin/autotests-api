@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIwOjAxOjU4LjI3NjkxOSIsInVzZXJfaWQiOiI2OTQ2MzkzYS1jYmIzLTRkMzUtOGU1Ny05ZjI5YzAwNTMwNjkifQ.vFqNE2biLIOyNRA060N3T38aAAydbYCtzroximbQwQ4' \
+  -H 'content-length: 279' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Especially surface reveal indicate not.","maxScore":80,"minScore":25,"description":"Or choice social international break relate.","estimatedTime":"10 weeks","previewFileId":"62940540-4056-47a4-8e66-8ece3ca2f76a","createdByUserId":"6946393a-cbb3-4d35-8e57-9f29c0053069"}'
