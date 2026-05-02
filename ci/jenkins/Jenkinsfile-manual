@@ -37,14 +37,14 @@ pipeline {
         stage('Подготовка окружения') {
             steps {
                 echo 'Сборка Docker-окружения'
-                sh 'docker-compose build'
+                sh 'docker compose build'
             }
         }
 
         stage('Запуск сервисов') {
             steps {
                 echo 'Запуск сервисов'
-                sh 'docker-compose up -d api-service'
+                sh 'docker compose up -d api-service'
             }
         }
 
@@ -52,7 +52,7 @@ pipeline {
             steps {
                 echo "Запуск тестов с маркером: ${params.TEST_TYPE}"
                 sh """
-                    PYTEST_MARKERS=${params.TEST_TYPE} docker-compose up --abort-on-container-exit test-runner
+                    PYTEST_MARKERS=${params.TEST_TYPE} docker compose up --abort-on-container-exit test-runner
                     """
             }
         }
@@ -90,7 +90,7 @@ pipeline {
         }
         always {
             echo 'Pipeline завершен'
-            sh 'docker-compose down -v'
+            sh 'docker compose down -v'
             cleanWs()
         }
     }
