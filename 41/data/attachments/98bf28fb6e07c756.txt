@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIxOjEwOjQ5LjQ1MzczNCIsInVzZXJfaWQiOiJhM2I0MTZmYy1kOGFlLTQ2ZGUtODM0Ni00NWYyNGZjYTM2MjkifQ.NpVwlqQIqNp0WZy28jEHZCNXNrwVuCQZh-tU4EpehfY' \
+  -H 'content-length: 212' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Physical movement whom.","courseId":"4a6f4ec9-7ba5-4a29-b973-a8c19dc9208f","maxScore":82,"minScore":19,"orderIndex":85,"description":"Relate indicate meeting difficult group.","estimatedTime":"3 weeks"}'

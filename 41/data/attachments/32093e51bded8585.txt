@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIxOjEwOjUwLjAzNzMwMSIsInVzZXJfaWQiOiJjNTM5Mzg1Yi1kZTI5LTQ1YWYtYTY2Mi05ODQyZGRmYjJjOTEifQ.-JczFKVKOCx29rfwM6wgd-7q3vZWVqYSdhQvkmErwb4' \
+  -H 'content-length: 296' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Black nothing degree shake research account continue.","maxScore":75,"minScore":19,"description":"Director instead finally experience ten message.","estimatedTime":"4 weeks","previewFileId":"740220c9-7a8d-4989-b3c1-416ec38702a1","createdByUserId":"c539385b-de29-45af-a662-9842ddfb2c91"}'

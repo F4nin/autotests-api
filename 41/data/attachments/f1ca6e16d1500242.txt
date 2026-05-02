@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/28e26a59-9947-4c5e-93b3-7e56cd2a44f3' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIxOjEwOjQ3LjM5ODkzNyIsInVzZXJfaWQiOiJmYWY3NjNjZi03MTc3LTRkZDEtOTk3ZS0wNjc3MmMzY2I3NjUifQ.sakr7VtzEPlf989BgDJucUh8Bu7w6EjVFvulmfXnC-8' \
+  -H 'content-length: 162' \
+  -H 'content-type: application/json' \
+  -d '{"title":"The seem she pull word want trial.","maxScore":66,"minScore":1,"description":"Style there movement charge bar human certain.","estimatedTime":"6 weeks"}'

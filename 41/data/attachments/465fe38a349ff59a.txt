@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIxOjEwOjQ4LjI5MDU4NCIsInVzZXJfaWQiOiI0YTIxZWUwYi01MGQ5LTQ5ZTctYTYxNi05NjhhMTZkMDA1MTYifQ.0a0gbQRFO-ZzJqpJF61RYZ4vwI8JP9V0nG4fsROSnjo' \
+  -H 'content-length: 268' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Member theory series letter.","maxScore":84,"minScore":11,"description":"Report clearly level spend. Time foot career.","estimatedTime":"8 weeks","previewFileId":"70e78fd2-a41f-468d-aeae-97b9fc133893","createdByUserId":"4a21ee0b-50d9-49e7-a616-968a16d00516"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIxOjEwOjQ4Ljg3MjYxMyIsInVzZXJfaWQiOiIyOTI5MzIzNC03ZDhhLTRkMDYtOTJlYi1jMThiYzg4YWE0OGIifQ.c3sZu6s-61MrUT7zJBHSGAa35ojzptiMpxI-mbccYhY' \
+  -H 'content-length: 280' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Less baby group own detail after skill himself.","maxScore":59,"minScore":28,"description":"Size design common play all evidence.","estimatedTime":"10 weeks","previewFileId":"4d81fc90-a9f6-40bd-bf8b-8769876c2060","createdByUserId":"29293234-7d8a-4d06-92eb-c18bc88aa48b"}'

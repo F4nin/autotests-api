@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIxOjEwOjUxLjg0MDAzMSIsInVzZXJfaWQiOiJlOWFkYzAyYi05ODNmLTQ0MjUtOWY0Zi1iZWU4ODExOWQ4NGQifQ.xuf4gy_Gv4Hej57HWTkZlwkuJLmekX2zE7f_mF7YnM4' \
+  -H 'content-length: 263' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Through five instead health bed make.","maxScore":79,"minScore":11,"description":"Visit her suddenly heart then.","estimatedTime":"10 weeks","previewFileId":"ffe1fa3d-07d4-4ebe-89ea-0bbb72357b1b","createdByUserId":"e9adc02b-983f-4425-9f4f-bee88119d84d"}'

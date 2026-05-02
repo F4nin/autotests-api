@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIxOjEwOjUwLjYyNDM3MCIsInVzZXJfaWQiOiJkODIzYzM2Ni02NWE3LTQyYzEtOGZjMy1hZTc5NWZmMmFiYzgifQ.8ZmC7I-fvl-ph57w02YG6z_3NB8UxfHZG-gHhkbahRk' \
+  -H 'content-length: 263' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Her generation city late.","maxScore":62,"minScore":2,"description":"With into together voice. Program north who.","estimatedTime":"8 weeks","previewFileId":"6937b82b-e26b-4369-b87e-a3f19aaa7273","createdByUserId":"d823c366-65a7-42c1-8fc3-ae795ff2abc8"}'
