@@ -11,6 +11,7 @@ pipeline {
 
     environment {
         PYTEST_MARKERS = "${params.TEST_TYPE}"
+        EMAIL_TO = 'qa-team@example.com'
     }
 
     stages {
@@ -60,12 +61,38 @@ pipeline {
     }
 
     post {
-        success {
-            echo '✅ Успешно!'
+       success {
+            emailext(
+                subject: "✅ Тесты пройдены: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                body: """
+                    <h2>Статус сборки: УСПЕШНО</h2>
+                    <p><b>Проект:</b> ${env.JOB_NAME}</p>
+                    <p><b>Сборка:</b> #${env.BUILD_NUMBER}</p>
+                    <p><b>Тип тестов:</b> ${params.TEST_TYPE}</p>
+                    <p><b>Дата:</b> ${new Date().format('dd.MM.yyyy HH:mm:ss')}</p>
+                    <p><b>Allure отчет:</b> <a href="${env.BUILD_URL}allure">${env.BUILD_URL}allure</a></p>
+                """,
+                to: "${EMAIL_TO}",
+                mimeType: 'text/html'
+            )
         }
+
         failure {
-            echo '❌ Ошибка'
+            emailext(
+                subject: "❌ Тесты упали: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                body: """
+                    <h2>Статус сборки: ОШИБКА</h2>
+                    <p><b>Проект:</b> ${env.JOB_NAME}</p>
+                    <p><b>Сборка:</b> #${env.BUILD_NUMBER}</p>
+                    <p><b>Тип тестов:</b> ${params.TEST_TYPE}</p>
+                    <p><b>Дата:</b> ${new Date().format('dd.MM.yyyy HH:mm:ss')}</p>
+                    <p><b>Логи сборки:</b> <a href="${env.BUILD_URL}console">${env.BUILD_URL}console</a></p>
+                """,
+                to: "${EMAIL_TO}",
+                mimeType: 'text/html'
+            )
         }
+
         always {
             sh 'docker compose down -v || true'
         }
