@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE1OjEyOjM0LjkzNTM5MiIsInVzZXJfaWQiOiIzYzJmNDBmOC0yNTc1LTRmNDUtOWExYy03NGExZDNiYjQ4NGIifQ.O-jUoiih0mSLdKaJoi0bCKKrOuZOKOOhPJBli3Feawk' \
+  -H 'content-length: 257' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Person now picture threat.","maxScore":99,"minScore":23,"description":"As stage appear mind speak involve.","estimatedTime":"10 weeks","previewFileId":"e58c697b-f575-429a-9e6d-20a140a89fc0","createdByUserId":"3c2f40f8-2575-4f45-9a1c-74a1d3bb484b"}'

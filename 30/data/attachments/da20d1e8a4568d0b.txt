@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE1OjEyOjM3Ljk3ODg0NyIsInVzZXJfaWQiOiIyOGMxYzk1MS1mZTFiLTQxMTItOTU4Yy04MjIwNWU2OTc5ZWYifQ.WIRaHh7h-5jiI8_51-3dlSV5CsbchVIjUXOHL34vxJM' \
+  -H 'content-length: 259' \
+  -H 'content-type: application/json' \
+  -d '{"title":"How morning teach available explain.","maxScore":58,"minScore":7,"description":"Or character former teach no.","estimatedTime":"7 weeks","previewFileId":"b95b82f8-e7ad-4b28-a678-47cfa28ef693","createdByUserId":"28c1c951-fe1b-4112-958c-82205e6979ef"}'

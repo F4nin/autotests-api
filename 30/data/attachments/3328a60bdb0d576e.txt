@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE1OjEyOjM4LjU2MTk3MyIsInVzZXJfaWQiOiJjODBkNTFhMi0xZTgzLTQ5ZmYtYTcwMS02ODViMDU3NGEzZDQifQ.ZVHNSsfHakGi8Sx-KIgyoS1Xo7vd9wBre-9VNRaXn5A' \
+  -H 'content-length: 266' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Surface office west become.","maxScore":75,"minScore":29,"description":"Us speech car occur practice power buy sign.","estimatedTime":"9 weeks","previewFileId":"62a12d10-c60c-41dd-856c-468497cc1d26","createdByUserId":"c80d51a2-1e83-49ff-a701-685b0574a3d4"}'

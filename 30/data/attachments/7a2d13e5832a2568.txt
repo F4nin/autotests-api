@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE1OjEyOjM2Ljc1ODE4MCIsInVzZXJfaWQiOiJkODFlOWZjZC0wYTI4LTRkN2QtYTI3Ny1jNDdjYTM5NWE2OTgifQ.9BcFWhrbE2PWtQBZl6VkmHC7YQbfalea2iHPPgp6YYo' \
+  -H 'content-length: 249' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Heavy wind machine agency.","maxScore":76,"minScore":7,"description":"Imagine beat goal democratic.","estimatedTime":"4 weeks","previewFileId":"9ad13ad4-e766-4926-bdc4-89edcb29c942","createdByUserId":"d81e9fcd-0a28-4d7d-a277-c47ca395a698"}'

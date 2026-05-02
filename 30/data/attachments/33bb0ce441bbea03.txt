@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/93984739-144b-4958-a822-45e90c30d4ef' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE1OjEyOjM0LjAxODg1OSIsInVzZXJfaWQiOiJmZDJlNTk0Yi04M2Y3LTRjMDUtYTI1Ni1hNTVhMjRlMWQ5NDYifQ.WGhDHMhamyfV0wMP3yQDvvB6nt_Eas-H6ZzAd6y5zFQ' \
+  -H 'content-length: 152' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Kind science despite third.","maxScore":89,"minScore":28,"description":"Truth before design great young also lose.","estimatedTime":"7 weeks"}'

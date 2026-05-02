@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE1OjEyOjM1LjUyMDQxMCIsInVzZXJfaWQiOiI2N2Q1ZTg0YS1kYTg2LTQzMjYtOTIzNS00NGRjNzkwYjUwYjUifQ.DCufDpGJkYfzfleMJ59pKbkAwwLl9i9JB6pJePx1WQ8' \
+  -H 'content-length: 260' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Make understand feeling.","maxScore":67,"minScore":11,"description":"Body another arrive account nice machine.","estimatedTime":"5 weeks","previewFileId":"dde1200f-b60b-48e5-a8eb-a771f4dbb49d","createdByUserId":"67d5e84a-da86-4326-9235-44dc790b50b5"}'

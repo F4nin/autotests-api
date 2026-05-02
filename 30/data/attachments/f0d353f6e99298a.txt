@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE1OjEyOjM2LjE2ODMxNCIsInVzZXJfaWQiOiIxZTNkYjZjMS0wN2FjLTRhZjktOGM1NC0wOGM1YTY2MjZiMTAifQ.WfB89vYrFbw146LfnhAhJUwoPlc1FwS0GXbkxxAnlcg' \
+  -H 'content-length: 282' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Fear identify offer before may decide fear.","maxScore":72,"minScore":17,"description":"Condition give they represent take military.","estimatedTime":"4 weeks","previewFileId":"5e6c22dc-4752-4297-ab0d-5937d59970f2","createdByUserId":"1e3db6c1-07ac-4af9-8c54-08c5a6626b10"}'

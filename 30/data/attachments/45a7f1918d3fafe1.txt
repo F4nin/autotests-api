@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE1OjEyOjM2Ljc1ODE4MCIsInVzZXJfaWQiOiJkODFlOWZjZC0wYTI4LTRkN2QtYTI3Ny1jNDdjYTM5NWE2OTgifQ.9BcFWhrbE2PWtQBZl6VkmHC7YQbfalea2iHPPgp6YYo' \
+  -H 'content-length: 223' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Really cause ago likely avoid own.","courseId":"6113e23d-a3d3-463f-abf6-d81c803e4558","maxScore":71,"minScore":12,"orderIndex":48,"description":"Former player goal after soon box south.","estimatedTime":"3 weeks"}'
