@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDExOjM1OjI4Ljk3MTg0OCIsInVzZXJfaWQiOiI3YmNjYmNmYi0yYTc2LTQxZTgtYmQxNC02MzNmYzc3OGIwNWUifQ.yprC9T0IpunOjzaaM4ttChAVCfAc6KZgPTMsiDr4Tl4' \
+  -H 'content-length: 241' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Must health leader popular.","maxScore":99,"minScore":8,"description":"Top apply here base.","estimatedTime":"2 weeks","previewFileId":"a677a3f4-653a-44e9-b34e-9e45daa8c3bb","createdByUserId":"7bccbcfb-2a76-41e8-bd14-633fc778b05e"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDExOjM1OjI3Ljc5OTgxNiIsInVzZXJfaWQiOiI3Zjc2YTI0YS1hZmE1LTQwOTUtYmJhZC0wNDQ2ZGY0NzBmYzEifQ.h5isu1T5Ejas_RzeWkibU43_a22_3bH22FjTjXnQjgU' \
+  -H 'content-length: 243' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Short sort require hold.","maxScore":54,"minScore":12,"description":"To instead around speak.","estimatedTime":"6 weeks","previewFileId":"cbc6a96b-6cef-4c94-876f-a028d83eac06","createdByUserId":"7f76a24a-afa5-4095-bbad-0446df470fc1"}'

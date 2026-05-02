@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDExOjM1OjI5LjU1MzMzMSIsInVzZXJfaWQiOiJhZjIxYzVhYS02OTljLTRiMGEtODRkOC02ZjU0ZDc1ZTNhYTgifQ.hjegBCBWcFY-R3VIjnXz-w_tqF9G5prSNlDufq94l5Q' \
+  -H 'content-length: 243' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Every story benefit.","maxScore":62,"minScore":13,"description":"Administration tonight turn.","estimatedTime":"2 weeks","previewFileId":"9850c161-71b6-4311-904a-571a8cd81a6f","createdByUserId":"af21c5aa-699c-4b0a-84d8-6f54d75e3aa8"}'

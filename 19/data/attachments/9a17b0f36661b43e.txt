@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDExOjM1OjI4LjM4NTk4NCIsInVzZXJfaWQiOiJhZjNlNTY4Ni1hOWMwLTQ4OTItOGM5NC1hNzlmNDYwYTc3YjAifQ.Yqg9vMzlglvavDftmifQKKAtxLSxhLdFA_55BD8oh2w' \
+  -H 'content-length: 241' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Mouth show thus even.","maxScore":81,"minScore":20,"description":"Couple watch ask address.","estimatedTime":"2 weeks","previewFileId":"126d87b6-1aff-404d-9573-1ea5f5c08ea9","createdByUserId":"af3e5686-a9c0-4892-8c94-a79f460a77b0"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDExOjM1OjMwLjE4MjU3NCIsInVzZXJfaWQiOiJjNTQ1MjI1ZC0xOWE2LTQ5YmMtOWUxZi1iZGY1ZDY3MjdhN2YifQ.YqcCW7b2E8jvrfKMOcI714gs0pOwe5xSCsMNQKBuOWk' \
+  -H 'content-length: 264' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Remember hour memory today.","maxScore":64,"minScore":25,"description":"Agreement option soldier wonder everybody.","estimatedTime":"9 weeks","previewFileId":"eadab451-907f-4e21-93a4-c472e928fb78","createdByUserId":"c545225d-19a6-49bc-9e1f-bdf5d6727a7f"}'
