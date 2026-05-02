@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/860197c4-72f4-428a-942a-a9b3113fff3a' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDExOjU5OjUzLjEwMjM2NSIsInVzZXJfaWQiOiJiNDYxZDZlMS1hM2YwLTQyYWItYjJkNi04MzYwNjViY2Q0ZjMifQ.UWRhuP8th8dY0l4GDsE3McR380iZFZnyTaLOd9kZqhY' \
+  -H 'content-length: 135' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Pull open last purpose.","maxScore":80,"minScore":8,"description":"Forward positive writer land.","estimatedTime":"10 weeks"}'

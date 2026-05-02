@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDExOjU5OjU1Ljk0Mzk5NiIsInVzZXJfaWQiOiJkZTIyNzgwNi0zM2E4LTRmZTktOGU4Yy1kNjE5ZWFiZGU1MDkifQ.qGdcz09StvpG-82DdWwxDo-_Qf1tsquIqVGaz3cGV2w' \
+  -H 'content-length: 239' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Focus need leader difficult.","maxScore":79,"minScore":22,"description":"Big rich common.","estimatedTime":"2 weeks","previewFileId":"4bc39196-df43-4d23-9359-9f4c591d506a","createdByUserId":"de227806-33a8-4fe9-8e8c-d619eabde509"}'

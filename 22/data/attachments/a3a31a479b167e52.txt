@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDExOjU5OjU3LjEwMjQxOCIsInVzZXJfaWQiOiI4ZDIyN2VhMS0zZmRlLTQ3YmItYTc0ZS01NDIyZWZhZmUzMWYifQ.48DvlsJAwfHtsMfy4pqcn4rilN1X3JMQx6Xcij_Ur4E' \
+  -H 'content-length: 266' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Official involve movement hope whom wind discuss.","maxScore":86,"minScore":12,"description":"Social mind five most.","estimatedTime":"3 weeks","previewFileId":"d9d7511b-5863-4352-bb0e-e3cb44d4e1cb","createdByUserId":"8d227ea1-3fde-47bb-a74e-5422efafe31f"}'

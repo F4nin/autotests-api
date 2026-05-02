@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDExOjU5OjU0LjgzMDg0OCIsInVzZXJfaWQiOiJiZGFlYWUwNS02M2FiLTQwMjAtOWI3ZC03ZGU2OGJkZDFhNTEifQ.gly-RvNZMmx6AAnMVhrAsXiQRYdz728CmYzmXo77h5M' \
+  -H 'content-length: 272' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Class single space audience effect middle benefit wrong.","maxScore":91,"minScore":7,"description":"Road care mouth white.","estimatedTime":"5 weeks","previewFileId":"64c6e9e0-e639-4af6-ab53-726ca9665ae8","createdByUserId":"bdaeae05-63ab-4020-9b7d-7de68bdd1a51"}'

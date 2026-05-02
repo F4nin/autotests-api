@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDExOjU5OjUzLjEwMjM2NSIsInVzZXJfaWQiOiJiNDYxZDZlMS1hM2YwLTQyYWItYjJkNi04MzYwNjViY2Q0ZjMifQ.UWRhuP8th8dY0l4GDsE3McR380iZFZnyTaLOd9kZqhY' \
+  -H 'content-length: 270' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Herself increase life couple produce.","maxScore":68,"minScore":14,"description":"Room stand she upon me their consider.","estimatedTime":"9 weeks","previewFileId":"6dc1cd1a-5e41-405b-b0d2-edebf240d7e5","createdByUserId":"b461d6e1-a3f0-42ab-b2d6-836065bcd4f3"}'
