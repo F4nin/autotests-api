@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDEyOjQwOjI5LjU3NjM4OCIsInVzZXJfaWQiOiI0NGEzMTdlYi04MjgyLTQwZTItYTM3Ni00YjcwNTJiZGY4YWMifQ.4PNDY65mDP6au9GrAMB7QFm6prC3pBNLEZ_sGgUTTUU' \
+  -H 'content-length: 264' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Bar argue after which travel technology town.","maxScore":50,"minScore":7,"description":"Key street international.","estimatedTime":"6 weeks","previewFileId":"0a2f398b-8846-4142-9f7a-ab6a3a6f6ab4","createdByUserId":"44a317eb-8282-40e2-a376-4b7052bdf8ac"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDEyOjQwOjI4LjY0ODU3OCIsInVzZXJfaWQiOiIwNzI0YTFjOC1hNTk2LTQ1M2EtYjI4MC02ZmNlMjJhZmFjNmIifQ.dlys3Z8rfm_fKAB202j0OkIvSLk1cn6RUGsJDufsYFE' \
+  -H 'content-length: 273' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Bring vote other method week soon middle.","maxScore":68,"minScore":24,"description":"Ready likely by respond general term.","estimatedTime":"3 weeks","previewFileId":"7b395444-1a87-42de-982f-80826ba5154a","createdByUserId":"0724a1c8-a596-453a-b280-6fce22afac6b"}'

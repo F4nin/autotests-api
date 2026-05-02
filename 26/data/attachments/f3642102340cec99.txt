@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDEyOjQwOjI1LjcwNjA1NiIsInVzZXJfaWQiOiJjNjZiMTAwZC1lOGM5LTQ4NWQtOGM5Yy01NjliMzlhYTUwOTEifQ.USVpKmVO_s1xxmlOClhsHUhDN6OHfruEaAHDr84vRvo' \
+  -H 'content-length: 256' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Shoulder put seven may.","maxScore":77,"minScore":24,"description":"Night or become involve public notice.","estimatedTime":"9 weeks","previewFileId":"c8b57eab-3d40-47ef-85fd-09427ed2e853","createdByUserId":"c66b100d-e8c9-485d-8c9c-569b39aa5091"}'

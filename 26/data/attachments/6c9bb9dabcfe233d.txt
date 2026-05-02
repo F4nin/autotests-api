@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDEyOjQwOjI5Ljg0OTg4NCIsInVzZXJfaWQiOiJjNDViMDA0Yi03MWJlLTQwMWMtODVhOC0xM2UyYTMzZjA4Y2QifQ.gNz6o5ZosxNbDczfsHyEH4qcXFGYUzngkXUUXFknv-E' \
+  -H 'content-length: 266' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Yes three economy teach pattern.","maxScore":58,"minScore":10,"description":"Adult pressure training administration.","estimatedTime":"6 weeks","previewFileId":"f6dc2689-6992-47a6-801c-4257f5a5e771","createdByUserId":"c45b004b-71be-401c-85a8-13e2a33f08cd"}'

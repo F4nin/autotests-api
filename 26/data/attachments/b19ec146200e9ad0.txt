@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/bd5d2d78-9614-46ba-88e9-8e61bc937e8e' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDEyOjQwOjI4LjM3NDI5NCIsInVzZXJfaWQiOiI2ODJhNjJjOC1kNWIzLTQ3YzMtYmRjYi1kNzFlMjZiYjY1OTIifQ.2avlj4mtmpiXPjzNPEsT4yKQ63e1oHQDL-8kncGHeCY' \
+  -H 'content-length: 164' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Serve nature write fast.","maxScore":73,"minScore":18,"orderIndex":14,"description":"Ten both example her figure rich usually.","estimatedTime":"9 weeks"}'

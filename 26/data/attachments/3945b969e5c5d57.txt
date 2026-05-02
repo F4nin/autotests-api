@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDEyOjQwOjI3LjQ2NTYwNyIsInVzZXJfaWQiOiIyZDk0MGNkMi0zYjVjLTQyYTQtYTk2Yi04MjEyYjFjYWE4NjkifQ.u9i3sKtFaB-dn9Ucxc0gf0h6lyZODdWvF7P8A_mBTcc' \
+  -H 'content-length: 289' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Value after decade standard tax sound question.","maxScore":97,"minScore":15,"description":"Many language body through. Medical house move.","estimatedTime":"9 weeks","previewFileId":"be647348-019f-452a-809e-a6969f18b52e","createdByUserId":"2d940cd2-3b5c-42a4-a96b-8212b1caa869"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDEyOjQwOjI3LjE5MjEwMiIsInVzZXJfaWQiOiI5Njk5M2FhZS1mMmNlLTQ3MmYtOThlYS0zMzEwOTIwNDdlZTUifQ.2WRK2EVVSFBlUgrEn-kfbHDEmjklewknCArLLzlNnLI' \
+  -H 'content-length: 289' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Marriage very like test door however suddenly.","maxScore":50,"minScore":11,"description":"Matter yourself step. Throughout message modern.","estimatedTime":"1 weeks","previewFileId":"199af8fd-fdf4-4483-b724-04b2e4dfc806","createdByUserId":"96993aae-f2ce-472f-98ea-331092047ee5"}'

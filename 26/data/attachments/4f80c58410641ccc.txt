@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDEyOjQwOjI4LjM3NDI5NCIsInVzZXJfaWQiOiI2ODJhNjJjOC1kNWIzLTQ3YzMtYmRjYi1kNzFlMjZiYjY1OTIifQ.2avlj4mtmpiXPjzNPEsT4yKQ63e1oHQDL-8kncGHeCY' \
+  -H 'content-length: 262' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Development born community focus society.","maxScore":78,"minScore":3,"description":"Sister choice town himself.","estimatedTime":"7 weeks","previewFileId":"3ceecb6a-bb1f-4f7e-a0f1-c56c23c09a80","createdByUserId":"682a62c8-d5b3-47c3-bdcb-d71e26bb6592"}'

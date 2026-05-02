@@ -1,0 +1,24 @@
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:28 Make GET request to http://localhost:8000/api/v1/exercises/c2d61dab-9702-4943-b36a-d8970a2ae47d
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/exercises/c2d61dab-9702-4943-b36a-d8970a2ae47d
+INFO     BASE_ASSERTIONS:base.py:16 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:72 Check get exercise response
+INFO     EXERCISES_ASSERTIONS:exercises.py:47 Check exercise
+INFO     BASE_ASSERTIONS:base.py:34 Check "id" equals to "c2d61dab-9702-4943-b36a-d8970a2ae47d"
+INFO     BASE_ASSERTIONS:base.py:34 Check "title" equals to "Generation size and list but knowledge."
+INFO     BASE_ASSERTIONS:base.py:34 Check "course_id" equals to "f662ed02-74fb-42c3-b7fc-1cf54488ecd3"
+INFO     BASE_ASSERTIONS:base.py:34 Check "description" equals to "Bit cell they method dark activity group board."
+INFO     BASE_ASSERTIONS:base.py:34 Check "max_score" equals to "85"
+INFO     BASE_ASSERTIONS:base.py:34 Check "min_score" equals to "19"
+INFO     BASE_ASSERTIONS:base.py:34 Check "order_index" equals to "77"
+INFO     BASE_ASSERTIONS:base.py:34 Check "estimated_time" equals to "10 weeks"
+INFO     SCHEMA_ASSERTIONS:schema.py:19 Validating JSON schema
