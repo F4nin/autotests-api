@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE1OjI0OjA3LjYxMzM0MCIsInVzZXJfaWQiOiI1Y2M2MmZmZS1iZGRmLTQ1NjItYWE0ZC1kMTNlODE1OTE0NjYifQ.IaANCaLKKJ9OE50lkN9INyXZfMOFxpXrKuvBn5zj0J4' \
+  -H 'content-length: 268' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Themselves quality they hotel look relationship.","maxScore":61,"minScore":15,"description":"Bag travel short meeting.","estimatedTime":"8 weeks","previewFileId":"2e45f21c-31ad-490a-8a6e-6d8c1b0c8a34","createdByUserId":"5cc62ffe-bddf-4562-aa4d-d13e81591466"}'

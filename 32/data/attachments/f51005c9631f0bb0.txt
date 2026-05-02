@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE1OjI0OjA3LjAzMjQxMiIsInVzZXJfaWQiOiJlOGVmYTA1ZS05MmNhLTRmMDctOGFkOC05MWU0Nzg4N2E2NWIifQ.QCXDJ8kXZ2rWtYzbR-rHA5lNgqeN6TVoi7QbOa4JVH4' \
+  -H 'content-length: 267' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Develop wonder next represent car.","maxScore":57,"minScore":21,"description":"Experience which behind foot I street.","estimatedTime":"1 weeks","previewFileId":"78c5eabe-467e-4e07-9b47-938eab0165a1","createdByUserId":"e8efa05e-92ca-4f07-8ad8-91e47887a65b"}'

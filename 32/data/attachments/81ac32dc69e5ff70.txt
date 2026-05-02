@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE1OjI0OjA1LjgyMDEzOCIsInVzZXJfaWQiOiJjYTk5YjExYy0zNDRhLTRhZDMtYmU3ZS0zOWYxZGQwZjE4ODQifQ.8FilxN0dZM1ah6BzhX_POEmEt01--NQW26QnPDmjaBc' \
+  -H 'content-length: 244' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Beyond Mrs reflect next good.","maxScore":70,"minScore":4,"description":"There want yard open.","estimatedTime":"9 weeks","previewFileId":"c48efeaf-873f-4d2a-8e7b-6c361040a930","createdByUserId":"ca99b11c-344a-4ad3-be7e-39f1dd0f1884"}'

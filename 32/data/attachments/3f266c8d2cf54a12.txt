@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE1OjI0OjA4LjI0NzQ3NSIsInVzZXJfaWQiOiJmOWFkNzVjMy1lYjE5LTQwOTYtOWQ4MS1kMDAwNTI2ZmI4YWEifQ.MFTvRTdMFwRMIjMmMytctd41JnfaJnSlHPm9U8Jqz1A' \
+  -H 'content-length: 258' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Crime identify price development article.","maxScore":92,"minScore":9,"description":"Around design marriage.","estimatedTime":"4 weeks","previewFileId":"a0ae439f-c845-4b90-bed6-58da59331afd","createdByUserId":"f9ad75c3-eb19-4096-9d81-d000526fb8aa"}'

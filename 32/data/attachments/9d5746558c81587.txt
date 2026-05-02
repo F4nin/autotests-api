@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE1OjI0OjA1LjgyMDEzOCIsInVzZXJfaWQiOiJjYTk5YjExYy0zNDRhLTRhZDMtYmU3ZS0zOWYxZGQwZjE4ODQifQ.8FilxN0dZM1ah6BzhX_POEmEt01--NQW26QnPDmjaBc' \
+  -H 'content-length: 232' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Phone recently respond us sit economy something.","courseId":"b3a3cb01-06ab-4a01-9e61-a4c3dbfb9dc2","maxScore":66,"minScore":16,"orderIndex":47,"description":"Church yeah election remain decade.","estimatedTime":"4 weeks"}'

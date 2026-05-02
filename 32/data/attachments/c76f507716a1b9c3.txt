@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE1OjI0OjAzLjc1Mjc1MCIsInVzZXJfaWQiOiI0Y2FlZDc2Ni0wODk0LTRiMmUtOGY0Mi0wMzg5ZDUzOGI0ZTEifQ.vcnsk28sCOYc9t61oSc_JeOFQNiHnxaEHpWiH4KfrQM' \
+  -H 'content-length: 257' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Produce air within research need.","maxScore":68,"minScore":20,"description":"Performance kid second world.","estimatedTime":"9 weeks","previewFileId":"08ab6ab8-6f21-4fc9-a8e1-96de8f5e062b","createdByUserId":"4caed766-0894-4b2e-8f42-0389d538b4e1"}'

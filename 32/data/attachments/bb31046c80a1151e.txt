@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/20797c35-ea2f-405f-8372-0e066fafaf3c' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE1OjI0OjAzLjc1Mjc1MCIsInVzZXJfaWQiOiI0Y2FlZDc2Ni0wODk0LTRiMmUtOGY0Mi0wMzg5ZDUzOGI0ZTEifQ.vcnsk28sCOYc9t61oSc_JeOFQNiHnxaEHpWiH4KfrQM' \
+  -H 'content-length: 133' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Offer rather its site raise because.","maxScore":68,"minScore":20,"description":"She top fund.","estimatedTime":"10 weeks"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE1OjI0OjA2LjQwMjYxNiIsInVzZXJfaWQiOiIwZjVlNDJjYy04NDc3LTQxNWMtODdlYS0wZDVkYTI5MmYxNDEifQ.FkMARN_newirKNBWyQ-NRsI0yx18lcc1mcStkG831pk' \
+  -H 'content-length: 272' \
+  -H 'content-type: application/json' \
+  -d '{"title":"New appear because sense record clear gun.","maxScore":61,"minScore":2,"description":"Happen herself term account speech.","estimatedTime":"10 weeks","previewFileId":"7f2bd87a-7096-43d2-9a4d-bd9cbecc2ae8","createdByUserId":"0f5e42cc-8477-415c-87ea-0d5da292f141"}'

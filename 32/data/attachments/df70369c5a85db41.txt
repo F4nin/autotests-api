@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE1OjI0OjA1LjIzMTk1OSIsInVzZXJfaWQiOiIxMTUxNzVhYS1mYjQ2LTQ2OWUtYmY5My05NDM2NzQ2MTdiYzEifQ.epWgTuW-EkBDvLOUdyOBJKDqR_yds7hnWpvJosUjQZE' \
+  -H 'content-length: 283' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Firm newspaper wish son certainly people small.","maxScore":73,"minScore":16,"description":"Interview story beat maintain four break.","estimatedTime":"3 weeks","previewFileId":"7048d3b3-9910-4a24-a77e-513795b0ca2c","createdByUserId":"115175aa-fb46-469e-bf93-943674617bc1"}'
