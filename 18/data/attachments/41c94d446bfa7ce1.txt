@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDExOjI5OjUyLjc3ODM4OSIsInVzZXJfaWQiOiI3ZTc0OWFkMS0zZDNjLTRjZDYtYWVmMS1kZGQxYzcyYzE1OWYifQ.mzMsaSpGFEBPG4pCZNTN__yjQeK0Pq-x5rbfqfkhht8' \
+  -H 'content-length: 230' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Quality hotel general dog morning.","courseId":"37cb14af-6389-4cc4-bc1c-c98ccb2b8fca","maxScore":89,"minScore":12,"orderIndex":43,"description":"Lot the family why. Nation which nothing never.","estimatedTime":"1 weeks"}'

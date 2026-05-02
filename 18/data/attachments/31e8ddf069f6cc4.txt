@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDExOjI5OjUxLjQ0NjA2MCIsInVzZXJfaWQiOiJmMjU3ZTMyYy1iOTA1LTQwM2ItOTJkZS03ZTBmYjU2YmJkMzIifQ.qDBHLVbBfgkXDOLLPYa877WTLVPWWf_RmuSDv1paUI4' \
+  -H 'content-length: 273' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Choose right tough affect stock.","maxScore":89,"minScore":8,"description":"Probably picture else respond set analysis her.","estimatedTime":"7 weeks","previewFileId":"f3f6e499-2ce8-4611-a701-9fb98dcab2b7","createdByUserId":"f257e32c-b905-403b-92de-7e0fb56bbd32"}'

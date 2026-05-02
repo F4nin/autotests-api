@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDExOjI5OjUwLjc5Mjc5NyIsInVzZXJfaWQiOiJhZGQxOWE4Ni0yMWE4LTQxNGItYmFiOC0xZTY4NmI2OTc3MjQifQ.OKXNrEuLB35OLIIgJXDrNzDndNJV4LqrVeCe1fSwDH8' \
+  -H 'content-length: 254' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Nearly action seven myself.","maxScore":56,"minScore":18,"description":"Training go idea decide teacher.","estimatedTime":"1 weeks","previewFileId":"cbf95515-42e2-4a4d-aae3-2da115dc6386","createdByUserId":"add19a86-21a8-414b-bab8-1e686b697724"}'
