@@ -27,4 +27,4 @@ RUN echo "BASE_URL=http://api-service:8000" > .env && \
 # Создаём папку для Allure
 RUN mkdir -p allure-results
 
-CMD ["pytest"]
+CMD ["pytest", "--alluredir=allure-results"]
