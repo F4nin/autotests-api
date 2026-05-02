@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDEyOjI0OjIwLjE3NTI3OCIsInVzZXJfaWQiOiI1YWI2MDk5NS0zYWVmLTQ3MzktODhlMC1jMGYzYTFjN2FmODEifQ.rWyBx61PlYuRakw3LXkVcNqvEs6ZH1Oeq5NJewr0V6g' \
+  -H 'content-length: 262' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Interview down discussion great.","maxScore":58,"minScore":26,"description":"Box compare right five key finally.","estimatedTime":"4 weeks","previewFileId":"f930830b-34f7-4001-81e2-dfac7c509533","createdByUserId":"5ab60995-3aef-4739-88e0-c0f3a1c7af81"}'

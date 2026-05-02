@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/547f1c16-67b4-4c54-9c3b-d5fbb000f202' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDEyOjI0OjIxLjk3ODIyMCIsInVzZXJfaWQiOiI2ZmUwZjc4Yi1mZDBjLTQ3ZjgtYjY1Yy0wMTg4ZjdjZTRmZTMifQ.46MIkMjpqktoYwPVxTcBKmDkxjRkZLEF5hY-6B-d_-g' \
+  -H 'content-length: 183' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Federal plant sometimes town important hear.","maxScore":86,"minScore":22,"orderIndex":45,"description":"Few picture father. Enjoy nice race one.","estimatedTime":"4 weeks"}'

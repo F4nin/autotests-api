@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/39a4b1de-6658-4674-84c5-0dcdec3a119a' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDEyOjI0OjE5LjU5NDEzNCIsInVzZXJfaWQiOiI3YjBjYWY3MC1hMWFjLTRmNTUtOThkYy1hMTdmMDUzYmE2MzEifQ.TD3Z-4xGM0PAc9y8HURbBFebWbIvA2pl4ln9QIus7hw' \
+  -H 'content-length: 151' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Among really collection ok.","maxScore":64,"minScore":5,"description":"Practice line worry blue firm group which.","estimatedTime":"8 weeks"}'
