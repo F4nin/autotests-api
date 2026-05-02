@@ -27,15 +27,15 @@ jobs:
           python-version: '3.13'  # Устанавливаем версию Python 3.11 (можно заменить на другую версию)
 
       # 3. Шаг для клонирования репозитория с тестовым сервером в рабочую среду
-      - name: Clone test server repository
+      - name: Clone tests server repository
         run: git clone https://github.com/Nikita-Filonov/qa-automation-engineer-api-course.git
 
       # 4. Шаг для установки зависимостей для тестового сервера
-      - name: Install test server dependencies
+      - name: Install tests server dependencies
         run: pip install -r qa-automation-engineer-api-course/requirements.txt
 
       # 5. Шаг для запуска тестового сервера с необходимыми переменными окружения
-      - name: Start a test server
+      - name: Start a tests server
         env:
           APP_HOST: "http://localhost:8000"  # Устанавливаем адрес хоста сервера
           DATABASE_URL: "sqlite+aiosqlite:///./local.db" # Устанавливаем URL локальной базы данных
