@@ -36,23 +36,7 @@ pipeline {
             steps {
                 echo "Запуск тестов с маркером: ${params.TEST_TYPE}"
                 sh """
-                    docker run \
-                        --name test-runner-temp \
-                        --network api-test-network \
-                        -e BASE_URL=http://api-service:8000 \
-                        -e API_URL=http://api-service:8000 \
-                        -e PYTEST_MARKERS=${params.TEST_TYPE} \
-                        -d \
-                        manual-test-runner:latest \
-                        sh -c "cd /tests && python -m pytest -m ${params.TEST_TYPE} -v --alluredir=/tmp/allure-results"
-
-                    docker wait test-runner-temp
-                    docker cp test-runner-temp:/tmp/allure-results/. allure-results/
-                    docker rm test-runner-temp
-
-                    echo "=== РЕЗУЛЬТАТЫ ==="
-                    ls -la allure-results/ | head -10
-                    echo "JSON файлов: \$(ls allure-results/*.json 2>/dev/null | wc -l)"
+                    PYTEST_MARKERS=${params.TEST_TYPE} docker compose up --abort-on-container-exit test-runner
                 """
             }
         }
