@@ -46,13 +46,7 @@ pipeline {
         stage('Запуск выбранных тестов') {
             steps {
                 echo "Запуск тестов с маркером: ${params.TEST_TYPE}"
-                sh """
-                    docker compose run --rm \
-                        -v \$(pwd)/allure-results:/app/allure-results \
-                        -e PYTEST_MARKERS=${params.TEST_TYPE} \
-                        test-runner \
-                        sh -c "cd /tests && pytest -m ${params.TEST_TYPE} -v --alluredir=/app/allure-results"
-                """
+                sh "PYTEST_MARKERS=${params.TEST_TYPE} docker compose up --abort-on-container-exit test-runner"
             }
         }
 

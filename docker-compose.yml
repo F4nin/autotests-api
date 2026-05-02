@@ -34,16 +34,7 @@ services:
       - API_URL=http://api-service:8000
       - PYTEST_MARKERS=${PYTEST_MARKERS}
     volumes:
-      - ./allure-results:/app/allure-results
-    command:
-      - sh
-      - -c
-      - |
-        cd /tests
-        echo "ЗАПУСК ТЕСТОВ с маркером: $${PYTEST_MARKERS}"
-        pytest -m "$${PYTEST_MARKERS}" -v --alluredir=/app/allure-results
-        echo "Результаты Allure:"
-        ls -la /app/allure-results/
+      - ./allure-results:/tests/allure-results
     restart: "no"
 
 networks:
