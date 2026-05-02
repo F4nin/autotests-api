@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDEyOjMzOjE2LjYzMjg4OCIsInVzZXJfaWQiOiJjNGFiZTVkYi0zMjU1LTQzZjQtYWUzOS02ZTdhNjE0ODQ2Y2EifQ.hwQbiah0aS35B3bU5Dk54karnuQ-mb3jjP7VifdX78w' \
+  -H 'content-length: 284' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Up accept reduce moment fast already first.","maxScore":77,"minScore":17,"description":"Forget provide arm herself room side security.","estimatedTime":"4 weeks","previewFileId":"3070b262-ba97-44f6-8ce1-f6be2692eacd","createdByUserId":"c4abe5db-3255-43f4-ae39-6e7a614846ca"}'

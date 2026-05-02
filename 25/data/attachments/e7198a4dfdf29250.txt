@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/f5aa56ef-f4af-4e89-a3e3-cdc4c19d2fcf' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDEyOjMzOjE2LjYzMjg4OCIsInVzZXJfaWQiOiJjNGFiZTVkYi0zMjU1LTQzZjQtYWUzOS02ZTdhNjE0ODQ2Y2EifQ.hwQbiah0aS35B3bU5Dk54karnuQ-mb3jjP7VifdX78w' \
+  -H 'content-length: 155' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Member a minute course face.","maxScore":53,"minScore":15,"description":"Democratic site organization cup where card.","estimatedTime":"9 weeks"}'
