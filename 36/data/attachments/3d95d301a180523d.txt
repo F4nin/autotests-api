@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIwOjM0OjA1LjQ4Mjk1NyIsInVzZXJfaWQiOiI1YzRjODJlMC1mMzI3LTQwZjUtOWEwZi1iYmQzN2M1NWMyOWEifQ.ImhQmstkLd4iLxyUQYUYVcfIbZ3jkjQRB9-5_dAjw3g' \
+  -H 'content-length: 272' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Administration sometimes room usually compare game.","maxScore":67,"minScore":27,"description":"Realize person lead fine.","estimatedTime":"10 weeks","previewFileId":"e5e3641a-a6ae-4c49-b37b-e39a484edd3f","createdByUserId":"5c4c82e0-f327-40f5-9a0f-bbd37c55c29a"}'

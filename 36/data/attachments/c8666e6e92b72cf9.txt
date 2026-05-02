@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIwOjM0OjA0Ljc4ODg1OCIsInVzZXJfaWQiOiI1NDlmZGM3Ny03NGUxLTRkMDUtYWI4YS0xYjVkYjA1Y2ExNjIifQ.ziBfZaQFC-5IcKGKwKRLtXRWlA5Geqv_9NyoTB-nPkI' \
+  -H 'content-length: 229' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Environment per catch road once government chair.","courseId":"e960bf19-e5f1-4ad5-8cb1-d28a8a29d54f","maxScore":97,"minScore":23,"orderIndex":9,"description":"Two perform accept who off seem.","estimatedTime":"1 weeks"}'

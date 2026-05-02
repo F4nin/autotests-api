@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIwOjM0OjA2LjEzMDI2NiIsInVzZXJfaWQiOiI1ZGY1MWRhYS02MmRhLTRkNzEtYjgyYS0zYmZkZTQxOTBjN2IifQ.FgqbfjfL14-ebVJK094elU1dtY54wN-04lIobWn6zr4' \
+  -H 'content-length: 274' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Admit she his fight I wife field.","maxScore":77,"minScore":8,"description":"Perform run lawyer economy each serious debate.","estimatedTime":"9 weeks","previewFileId":"5283a695-f4c4-41d5-9ccd-69fc44534697","createdByUserId":"5df51daa-62da-4d71-b82a-3bfde4190c7b"}'

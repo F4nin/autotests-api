@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIwOjM0OjAzLjQ4NzM4NCIsInVzZXJfaWQiOiI4MGI1OWQyMS1lYmNkLTQ1MjctODY2ZC0wMzUxNjY4ZTkwODcifQ.253ViGFaNf0oImhJWxc-ws7GftbvGHHLDzIlADeBRGc' \
+  -H 'content-length: 254' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Science again every true couple way.","maxScore":63,"minScore":25,"description":"Yourself be democratic.","estimatedTime":"2 weeks","previewFileId":"6857a3db-9eeb-4881-8bc6-7e20e9e3a0ae","createdByUserId":"80b59d21-ebcd-4527-866d-0351668e9087"}'

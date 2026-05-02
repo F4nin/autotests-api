@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIwOjM0OjAyLjg0MDkyNiIsInVzZXJfaWQiOiI5MjgwMTUzZC0zMDk1LTQ5MTctYTJiMS00NDdiYzFhMTllNTgifQ.FRhdqrWqqZbFYZ189dOsTD2aFpkYtd3A5hSYRx46Ggo' \
+  -H 'content-length: 279' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Anyone talk beyond support beat look deal.","maxScore":85,"minScore":30,"description":"Amount carry finally movie effort should.","estimatedTime":"10 weeks","previewFileId":"12ecc0c1-828f-4981-8022-121c43c696d7","createdByUserId":"9280153d-3095-4917-a2b1-447bc1a19e58"}'

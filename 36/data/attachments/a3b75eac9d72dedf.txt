@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIwOjM0OjA0Ljc4ODg1OCIsInVzZXJfaWQiOiI1NDlmZGM3Ny03NGUxLTRkMDUtYWI4YS0xYjVkYjA1Y2ExNjIifQ.ziBfZaQFC-5IcKGKwKRLtXRWlA5Geqv_9NyoTB-nPkI' \
+  -H 'content-length: 246' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Edge cover impact.","maxScore":61,"minScore":17,"description":"Customer call prepare reach game.","estimatedTime":"4 weeks","previewFileId":"c1673e6d-3327-4c40-b689-5eed285dba8a","createdByUserId":"549fdc77-74e1-4d05-ab8a-1b5db05ca162"}'
