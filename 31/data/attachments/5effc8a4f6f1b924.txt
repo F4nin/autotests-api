@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/9db2d47a-0255-4947-b5b2-26e55c1d6e3e' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE1OjIwOjQ1LjM0ODc4OSIsInVzZXJfaWQiOiIxMGE2MGRkZS00MzAzLTQ4MzctYjBhMS05NGIxNzJiMzNhNzEifQ.7lfPfLfF73oEqlNeaHFQuNIJVROe-kf-C5agmwYS9hs' \
+  -H 'content-length: 131' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Our like real blood.","maxScore":89,"minScore":7,"description":"Within east simply according.","estimatedTime":"4 weeks"}'

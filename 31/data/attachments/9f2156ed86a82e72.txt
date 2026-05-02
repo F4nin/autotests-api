@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE1OjIwOjQ4LjU5NjMzOSIsInVzZXJfaWQiOiI1NGE4ZTk3OS0yMGIxLTQyMDQtOGIxMi04Mjg1ODgzYTkyNTcifQ.vBmq2Lt1Z40vqjf0GpMMenPqqfWHGEzPIDu27_ifNv0' \
+  -H 'content-length: 263' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Group community national be bill happy.","maxScore":54,"minScore":14,"description":"Around beautiful trouble hot.","estimatedTime":"7 weeks","previewFileId":"0a9c809c-ed08-4c30-91c7-733b9a3d2a8a","createdByUserId":"54a8e979-20b1-4204-8b12-8285883a9257"}'

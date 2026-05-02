@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE1OjIwOjQ5LjYxNDEzNSIsInVzZXJfaWQiOiI3MTMxODYxMi03OTA5LTQ0MmYtYTgzMy0zMWZiY2E3ZGJlODAifQ.qwHGVn7aDRbB5HNDYLDeQduyESoWNWUiC6Jk3zgdxhw' \
+  -H 'content-length: 261' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Firm long both create radio.","maxScore":53,"minScore":19,"description":"Worry call plan understand talk blood.","estimatedTime":"2 weeks","previewFileId":"30df7d2d-4821-43d0-a352-373e4f347ce3","createdByUserId":"71318612-7909-442f-a833-31fbca7dbe80"}'

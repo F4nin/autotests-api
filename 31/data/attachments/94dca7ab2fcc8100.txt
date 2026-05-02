@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE1OjIwOjQ3LjI4ODU4OCIsInVzZXJfaWQiOiJmZmU4ZDM4OS03OTI5LTQ5NTUtYTBhMS05MGJhNWFkMTk1MzAifQ.OlFzbDl7jcED48CxE3AFqR7EOrYwB-BNo9LOIGk_TSI' \
+  -H 'content-length: 260' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Amount tend laugh source.","maxScore":80,"minScore":2,"description":"Today three ten be well water management.","estimatedTime":"7 weeks","previewFileId":"65e91033-3581-448c-bc64-b369543f354d","createdByUserId":"ffe8d389-7929-4955-a0a1-90ba5ad19530"}'

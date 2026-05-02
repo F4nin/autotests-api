@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE1OjIwOjQ5LjkyMjA3MyIsInVzZXJfaWQiOiI2ZDFlYmVjZi0wOTA5LTRjODEtODRjNi1mYzM4ODVhMTNiNTkifQ.nkeBHaVQ5tqiMAtzufEKf9ajK2pzcHUgtwuppOHp-Dw' \
+  -H 'content-length: 271' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Three teach bag mention admit money.","maxScore":75,"minScore":20,"description":"Surface toward across why value brother.","estimatedTime":"7 weeks","previewFileId":"417d2390-c48c-4371-b3c5-c6d2a14094a8","createdByUserId":"6d1ebecf-0909-4c81-84c6-fc3885a13b59"}'
