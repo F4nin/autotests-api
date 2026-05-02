@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE1OjA5OjUxLjk0ODMxNiIsInVzZXJfaWQiOiJhYTFkOTEzNi1mZDljLTQ1ZDEtYmExMC1iOThkZDE1MmNmYTgifQ.9RR0Yd63nQqeBRmmP9ckWpK97rFnk5HFdpswQuXxN9k' \
+  -H 'content-length: 266' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Career within him alone enter rate feel.","maxScore":81,"minScore":25,"description":"Board of carry bill population.","estimatedTime":"6 weeks","previewFileId":"6a2943f7-96c8-4005-9fbc-90cb4c60a3e6","createdByUserId":"aa1d9136-fd9c-45d1-ba10-b98dd152cfa8"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE1OjA5OjUzLjE0OTYzMyIsInVzZXJfaWQiOiI0NGRhZDQ2MC02MWJlLTQ2ODgtYjc0YS1mY2JmZDY3Y2FkOWMifQ.GdMfq1_U-R0VSauStOPMmh0HMgN64d863OWryTEtXHU' \
+  -H 'content-length: 262' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Those something fast step.","maxScore":98,"minScore":1,"description":"Book put set environment upon nature view.","estimatedTime":"3 weeks","previewFileId":"3e7294eb-3b9d-4d13-83b9-e69279fe38c7","createdByUserId":"44dad460-61be-4688-b74a-fcbfd67cad9c"}'

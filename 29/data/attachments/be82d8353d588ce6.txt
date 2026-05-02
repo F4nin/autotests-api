@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE1OjA5OjUwLjc3MTEwNyIsInVzZXJfaWQiOiI3OWM0YzhiNC1mNjkwLTQ2NTktOGU4MS1jZjg3ZWI0Nzc1YjMifQ.k3gwhmcCM9EAxQ-J1uOVKT2dphlqGIs-Nch3jNo_ECc' \
+  -H 'content-length: 282' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Fly start record plan civil mother whole.","maxScore":86,"minScore":25,"description":"Perform score live group evening look defense.","estimatedTime":"3 weeks","previewFileId":"5ce6a445-8dd2-44f3-89e1-57f19ffe495e","createdByUserId":"79c4c8b4-f690-4659-8e81-cf87eb4775b3"}'

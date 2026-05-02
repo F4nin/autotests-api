@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE1OjA5OjQ5LjAyMTUyOSIsInVzZXJfaWQiOiJkZDc5YWIwNS1mZWU5LTQ1N2QtODA3MC1hNjZlZTBiM2I2MGIifQ.9zvv-TqhL0fI3pAPpsX3ViPLorRXWWfM_UGgT23PLT0' \
+  -H 'content-length: 274' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Local east operation may measure.","maxScore":97,"minScore":28,"description":"Method positive sure skill outside then early.","estimatedTime":"1 weeks","previewFileId":"5d5e68d9-97a3-4b41-9bd1-8655c7d8bf4d","createdByUserId":"dd79ab05-fee9-457d-8070-a66ee0b3b60b"}'

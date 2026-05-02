@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE1OjA5OjUyLjg3NjI1MSIsInVzZXJfaWQiOiJjMmU2NWZhNC1mOTMxLTQyOTItYTlhZS1hZDkyZjVhNDhmZjcifQ.--gJnAKdIemPAaguiO5Mu3W9HYdicqemvcmCYiA0NDo' \
+  -H 'content-length: 263' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Work heart money far nearly Republican tough word.","maxScore":66,"minScore":21,"description":"Or seem among key.","estimatedTime":"8 weeks","previewFileId":"fce915ff-53b6-421b-93fb-4599c8bee491","createdByUserId":"c2e65fa4-f931-4292-a9ae-ad92f5a48ff7"}'

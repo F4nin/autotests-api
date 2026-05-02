@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/8d5d0bf7-655e-4a11-99cf-9588b15d832d' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE1OjA5OjQ5LjAyMTUyOSIsInVzZXJfaWQiOiJkZDc5YWIwNS1mZWU5LTQ1N2QtODA3MC1hNjZlZTBiM2I2MGIifQ.9zvv-TqhL0fI3pAPpsX3ViPLorRXWWfM_UGgT23PLT0' \
+  -H 'content-length: 177' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Pressure federal in believe town statement election throw.","maxScore":89,"minScore":18,"description":"East course others finish son great.","estimatedTime":"1 weeks"}'

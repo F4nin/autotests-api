@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE1OjA5OjUwLjQ5NzQwMiIsInVzZXJfaWQiOiI5ZjI4Njk4MS03YTZhLTQ5ZmItOGE0MC0wYjYyYWRiMTE4YjkifQ.mTzVH5fvVkP6aDPN1_OePgLntVaASLM3abzuQH6gKLM' \
+  -H 'content-length: 278' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Throw memory few friend analysis between seat thank.","maxScore":90,"minScore":26,"description":"Challenge activity left weight.","estimatedTime":"6 weeks","previewFileId":"8a69a623-bb2c-4285-8a7a-778869d0bf80","createdByUserId":"9f286981-7a6a-49fb-8a40-0b62adb118b9"}'
