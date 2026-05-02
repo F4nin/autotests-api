@@ -8,148 +8,65 @@ pipeline {
     environment {
         PYTEST_MARKERS = 'regression'
         EMAIL_TO = 'qa-team@example.com'
-        ALLURE_DIR = 'allure-results'
     }
 
     stages {
-        stage('Информация о запуске') {
-            steps {
-                echo """
-                ⏰ ЗАПУСК ПО РАСПИСАНИЮ
-                ================================
-                📅 День: Среда
-                🕐 Время: 23:00
-                🧪 Тип тестов: Regression
-                📋 Маркеры: ${PYTEST_MARKERS}
-                ================================
-                """
-            }
-        }
-
         stage('Очистка предыдущих результатов') {
             steps {
-                echo '🧹 Очистка предыдущих результатов'
-                sh 'rm -rf ${ALLURE_DIR} allure-report && mkdir -p ${ALLURE_DIR}'
-            }
-        }
-
-        stage('Очистка Docker окружения') {
-            steps {
-                echo '🐳 Очистка старых контейнеров'
-                sh '''
-                    docker compose down -v 2>/dev/null || true
-                    docker system prune -f 2>/dev/null || true
-                '''
+                echo 'Очистка предыдущих результатов'
+                sh 'rm -rf allure-results allure-report && mkdir -p allure-results'
             }
         }
 
         stage('Подготовка окружения') {
             steps {
-                echo '🏗️ Сборка Docker-окружения'
-                sh 'docker compose build --no-cache'
+                echo 'Сборка Docker-окружения'
+                sh 'docker compose build'
             }
         }
 
         stage('Запуск сервисов') {
             steps {
-                echo '🚀 Запуск API сервиса'
+                echo 'Запуск сервисов'
                 sh 'docker compose up -d api-service'
-            }
-        }
-
-        stage('Ожидание готовности сервиса') {
-            steps {
-                echo '⏳ Ожидание готовности API сервиса'
-                sh '''
-                    echo "Проверка healthcheck..."
-                    for i in $(seq 1 10); do
-                        if curl -f http://localhost:8000/docs > /dev/null 2>&1; then
-                            echo "✅ Сервис готов (попытка $i)"
-                            break
-                        fi
-                        echo "Ожидание... ($i/30)"
-                        sleep 2
-                    done
-                '''
             }
         }
 
         stage('Запуск regression тестов') {
             steps {
-                echo '🧪 Запуск regression тестов'
+                echo 'Запуск regression тестов'
                 sh """
-                    echo "Запуск тестов с маркером: ${PYTEST_MARKERS}"
                     PYTEST_MARKERS=${PYTEST_MARKERS} docker compose up --abort-on-container-exit test-runner
 
-                    echo '📋 Копирование результатов из контейнера'
-                    # ИСПРАВЛЕНО: правильный путь /tests/allure-results
-                    docker cp test_runner:/tests/allure-results/. ${ALLURE_DIR}/ 2>/dev/null && echo "✅ Результаты скопированы" || echo "⚠️ Ошибка копирования"
+                    echo 'Копируем результаты из контейнера на хост'
+                    docker cp test_runner:/app/allure-results/. allure-results/ 2>/dev/null && echo "Скопировано!" || echo "Не скопировано"
 
-                    echo '📊 Статистика результатов:'
-                    ls -la ${ALLURE_DIR}/ 2>/dev/null | head -10
-                    echo "JSON файлов: \$(ls ${ALLURE_DIR}/*.json 2>/dev/null | wc -l)"
-                    echo "TXT файлов: \$(ls ${ALLURE_DIR}/*.txt 2>/dev/null | wc -l)"
+                    echo "=== Файлы ==="
+                    ls -la allure-results/ | head -10
+                    echo "JSON: \$(ls allure-results/*.json 2>/dev/null | wc -l)"
                 """
             }
         }
 
         stage('Генерация Allure отчета') {
             steps {
-                echo '📊 Генерация Allure отчета'
-                script {
-                    def jsonCount = sh(
-                        script: "ls ${ALLURE_DIR}/*.json 2>/dev/null | wc -l",
-                        returnStdout: true
-                    ).trim()
-
-                    echo "Найдено JSON файлов: ${jsonCount}"
-
-                    if (jsonCount.toInteger() > 0) {
-                        allure results: [[path: "${ALLURE_DIR}"]]
-                        echo "✅ Allure отчет создан (${jsonCount} файлов)"
-                    } else {
-                        echo '⚠️ Нет данных для Allure отчета'
-                        // Проверяем что в директории
-                        sh "ls -la ${ALLURE_DIR}/ || echo 'Директория пуста'"
-                    }
-                }
+                echo 'Генерация Allure отчета'
+                allure results: [[path: 'allure-results']]
             }
         }
     }
 
     post {
-        success {
-            echo '✅ Regression тесты успешно пройдены'
+       success {
             emailext(
-                subject: "✅ [Среда 23:00] Regression тесты пройдены: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                subject: "✅ [Среда 23:00] Тесты пройдены: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                 body: """
-                    <html>
-                    <body>
-                        <h2 style="color: green;">✅ Статус сборки: УСПЕШНО</h2>
-                        <hr>
-                        <h3>📋 Информация о запуске:</h3>
-                        <ul>
-                            <li><b>Тип запуска:</b> По расписанию (Среда, 23:00)</li>
-                            <li><b>Проект:</b> ${env.JOB_NAME}</li>
-                            <li><b>Сборка:</b> #${env.BUILD_NUMBER}</li>
-                            <li><b>Тип тестов:</b> Regression</li>
-                            <li><b>Маркер:</b> regression</li>
-                            <li><b>Дата выполнения:</b> ${new Date().format('dd.MM.yyyy HH:mm:ss')}</li>
-                            <li><b>Длительность:</b> ${currentBuild.durationString}</li>
-                        </ul>
-                        <hr>
-                        <h3>📊 Ссылки:</h3>
-                        <ul>
-                            <li><a href="${env.BUILD_URL}allure">📈 Allure отчет</a></li>
-                            <li><a href="${env.BUILD_URL}console">📋 Логи сборки</a></li>
-                            <li><a href="${env.BUILD_URL}">🔗 Страница сборки</a></li>
-                        </ul>
-                        <hr>
-                        <p style="color: gray; font-size: 12px;">
-                            Это автоматическое сообщение. Следующий запуск: следующая среда в 23:00
-                        </p>
-                    </body>
-                    </html>
+                    <h2>Статус сборки: УСПЕШНО</h2>
+                    <p><b>Проект:</b> ${env.JOB_NAME}</p>
+                    <p><b>Сборка:</b> #${env.BUILD_NUMBER}</p>
+                    <p><b>Тип тестов:</b> Regression (по расписанию)</p>
+                    <p><b>Дата:</b> ${new Date().format('dd.MM.yyyy HH:mm:ss')}</p>
+                    <p><b>Allure отчет:</b> <a href="${env.BUILD_URL}allure">${env.BUILD_URL}allure</a></p>
                 """,
                 to: "${EMAIL_TO}",
                 mimeType: 'text/html'
@@ -157,50 +74,15 @@ pipeline {
         }
 
         failure {
-            echo '❌ Regression тесты завершились с ошибкой'
             emailext(
-                subject: "❌ [Среда 23:00] Regression тесты УПАЛИ: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                subject: "❌ [Среда 23:00] Тесты упали: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                 body: """
-                    <html>
-                    <body>
-                        <h2 style="color: red;">❌ Статус сборки: ОШИБКА</h2>
-                        <hr>
-                        <h3>📋 Информация о запуске:</h3>
-                        <ul>
-                            <li><b>Тип запуска:</b> По расписанию (Среда, 23:00)</li>
-                            <li><b>Проект:</b> ${env.JOB_NAME}</li>
-                            <li><b>Сборка:</b> #${env.BUILD_NUMBER}</li>
-                            <li><b>Тип тестов:</b> Regression</li>
-                            <li><b>Маркер:</b> regression</li>
-                            <li><b>Дата ошибки:</b> ${new Date().format('dd.MM.yyyy HH:mm:ss')}</li>
-                            <li><b>Длительность до падения:</b> ${currentBuild.durationString}</li>
-                        </ul>
-                        <hr>
-                        <h3>🔍 Действия:</h3>
-                        <ol>
-                            <li>Проверить <a href="${env.BUILD_URL}console">логи сборки</a></li>
-                            <li>Проанализировать <a href="${env.BUILD_URL}allure">Allure отчет</a></li>
-                            <li>Создать баг-репорт при необходимости</li>
-                        </ol>
-                        <hr>
-                        <p style="color: red;">
-                            ⚠️ Требуется внимание команды QA!
-                        </p>
-                    </body>
-                    </html>
-                """,
-                to: "${EMAIL_TO}",
-                mimeType: 'text/html'
-            )
-        }
-
-        unstable {
-            echo '⚠️ Сборка нестабильна (есть упавшие тесты)'
-            emailext(
-                subject: "⚠️ [Среда 23:00] Regression тесты нестабильны: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-                body: """
-                    <h2 style="color: orange;">⚠️ Статус: НЕСТАБИЛЬНО</h2>
-                    <p>Часть тестов упала. Проверьте <a href="${env.BUILD_URL}allure">Allure отчет</a></p>
+                    <h2>Статус сборки: ОШИБКА</h2>
+                    <p><b>Проект:</b> ${env.JOB_NAME}</p>
+                    <p><b>Сборка:</b> #${env.BUILD_NUMBER}</p>
+                    <p><b>Тип тестов:</b> Regression (по расписанию)</p>
+                    <p><b>Дата:</b> ${new Date().format('dd.MM.yyyy HH:mm:ss')}</p>
+                    <p><b>Логи сборки:</b> <a href="${env.BUILD_URL}console">${env.BUILD_URL}console</a></p>
                 """,
                 to: "${EMAIL_TO}",
                 mimeType: 'text/html'
@@ -208,12 +90,7 @@ pipeline {
         }
 
         always {
-            echo '🧹 Очистка Docker окружения'
-            sh '''
-                docker compose down -v 2>/dev/null || true
-                docker system prune -f --volumes 2>/dev/null || true
-            '''
-            echo '🏁 Пайплайн завершен'
+            sh 'docker compose down -v || true'
         }
     }
 }
