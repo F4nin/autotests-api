@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDExOjIwOjIyLjUyNTI1OCIsInVzZXJfaWQiOiJkODk3ZDFkMi0wZDY0LTRkYjYtOTFiOC1jOTZlOTNhYzA2MDYifQ.PlE2SJgKkNAinfYNlu9gxyHnCpfU0ebNKlAn13d9VxU' \
+  -H 'content-length: 255' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Last green as little believe miss.","maxScore":90,"minScore":22,"description":"Tell check several debate.","estimatedTime":"3 weeks","previewFileId":"8029284e-461a-4e6f-8654-50cc4b37e1e3","createdByUserId":"d897d1d2-0d64-4db6-91b8-c96e93ac0606"}'

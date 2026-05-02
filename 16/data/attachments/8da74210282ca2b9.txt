@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDExOjIwOjIzLjc0MjIyNiIsInVzZXJfaWQiOiJjZDRiN2U0Mi0wMjYxLTQ0MDctYTMzMi0wN2YyZjdmMmJkNGQifQ.l1F4VCMvg_zH9w24rJDgxHkXt71wFU8z2sr-exFTgfI' \
+  -H 'content-length: 268' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Improve growth newspaper face.","maxScore":90,"minScore":19,"description":"Investment during nor. Student image tough.","estimatedTime":"4 weeks","previewFileId":"868e3952-97ce-4544-9822-7dfc6c4ad391","createdByUserId":"cd4b7e42-0261-4407-a332-07f2f7f2bd4d"}'
