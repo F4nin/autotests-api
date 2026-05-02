@@ -33,14 +33,13 @@ services:
       - BASE_URL=http://api-service:8000
       - API_URL=http://api-service:8000
       - PYTEST_MARKERS=${PYTEST_MARKERS}
-      - PYTEST_ADDOPTS=-v --alluredir=allure-results
     volumes:
-      - ./allure-results:/tests/allure-results
+      - ./allure-results:/app/allure-results
     command: >
       sh -c "
         cd /tests &&
         echo 'ЗАПУСК ТЕСТОВ с маркером: ${PYTEST_MARKERS}' &&
-        pytest -m ${PYTEST_MARKERS} -v --alluredir=allure-results
+        pytest -m ${PYTEST_MARKERS} -v --alluredir=/app/allure-results &&
       "
     restart: "no"
 
