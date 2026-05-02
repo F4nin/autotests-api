@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE5OjIyOjQ5LjQzMDk2NiIsInVzZXJfaWQiOiI1OWNlN2MxMy0zNjBmLTQ5OTctOGQ3NC1lMTIyYmIyNjAzYmMifQ.8QKFAfEpYUWIvSbQWbbLkMQv8xbXq3s9VNLhsK45nGw' \
+  -H 'content-length: 283' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Energy democratic poor available marriage.","maxScore":68,"minScore":11,"description":"Item side heart include most director evening.","estimatedTime":"8 weeks","previewFileId":"7ea1a13c-a70c-4377-b0ff-cfc0570e580b","createdByUserId":"59ce7c13-360f-4997-8d74-e122bb2603bc"}'

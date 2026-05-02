@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE5OjIyOjQ0Ljk4OTA3MSIsInVzZXJfaWQiOiI4OWM3OWI5MS02M2Q1LTQ5NWYtOWFmYS02ZjU1NTAxYzI5ZTUifQ.M0haxNkvqvXxchbmIipghtUjvYp3RVlmMtskZdt3ypw' \
+  -H 'content-length: 238' \
+  -H 'content-type: application/json' \
+  -d '{"title":"World image prepare try page.","maxScore":80,"minScore":6,"description":"Tv wrong color.","estimatedTime":"3 weeks","previewFileId":"ae37ff99-ac6c-4385-a940-b47ae0caf506","createdByUserId":"89c79b91-63d5-495f-9afa-6f55501c29e5"}'

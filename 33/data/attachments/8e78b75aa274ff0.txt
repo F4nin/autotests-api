@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE5OjIyOjQ4LjIxNDMxOCIsInVzZXJfaWQiOiIyNDU1MThjNC1kNmFmLTQ0ZTctYTMxMi04MWRlNTNkY2JjZjQifQ.JNQLGA-rPUVZ8nOzaV_EoR-W_7BLV_cKH0mbG7LqGk4' \
+  -H 'content-length: 263' \
+  -H 'content-type: application/json' \
+  -d '{"title":"White Mr score ability hold.","maxScore":99,"minScore":11,"description":"Call PM remember daughter large morning.","estimatedTime":"3 weeks","previewFileId":"9c5d3137-8daa-4a32-bfd6-00ebebf6d264","createdByUserId":"245518c4-d6af-44e7-a312-81de53dcbcf4"}'

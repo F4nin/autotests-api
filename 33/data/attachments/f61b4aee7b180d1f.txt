@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE5OjIyOjQ1Ljg5MDQ4MyIsInVzZXJfaWQiOiIzNzM5MzM5Zi05MjE5LTQ5N2QtOTNkYi1iYmEwZTk4Njg3OWQifQ.M3Ts45q8jFgE0h8VRmY7IAXv-uAY-14wCGOj2PV_3eM' \
+  -H 'content-length: 277' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Practice bill real must seat beat industry Mr.","maxScore":77,"minScore":23,"description":"Nothing including energy idea ahead.","estimatedTime":"9 weeks","previewFileId":"e985928f-e7c2-4b29-aac6-816940d7fe5c","createdByUserId":"3739339f-9219-497d-93db-bba0e986879d"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE5OjIyOjQ3LjYzMjQ3NiIsInVzZXJfaWQiOiIxNWUxNGFkZS1kOGJmLTRhYjEtYjgwNy0yZjFiZDc2NmQzYjkifQ.CTHmICIdGtbMCfkAFWJvHLTZJL0n8wPXXdTbjkDHBjk' \
+  -H 'content-length: 250' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Suddenly method for east official course.","maxScore":54,"minScore":11,"description":"Treat book my.","estimatedTime":"7 weeks","previewFileId":"7b23a3d6-c953-4cc0-bea4-65f47e30013e","createdByUserId":"15e14ade-d8bf-4ab1-b807-2f1bd766d3b9"}'

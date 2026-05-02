@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDE5OjIyOjQ3LjA0NTYyMSIsInVzZXJfaWQiOiIxNTRiMjBkYy01MjM0LTRlYTYtODk5ZS1jZjBjNWVkZmRlODUifQ.LlUoAR9GcywP4uZTrCnaxrmfhm0sChmfPKBIYgIQ-XQ' \
+  -H 'content-length: 286' \
+  -H 'content-type: application/json' \
+  -d '{"title":"While could important almost rate central prove.","maxScore":75,"minScore":7,"description":"Exactly most girl sound ball security hope.","estimatedTime":"10 weeks","previewFileId":"eb4607fe-59eb-4f6b-b38d-6322eb9177a3","createdByUserId":"154b20dc-5234-4ea6-899e-cf0c5edfde85"}'
