@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIxOjIyOjM3LjA5NDE1NyIsInVzZXJfaWQiOiIxNzUxMTcxMi1iNzI0LTRlMDItYjUwOS01Y2NlOWUyMWI4NmMifQ.dz_bsNU0RUrCyQx4t2GfbrbFYirLIc2HpZ9G6rHMWpI' \
+  -H 'content-length: 257' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Strong central hit firm respond.","maxScore":92,"minScore":7,"description":"East fear difference raise oil.","estimatedTime":"7 weeks","previewFileId":"0db0256f-b49b-476b-8e50-8cdd6285b5f1","createdByUserId":"17511712-b724-4e02-b509-5cce9e21b86c"}'

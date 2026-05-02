@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIxOjIyOjM0Ljc3MjM3MSIsInVzZXJfaWQiOiI3YzlkZjdjNy1jZjFhLTRhOWYtYmY4Zi0yY2FjYjg5YmFhYWEifQ.SPgIS32CQw4YFvVpgNc7o2QEXPWfXOalW2pWKJbJErY' \
+  -H 'content-length: 287' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Whose people property few fight evidence find.","maxScore":91,"minScore":22,"description":"Keep approach carry billion reduce rich girl.","estimatedTime":"10 weeks","previewFileId":"3b6e8116-45d5-40e3-8656-4a3bb95c7444","createdByUserId":"7c9df7c7-cf1a-4a9f-bf8f-2cacb89baaaa"}'

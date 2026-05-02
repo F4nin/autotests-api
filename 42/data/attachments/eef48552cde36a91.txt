@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/ea01ec6a-0e28-4ed4-a47f-14317188c607' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIxOjIyOjM2LjUwMTI2NiIsInVzZXJfaWQiOiJjNmM1ZjY3NC0wZDhmLTQ5ZWItYWRmMS0wMjViZGYzN2Q3NGIifQ.EV63cGsMtLUzqip2ogm7JX3sr3kGoDeJH_s4Cx8x2tc' \
+  -H 'content-length: 178' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Wish institution sort small Mr prepare song.","maxScore":74,"minScore":23,"orderIndex":85,"description":"Drop tree development onto explain.","estimatedTime":"4 weeks"}'

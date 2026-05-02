@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIxOjIyOjM4LjI4OTIwMCIsInVzZXJfaWQiOiJlZWI1OWY4MC1kNGUwLTRhMTktOWVjNS1iZGIwODQ0N2VhMjYifQ.Zq4jRoUWuDinCMR7sH9pSc6CUfrQcMakgeV8TATKZFk' \
+  -H 'content-length: 283' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Minute whole deal general wonder about window.","maxScore":74,"minScore":8,"description":"Deep generation heavy great again eat wish.","estimatedTime":"2 weeks","previewFileId":"d4209a98-490f-4aba-a189-5e9b1ed4ff5c","createdByUserId":"eeb59f80-d4e0-4a19-9ec5-bdb08447ea26"}'

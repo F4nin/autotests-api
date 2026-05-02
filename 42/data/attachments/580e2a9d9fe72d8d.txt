@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIxOjIyOjM3LjcyMTUzOCIsInVzZXJfaWQiOiJlYzJhMjRmNC1iZTdhLTQ1NTMtOWNjZi1kMDZmOWY0ZTFkMDEifQ.laPhTK6Ba0INU5OF0vzvUIvmbMdl-45vBnxHKBogHIk' \
+  -H 'content-length: 254' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Study occur go gas herself because.","maxScore":97,"minScore":3,"description":"In half sign power think.","estimatedTime":"8 weeks","previewFileId":"35f3ae13-0d63-4807-8dea-77b8d56cfeed","createdByUserId":"ec2a24f4-be7a-4553-9ccf-d06f9f4e1d01"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIxOjIyOjM3LjcyMTUzOCIsInVzZXJfaWQiOiJlYzJhMjRmNC1iZTdhLTQ1NTMtOWNjZi1kMDZmOWY0ZTFkMDEifQ.laPhTK6Ba0INU5OF0vzvUIvmbMdl-45vBnxHKBogHIk' \
+  -H 'content-length: 197' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Less idea newspaper could door.","courseId":"965637b0-2997-401a-bf8d-19505df68da6","maxScore":56,"minScore":10,"orderIndex":62,"description":"Hard across pull.","estimatedTime":"3 weeks"}'

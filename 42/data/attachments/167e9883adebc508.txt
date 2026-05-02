@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/609dfdf2-6e78-4cde-8167-934582625a2b' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIxOjIyOjM0LjE0NTAwNyIsInVzZXJfaWQiOiI2YWFhYjVmZS1hMGQyLTRmYWMtYWE1NC0zNmRlNTM4ZGI2MTkifQ.07CPbd_5ZaYN_KE6yHbLHw5GRO00aZc1Z-2rDBLaCng' \
+  -H 'content-length: 146' \
+  -H 'content-type: application/json' \
+  -d '{"title":"We responsibility lead western.","maxScore":98,"minScore":5,"description":"Health reality about these first.","estimatedTime":"8 weeks"}'

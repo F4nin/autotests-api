@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIxOjIyOjM1LjM0ODAwOCIsInVzZXJfaWQiOiI0NjBiZjRhMC01ZjU1LTQ3M2ItOTkwNy1mOGFlN2UxYzIzOTIifQ.n7KVdI_XxVgLVHoP2-DUqFWK4ymYSKUNwVDQxRmd_Dg' \
+  -H 'content-length: 267' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Western organization allow picture pretty.","maxScore":96,"minScore":11,"description":"Kid already wonder especially.","estimatedTime":"6 weeks","previewFileId":"db2a8310-9a0e-4df5-ad7d-e9a41586cf9f","createdByUserId":"460bf4a0-5f55-473b-9907-f8ae7e1c2392"}'
