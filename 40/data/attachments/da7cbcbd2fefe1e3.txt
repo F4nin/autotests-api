@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIxOjA2OjQwLjM2MzYzMyIsInVzZXJfaWQiOiI4NDEzYWY2ZS05NTdiLTQ0MDctYjY5Ni1iMGY1MzJmZGFmNTcifQ.syc4QV3Aawl5Bzpe8-TAb9dIzsobR3iSKh_vq4A1rSU' \
+  -H 'content-length: 248' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Next control more live this.","maxScore":69,"minScore":21,"description":"Carry poor land its keep.","estimatedTime":"1 weeks","previewFileId":"f6326a15-5fca-401e-bd40-998c390256c1","createdByUserId":"8413af6e-957b-4407-b696-b0f532fdaf57"}'

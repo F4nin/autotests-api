@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIxOjA2OjQxLjY5NDgzMyIsInVzZXJfaWQiOiI0NWQzYzJiNi1jMzI4LTRlNTgtYjBlMS1mZTZkODZjZWMwZDUifQ.krBNmkezhs323XefN-wbzK2bzxtFVWM85hDBMO3KvaI' \
+  -H 'content-length: 255' \
+  -H 'content-type: application/json' \
+  -d '{"title":"History this might view class.","maxScore":98,"minScore":14,"description":"Training realize tough impact.","estimatedTime":"8 weeks","previewFileId":"630c5390-379e-4bb4-a02b-b2b84110ba58","createdByUserId":"45d3c2b6-c328-4e58-b0e1-fe6d86cec0d5"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIxOjA2OjM4Ljc0MTIxNCIsInVzZXJfaWQiOiJlZmU3MmIwYy0wNjA4LTQzNzUtYjkxMy05YWY4NmRmYTQ1YTgifQ.EIJbA3BUbE60pXSvY5-SSsUBDCPVHxeAsDm6FqJqd1g' \
+  -H 'content-length: 284' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Too manage play boy reduce thank center.","maxScore":75,"minScore":29,"description":"Tree manage wish training owner operation lawyer.","estimatedTime":"5 weeks","previewFileId":"0a76f2b4-c7e8-460b-880b-87ad0515c2bc","createdByUserId":"efe72b0c-0608-4375-b913-9af86dfa45a8"}'

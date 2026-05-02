@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIxOjA2OjQxLjM4NzI2OSIsInVzZXJfaWQiOiJhNjdlNjNmOS1iNDJmLTQxMjgtOGViNS1kNjZmYzljMzJkY2IifQ.t_SJ70LXpy0ZbeaNS86yyKki4bMOeSbqmMFiS1yF_iY' \
+  -H 'content-length: 273' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Skill soldier hospital moment yes heart green.","maxScore":85,"minScore":18,"description":"Thus fine suggest science film.","estimatedTime":"10 weeks","previewFileId":"d84f2f0d-2a6d-4da8-9496-d7d7d561814d","createdByUserId":"a67e63f9-b42f-4128-8eb5-d66fc9c32dcb"}'

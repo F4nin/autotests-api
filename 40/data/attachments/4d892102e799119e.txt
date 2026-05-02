@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIxOjA2OjQwLjA1NTQzNiIsInVzZXJfaWQiOiI5MzFkNjEyZi1lM2JmLTQ2ZDktYTk4Yi0xMTdjOWFlYzM1NzgifQ.e-xZXiSA1kCUY1UUoPf2rvaDyIGQgDmi-XFpKXDYEnY' \
+  -H 'content-length: 265' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Particular budget listen face any make.","maxScore":100,"minScore":18,"description":"Serious left according memory.","estimatedTime":"1 weeks","previewFileId":"34eb31b2-e885-47c2-9e8d-95eb07963f56","createdByUserId":"931d612f-e3bf-46d9-a98b-117c9aec3578"}'

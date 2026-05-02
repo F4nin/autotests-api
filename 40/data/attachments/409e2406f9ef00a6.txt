@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTAyVDIxOjA2OjM5LjA0OTM5NyIsInVzZXJfaWQiOiI1Mzk1MzY2MS03Yzg1LTQ0NzktYjAxNS1lNGRlNzg2MTNhNDQifQ.2ORU2KzrE15RGefVubQC-sezFh-oGsj-LVoFo9Oo7i0' \
+  -H 'content-length: 284' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Community for themselves network example.","maxScore":90,"minScore":14,"description":"Under style month parent produce behind include.","estimatedTime":"9 weeks","previewFileId":"ebc6cc1e-e57e-49ec-8e00-e52969fbbc61","createdByUserId":"53953661-7c85-4479-b015-e4de78613a44"}'
