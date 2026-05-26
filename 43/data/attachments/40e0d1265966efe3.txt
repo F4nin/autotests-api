@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTI2VDIwOjM1OjIwLjU2NDc5OCIsInVzZXJfaWQiOiI5YTdlMmNlZS1jZDJkLTRhMGMtOTFmZC03ZWYxMDZmMDVkYzkifQ.RX7qIW5KpiBxyvXOCDg2s9dz6VVSiINNuqLqF1zntZs' \
+  -H 'content-length: 216' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Foot college say hear democratic.","courseId":"6fea6f58-1fb0-416b-8482-0ec08ea44943","maxScore":82,"minScore":2,"orderIndex":28,"description":"Who nature much near within social.","estimatedTime":"6 weeks"}'

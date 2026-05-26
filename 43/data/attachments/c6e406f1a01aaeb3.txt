@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTI2VDIwOjM1OjE4LjIwNDQwMCIsInVzZXJfaWQiOiIzZDZhZmExNi1mOTE5LTRlMjQtODIyNy01MzRkMGVhYWNiMDcifQ.NMs6rod4ZrCdWFSu2r5iB9Bgm5DsDUNn2kc9bbhDg7U' \
+  -H 'content-length: 258' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Expert believe mouth hot behavior.","maxScore":93,"minScore":10,"description":"Against nothing article trip.","estimatedTime":"6 weeks","previewFileId":"f59d222c-b9fe-440a-a585-71de3fd6685a","createdByUserId":"3d6afa16-f919-4e24-8227-534d0eaacb07"}'

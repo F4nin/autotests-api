@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTI2VDIwOjM1OjIwLjI4OTEwOCIsInVzZXJfaWQiOiI2ZDhjYzQzMy04ZDgxLTQ0NzktOTI3NC0wY2UxMDNjYzNlZjgifQ.YU5sxbPYAeCVmo8PNvWoLWSxHLkb-TqjyPCFpI1omho' \
+  -H 'content-length: 276' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Story past within recently against hand fast.","maxScore":71,"minScore":8,"description":"Share professional summer across him.","estimatedTime":"1 weeks","previewFileId":"f7067bf5-8b06-41e8-8c57-63057b7d4e92","createdByUserId":"6d8cc433-8d81-4479-9274-0ce103cc3ef8"}'

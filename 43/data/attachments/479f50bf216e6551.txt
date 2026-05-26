@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTI2VDIwOjM1OjE2LjQ2Nzk1OCIsInVzZXJfaWQiOiI4ZTA1Y2Y5Zi05ODdiLTRkMGYtYTcwMy1iMmY3MDFlODg2YWUifQ.0EyiBGi-KNK4eKogCpVA6DjvF5UjsQueojDVB4eA_8I' \
+  -H 'content-length: 234' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Employee tell prove.","maxScore":82,"minScore":6,"description":"Air a but look rest.","estimatedTime":"4 weeks","previewFileId":"c38ae0fe-536c-47f4-a096-61fe278a0559","createdByUserId":"8e05cf9f-987b-4d0f-a703-b2f701e886ae"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTI2VDIwOjM1OjIxLjQ5NDQ5MyIsInVzZXJfaWQiOiI1ZThhODQwOC0wZmQyLTQxYTEtOTU5OS0yMjc2MzE5NTE1MWUifQ.h1DM-6WPgY0F54C7Zcn8kxX69jbrTlXyRj2u7PATjn8' \
+  -H 'content-length: 192' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Believe if ok there with.","courseId":"9e8c1406-ef73-4c7f-a649-b4f2495f8dd7","maxScore":79,"minScore":17,"orderIndex":100,"description":"Summer rest step.","estimatedTime":"4 weeks"}'

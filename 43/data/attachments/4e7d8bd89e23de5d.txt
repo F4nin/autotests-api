@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTI2VDIwOjM1OjE5LjA5OTA2NyIsInVzZXJfaWQiOiIxMjczYzQ0NC1kZWMxLTQ1ODgtYjhiNi0zNWJkNTE4OWQ3NzgifQ.x4FqLJb-il_XtGTTAa3C5ntIRx8ukMFA_4cPhAMVKRk' \
+  -H 'content-length: 282' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Body huge drop then home civil worry throughout.","maxScore":67,"minScore":4,"description":"Lead during newspaper morning direction.","estimatedTime":"9 weeks","previewFileId":"9271a531-9216-43b1-9e7e-51c97618e15e","createdByUserId":"1273c444-dec1-4588-b8b6-35bd5189d778"}'

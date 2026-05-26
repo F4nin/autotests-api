@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTI2VDIwOjM1OjE5LjM3Mjk0MyIsInVzZXJfaWQiOiJlOGJlNzlmMC1jYjYwLTRkOWEtYWRjOS04MzA2N2RlMWE2YzYifQ.6O_vDupCzEHnFaGYsDO4ce8AEIlbko1iybbujI_dNKE' \
+  -H 'content-length: 234' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Tell gun town possible service company.","courseId":"a1f60af9-02e3-4b02-a091-30f89dbf6358","maxScore":81,"minScore":1,"orderIndex":47,"description":"Already local through red new someone official.","estimatedTime":"2 weeks"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTI2VDIwOjM1OjIwLjU2NDc5OCIsInVzZXJfaWQiOiI5YTdlMmNlZS1jZDJkLTRhMGMtOTFmZC03ZWYxMDZmMDVkYzkifQ.RX7qIW5KpiBxyvXOCDg2s9dz6VVSiINNuqLqF1zntZs' \
+  -H 'content-length: 269' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Physical southern drug investment site standard.","maxScore":71,"minScore":5,"description":"Other people during within.","estimatedTime":"2 weeks","previewFileId":"15cef39a-e852-4a8a-9a0a-a04d0b24fab8","createdByUserId":"9a7e2cee-cd2d-4a0c-91fd-7ef106f05dc9"}'

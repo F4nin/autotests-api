@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTI2VDIwOjM1OjE5LjA5OTA2NyIsInVzZXJfaWQiOiIxMjczYzQ0NC1kZWMxLTQ1ODgtYjhiNi0zNWJkNTE4OWQ3NzgifQ.x4FqLJb-il_XtGTTAa3C5ntIRx8ukMFA_4cPhAMVKRk' \
+  -H 'content-length: 233' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Determine involve once early four other.","courseId":"82be7316-475a-447f-b64a-e93312e77923","maxScore":64,"minScore":15,"orderIndex":9,"description":"Have letter interest business guy or quality.","estimatedTime":"1 weeks"}'

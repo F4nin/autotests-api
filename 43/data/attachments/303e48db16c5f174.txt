@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/exercises/69f82afa-3b0a-4d4f-83b8-166123a4025f' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTI2VDIwOjM1OjE5LjM3Mjk0MyIsInVzZXJfaWQiOiJlOGJlNzlmMC1jYjYwLTRkOWEtYWRjOS04MzA2N2RlMWE2YzYifQ.6O_vDupCzEHnFaGYsDO4ce8AEIlbko1iybbujI_dNKE' \
+  -H 'content-length: 172' \
+  -H 'content-type: application/json' \
+  -d '{"title":"We size region real option across well.","maxScore":58,"minScore":1,"orderIndex":18,"description":"Option game war reveal phone since.","estimatedTime":"4 weeks"}'

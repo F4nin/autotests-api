@@ -1,0 +1,21 @@
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/exercises
+INFO     HTTP_CLIENT:event_hooks.py:28 Make PATCH request to http://localhost:8000/api/v1/exercises/69f82afa-3b0a-4d4f-83b8-166123a4025f
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/exercises/69f82afa-3b0a-4d4f-83b8-166123a4025f
+INFO     BASE_ASSERTIONS:base.py:16 Check that response status code equals to 200
+INFO     EXERCISES_ASSERTIONS:exercises.py:87 Check update exercise response
+INFO     BASE_ASSERTIONS:base.py:34 Check "title" equals to "We size region real option across well."
+INFO     BASE_ASSERTIONS:base.py:34 Check "max_score" equals to "58"
+INFO     BASE_ASSERTIONS:base.py:34 Check "min_score" equals to "1"
+INFO     BASE_ASSERTIONS:base.py:34 Check "order_index" equals to "18"
+INFO     BASE_ASSERTIONS:base.py:34 Check "estimated_time" equals to "4 weeks"
+INFO     BASE_ASSERTIONS:base.py:34 Check "description" equals to "Option game war reveal phone since."
+INFO     SCHEMA_ASSERTIONS:schema.py:19 Validating JSON schema
