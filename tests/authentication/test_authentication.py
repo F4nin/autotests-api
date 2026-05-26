@@ -2,14 +2,16 @@ from http import HTTPStatus
 import pytest
 from allure_commons.types import Severity
 
+from fixtures.authentication import AuthenticationFixture
 from fixtures.users import UserFixture
 from tools.allure.epics import AllureEpic
 from tools.allure.features import AllureFeature
 from tools.allure.stories import AllureStory
 from tools.allure.tags import AllureTag
-from tools.assertions.authentication import assert_login_response
+from tools.assertions.authentication import assert_login_response, assert_refresh_token_response
 from clients.authentication.authentication_client import AuthenticationClient
-from clients.authentication.authentication_schema import LoginRequestSchema, LoginResponseSchema
+from clients.authentication.authentication_schema import LoginRequestSchema, LoginResponseSchema, RefreshResponseSchema, \
+    RefreshRequestSchema
 from tools.assertions.base import assert_status_code
 from tools.assertions.schema import validate_json_schema
 import allure
@@ -35,5 +37,20 @@ class TestAuthentication:
         assert_status_code(response.status_code, HTTPStatus.OK)
 
         assert_login_response(response_data)
+
+        validate_json_schema(response.json(), response_data.model_json_schema())
+
+    @allure.story(AllureStory.REFRESH)
+    @allure.sub_suite(AllureStory.REFRESH)
+    @allure.title("Refresh token with correct credentials")
+    @allure.severity(Severity.NORMAL)
+    def test_refresh_token(self, function_authentication: AuthenticationFixture, authentication_client: AuthenticationClient):
+        request = RefreshRequestSchema(refresh_token=function_authentication.refresh_token)
+        response = authentication_client.refresh_api(request)
+        response_data = RefreshResponseSchema.model_validate_json(response.text)
+
+        assert_status_code(response.status_code, HTTPStatus.OK)
+
+        assert_refresh_token_response(response_data)
 
         validate_json_schema(response.json(), response_data.model_json_schema())
