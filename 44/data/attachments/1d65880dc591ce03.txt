@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTI3VDIwOjM5OjQ2LjU0ODQwMSIsInVzZXJfaWQiOiIwODM1Mjc3Yi0zODIxLTRlNjktOGMyNS1iZWY4NzkyMmFhNTIifQ.GurqTaxpVUtwiWiKTnwa963lLDUisv-aC2gupSbUHXw' \
+  -H 'content-length: 260' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Begin bring society.","maxScore":51,"minScore":27,"description":"Line edge ever mind. Ten base four everybody.","estimatedTime":"3 weeks","previewFileId":"462fcfb3-2b92-4ecd-a436-c0cfcf8c962f","createdByUserId":"0835277b-3821-4e69-8c25-bef87922aa52"}'

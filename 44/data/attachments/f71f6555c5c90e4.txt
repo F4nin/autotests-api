@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTI3VDIwOjM5OjQ1LjUyOTAwOCIsInVzZXJfaWQiOiJmOTRhN2U0Yy01YjE4LTQ2MGQtYmMyYi1hNDQ3NWVhYzc4ZDYifQ.kJiewGYrute0dQ5bwCTz6hdgfOOArCpO7SZ2LjElXuA' \
+  -H 'content-length: 263' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Campaign plan tell leave whose.","maxScore":75,"minScore":2,"description":"Nation three agency across outside of.","estimatedTime":"5 weeks","previewFileId":"1e6daf0c-834b-45cb-bfcb-5a533b8ce350","createdByUserId":"f94a7e4c-5b18-460d-bc2b-a4475eac78d6"}'

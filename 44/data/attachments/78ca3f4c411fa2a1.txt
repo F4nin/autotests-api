@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTI3VDIwOjM5OjQzLjkwNDY3MiIsInVzZXJfaWQiOiIxZjNjZTVlMi1kYWIwLTRiNzQtODc1Zi01NTIyMzY5NjM2OWQifQ.F82zOvrqy0SA4-_54jbLmLh2GlqXBYKriISJBj5XsYE' \
+  -H 'content-length: 259' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Stop rock model market.","maxScore":83,"minScore":16,"description":"At use choose product hand sister health.","estimatedTime":"2 weeks","previewFileId":"a84288be-97e3-48f5-af58-364b7a29d196","createdByUserId":"1f3ce5e2-dab0-4b74-875f-55223696369d"}'

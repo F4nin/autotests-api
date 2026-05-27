@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTI3VDIwOjM5OjQ1LjIyMDMwNiIsInVzZXJfaWQiOiI0NmUyMmM5ZC1iY2Y4LTQ0NDEtYjAzMS04YjJlYzIwMDIzNzgifQ.s3FXG9ec9nKhtV2ilzKpyRjufJ66T5BPkrOC0gJqJuI' \
+  -H 'content-length: 268' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Grow interesting certain investment represent.","maxScore":90,"minScore":6,"description":"Purpose degree skin finally.","estimatedTime":"7 weeks","previewFileId":"de18b67b-e14d-4cbb-a086-a96447beadbe","createdByUserId":"46e22c9d-bcf8-4441-b031-8b2ec2002378"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTI3VDIwOjM5OjQyLjYwMjk5MiIsInVzZXJfaWQiOiJlZmJkZmQzOC0wNTBkLTRkN2ItYmMxYy05M2NhOTRjMzJjMTMifQ.SCf22ahZJjmmZxpa2quh_BAhRYElzx3biF1wAoRFciM' \
+  -H 'content-length: 256' \
+  -H 'content-type: application/json' \
+  -d '{"title":"West wait old reach.","maxScore":51,"minScore":12,"description":"Make civil picture option same rule such.","estimatedTime":"1 weeks","previewFileId":"8c715878-091c-42f6-aecb-0361715dd3f1","createdByUserId":"efbdfd38-050d-4d7b-bc1c-93ca94c32c13"}'

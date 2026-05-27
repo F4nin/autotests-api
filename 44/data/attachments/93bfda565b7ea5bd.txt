@@ -1,0 +1,11 @@
+curl -X 'PATCH' \
+  'http://localhost:8000/api/v1/courses/596f06ed-3bf2-419c-a96e-13c64ea37917' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTI3VDIwOjM5OjQyLjkxMTg5OCIsInVzZXJfaWQiOiJiMTI5OTg3NC1mNTRkLTQyZDQtODkxOS1hMDJhZGYxYmFmNmYifQ.YF23U4x2jgSECta7Vl1wsTKF1EJW-6yAM7RyR2U8k3w' \
+  -H 'content-length: 146' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Bring business budget spring over statement.","maxScore":50,"minScore":27,"description":"Send rather debate.","estimatedTime":"4 weeks"}'

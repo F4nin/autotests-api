@@ -1,0 +1,18 @@
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/users
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/authentication/login
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/files
+INFO     HTTP_CLIENT:event_hooks.py:28 Make POST request to http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/courses
+INFO     HTTP_CLIENT:event_hooks.py:28 Make PATCH request to http://localhost:8000/api/v1/courses/596f06ed-3bf2-419c-a96e-13c64ea37917
+INFO     HTTP_CLIENT:event_hooks.py:38 Got response 200 OK from http://localhost:8000/api/v1/courses/596f06ed-3bf2-419c-a96e-13c64ea37917
+INFO     BASE_ASSERTIONS:base.py:16 Check that response status code equals to 200
+INFO     COURSES_ASSERTIONS:courses.py:22 Check update course response
+INFO     BASE_ASSERTIONS:base.py:34 Check "title" equals to "Bring business budget spring over statement."
+INFO     BASE_ASSERTIONS:base.py:34 Check "description" equals to "Send rather debate."
+INFO     BASE_ASSERTIONS:base.py:34 Check "estimatedTime" equals to "4 weeks"
+INFO     BASE_ASSERTIONS:base.py:34 Check "max_score" equals to "50"
+INFO     BASE_ASSERTIONS:base.py:34 Check "min_score" equals to "27"
+INFO     SCHEMA_ASSERTIONS:schema.py:19 Validating JSON schema

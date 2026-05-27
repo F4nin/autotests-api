@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTI3VDIwOjM5OjQwLjk4NjYzNiIsInVzZXJfaWQiOiIzNzIyZDdiYi02MWFiLTRlZjEtOGFmMS1hZTlkMjNiOGJhYTkifQ.jrekg42B_RcKEamotppTDR6G1CNEkclX08rFZx7IvWo' \
+  -H 'content-length: 258' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Billion recent common same project.","maxScore":83,"minScore":28,"description":"Law also seat law community.","estimatedTime":"9 weeks","previewFileId":"f5979a3a-b85c-40e7-861b-644de26bace8","createdByUserId":"3722d7bb-61ab-4ef1-8af1-ae9d23b8baa9"}'

@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA1LTI3VDIwOjM5OjQyLjkxMTg5OCIsInVzZXJfaWQiOiJiMTI5OTg3NC1mNTRkLTQyZDQtODkxOS1hMDJhZGYxYmFmNmYifQ.YF23U4x2jgSECta7Vl1wsTKF1EJW-6yAM7RyR2U8k3w' \
+  -H 'content-length: 270' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Experience agree trouble blue.","maxScore":92,"minScore":15,"description":"Machine town explain because the house value.","estimatedTime":"6 weeks","previewFileId":"c7c8a087-b944-4770-944d-ed9be7dce57b","createdByUserId":"b1299874-f54d-42d4-8919-a02adf1baf6f"}'
