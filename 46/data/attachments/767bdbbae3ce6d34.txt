@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/exercises' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA3LTE0VDE0OjAwOjE3LjU5NjAzNyIsInVzZXJfaWQiOiI5MWNkODdlZi1mMTM3LTRmNTAtYjEzYi0wYTU1ZDFmYWY5NGYifQ.X3YoM3iuf4wQAyuLE5LEryU8-tkq5gefZiSZ_AJWQUg' \
+  -H 'content-length: 219' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Unit require capital training move range.","courseId":"aabb6dd0-5ecb-49b8-938b-b4ba8ace7cc2","maxScore":50,"minScore":25,"orderIndex":54,"description":"Pressure rise born beat term.","estimatedTime":"5 weeks"}'

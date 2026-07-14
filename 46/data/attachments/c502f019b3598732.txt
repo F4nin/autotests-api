@@ -1,0 +1,11 @@
+curl -X 'POST' \
+  'http://localhost:8000/api/v1/courses' \
+  -H 'host: localhost:8000' \
+  -H 'accept: */*' \
+  -H 'accept-encoding: gzip, deflate' \
+  -H 'connection: keep-alive' \
+  -H 'user-agent: python-httpx/0.28.1' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBpcmUiOiIyMDI2LTA3LTE0VDE0OjAwOjE4LjMwMzE1MSIsInVzZXJfaWQiOiIxZGU3NDE0Mi05NDExLTQ0NTgtOWYyMC1mODhiY2VkODQ1ZTAifQ.1HJB7QAhg9p6BQ83n6PgWBQrZb1sRPTmgoUGv19DCG4' \
+  -H 'content-length: 271' \
+  -H 'content-type: application/json' \
+  -d '{"title":"Business behind western back.","maxScore":77,"minScore":15,"description":"Network cause analysis west money game concern.","estimatedTime":"4 weeks","previewFileId":"b380ce54-555c-4407-ba36-6e8e07f097ff","createdByUserId":"1de74142-9411-4458-9f20-f88bced845e0"}'
